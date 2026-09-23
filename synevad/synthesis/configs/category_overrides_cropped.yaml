@@ -1,0 +1,24 @@
+# Per-crop overlays for a cropped high-resolution dataset, loaded the same way as
+# category_overrides.yaml (see that file for the merge rules).
+#
+# Each "category" here is one fixed window of a much larger frame, named in full-frame
+# pixel coordinates. This is the layout to use when the camera is fixed and the same
+# regions are inspected on every frame: one window per region of interest, each with its
+# own prompts, its own masks and its own manifest rows.
+#
+# Replace the centres below with your own. They are the only thing in this file that is
+# dataset-specific — everything else about the framing lives in `cropping:` in
+# cropped_example.yaml. Whatever cuts the detector's train/test crops must read the same
+# centres, or the detector trains on different windows than the defects were generated in.
+
+crop_a:
+  cropping:
+    crop_centers: ["2270,3560"]
+
+crop_b:
+  cropping:
+    crop_centers: ["1300,3000"]
+
+crop_c:
+  cropping:
+    crop_centers: ["2270,2150"]

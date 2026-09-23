@@ -1,0 +1,89 @@
+category: bottle
+device: cuda:0
+experiment_name: synevad
+version: v0
+seed: 0
+
+model:
+  backbone: wide_resnet50_2
+  coreset_sampling_ratio: 0.1
+  # Module names for a CNN; block indices for a DINO backbone (-1 is the last block).
+  # `default` picks per family (resnet: layer2+layer3 / dino:[-1]) 
+  layers: default
+  # Feature width as a fraction of what the backbone natively carries (wide_resnet50_2
+  # 1024, resnet18 256, DINO the ViT's embed_dim: 384 for dinov3_vits16, 1024 for
+  # dinov3_vitl16), so one swept value is comparable across backbones instead of asking
+  # the narrow ones to upsample. `model.embed_dimension` overrides the anchor with a
+  # literal width if a run needs the same number everywhere.
+  embed_dimension_factor: 1.0
+  number_of_starting_points: 10
+  dimension_to_project_features_to: 128
+  anomaly_score_num_nn: 3
+  
+data:
+  image_size: [224,224]
+  num_train_samples: -1
+  batch_size: 32
+  num_workers: 16
+  # The gen half of the train/gen split (scripts/make_split.sh) is symlinked out of this
+  # root, so train/good holds no frame that generation edited.
+  root: ${oc.env:MVTEC_PATH}
+  synthetic:
+    all:
+      root: ${oc.env:SYNTHETIC_BENCH,data/bench/final}/${category}/images/
+      scorer_result: all
+      severity: all
+      good_dir: ${oc.env:MVTEC_PATH}/${category}/test/good
+      train_dir: ${oc.env:MVTEC_PATH}/${category}/train/good  # checked, not loaded 
+
+logging:
+  root: ${oc.env:MLFLOW_DIR}
+  db_name: mlflow.db
+  artifacts_dirname: artifacts
+  experiment_name: ${experiment_name}
+  log_anomaly_maps: false
+
+
+queries:
+  all:
+    all: null
+    minimal: "severity == 'minimal'"
+    slight: "severity == 'slight'"
+    moderate: "severity == 'moderate'"
+    severe: "severity == 'severe'"
+    mask_ok: "mask_status == 'ok'"
+  real:
+    all: null
+
+# ANDed into every query of the set above it, so a set is scored on the same rows
+# whatever the query says. A composite whose mask has no pixels carries no defect to
+# detect, so it is `label == 1` noise in every query alike. `defect_area_frac` is the
+# share of the frame the mask covers (`synevad.metrics.area`); `!= 0` drops exactly the
+# measured-empty ones. `!=` rather than `> 0` on purpose: the column is NaN on rows
+# whose mask was never measured, `NaN != 0` is True, and an unscored row must stay in
+# rather than be dropped as if it had been measured empty. Defect-free frames are
+# added back after the filter. Null on `real`, whose defects were photographed rather
+# than edited and whose masks are ground truth.
+gate:
+  all: "defect_area_frac != 0"
+  real: null
+
+min_num_defects: 15 
+
+# Helper to select tags in mlflow
+tags:
+  experiment_name: ${experiment_name}
+  version: ${version}
+  category: ${category}
+  backbone: ${model.backbone}
+
+
+params:
+  coreset_sampling_ratio: ${model.coreset_sampling_ratio}
+  image_size: ${data.image_size}
+  seed: ${seed}
+  num_train_sample: ${data.num_train_samples}
+  # Logged even when not swept; `apply_overrides` adds swept keys on its own.
+  layers: ${model.layers}
+  embed_dimension_factor: ${model.embed_dimension_factor}
+

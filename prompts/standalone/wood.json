@@ -1,0 +1,246 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "wood",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "surface_discoloration",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "wood face along the grain",
+      "instance_count": "single",
+      "negatives": [
+        "not wooly or fuzzy mold growth",
+        "no raised or powdery texture",
+        "no cracks or checks",
+        "no material loss"
+      ],
+      "prompt": "Edit the image to add a single surface discoloration defect at minimal severity, caused by sap-staining fungi colonise the sapwood and deposit dark melanin pigments in their hyphae, tinting the wood bluish-grey to black without degrading the wood structure. The defect must appear as: On the wood face along the grain, lay the barest cool cast over a short run so its bluish character is only just readable against the warm wood tone. Keep the grain figure and the surface texture unchanged beneath it. Add exactly one such defect. Apply this change only within the wood face along the grain and leave every other part of the image unchanged. Constraints: not wooly or fuzzy mold growth; no raised or powdery texture; no cracks or checks; no material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_discoloration",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "wood face along the grain",
+      "instance_count": "single",
+      "negatives": [
+        "not wooly or fuzzy mold growth",
+        "no raised or powdery texture",
+        "no cracks or checks",
+        "no material loss"
+      ],
+      "prompt": "Edit the image to add a single surface discoloration defect at slight severity, caused by sap-staining fungi colonise the sapwood and deposit dark melanin pigments in their hyphae, tinting the wood bluish-grey to black without degrading the wood structure. The defect must appear as: On the wood face along the grain, lay a pale bluish-grey tint over a small area, light enough that the grain figure reads clearly through it. Keep the surface texture unchanged and let the tint fade without a defined margin. Add exactly one such defect. Apply this change only within the wood face along the grain and leave every other part of the image unchanged. Constraints: not wooly or fuzzy mold growth; no raised or powdery texture; no cracks or checks; no material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_discoloration",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "wood face along the grain",
+      "instance_count": "single",
+      "negatives": [
+        "not wooly or fuzzy mold growth",
+        "no raised or powdery texture",
+        "no cracks or checks",
+        "no material loss"
+      ],
+      "prompt": "Edit the image to add a single surface discoloration defect at moderate severity, caused by sap-staining fungi colonise the sapwood and deposit dark melanin pigments in their hyphae, tinting the wood bluish-grey to black without degrading the wood structure. The defect must appear as: On the wood face along the grain, lay a diffuse bluish-grey stain patch or streak partly covering the wood. Keep the surface texture unchanged and let the stain fade into an ill-defined margin. Add exactly one such defect. Apply this change only within the wood face along the grain and leave every other part of the image unchanged. Constraints: not wooly or fuzzy mold growth; no raised or powdery texture; no cracks or checks; no material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_discoloration",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "wood face along the grain",
+      "instance_count": "single",
+      "negatives": [
+        "not wooly or fuzzy mold growth",
+        "no raised or powdery texture",
+        "no cracks or checks",
+        "no material loss"
+      ],
+      "prompt": "Edit the image to add a single surface discoloration defect at severe severity, caused by sap-staining fungi colonise the sapwood and deposit dark melanin pigments in their hyphae, tinting the wood bluish-grey to black without degrading the wood structure. The defect must appear as: On the wood face along the grain, lay an extensive dark bluish-black to grey discoloration over a large area. Keep the wood surface flat and intact beneath it, with an ill-defined margin to the stain. Add exactly one such defect. Apply this change only within the wood face along the grain and leave every other part of the image unchanged. Constraints: not wooly or fuzzy mold growth; no raised or powdery texture; no cracks or checks; no material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bore_hole",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear scratch or crack",
+        "no broad diffuse stain patch",
+        "no resin fill",
+        "no wide gouge"
+      ],
+      "prompt": "Edit the image to add a single bore hole defect at minimal severity, caused by a wood-boring insect (pinhole or shot-hole borer) tunnels into the wood, removing material and leaving a small round dark-walled hole, often with staining around the opening. The defect must appear as: On the flat wood face, press a pinprick depression barely darker than the surround, so shallow it barely breaks the planed surface. Leave no rim standing out around it and keep the surrounding grain unmarked. Add exactly one such defect. Apply this change only within the flat wood face and leave every other part of the image unchanged. Constraints: not a linear scratch or crack; no broad diffuse stain patch; no resin fill; no wide gouge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bore_hole",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear scratch or crack",
+        "no broad diffuse stain patch",
+        "no resin fill",
+        "no wide gouge"
+      ],
+      "prompt": "Edit the image to add a single bore hole defect at slight severity, caused by a wood-boring insect (pinhole or shot-hole borer) tunnels into the wood, removing material and leaving a small round dark-walled hole, often with staining around the opening. The defect must appear as: On the flat wood face, sink a tiny shallow round pit with a faintly darker floor and a just-discernible circular rim. Keep it superficial so it does not penetrate the wood, and leave the surrounding grain unmarked. Add exactly one such defect. Apply this change only within the flat wood face and leave every other part of the image unchanged. Constraints: not a linear scratch or crack; no broad diffuse stain patch; no resin fill; no wide gouge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bore_hole",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear scratch or crack",
+        "no broad diffuse stain patch",
+        "no resin fill",
+        "no wide gouge"
+      ],
+      "prompt": "Edit the image to add a single bore hole defect at moderate severity, caused by a wood-boring insect (pinhole or shot-hole borer) tunnels into the wood, removing material and leaving a small round dark-walled hole, often with staining around the opening. The defect must appear as: On the flat wood face, bore a small round hole penetrating the wood surface, with a dark interior and a defined rim. Leave the surrounding grain unstained. Add exactly one such defect. Apply this change only within the flat wood face and leave every other part of the image unchanged. Constraints: not a linear scratch or crack; no broad diffuse stain patch; no resin fill; no wide gouge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bore_hole",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear scratch or crack",
+        "no broad diffuse stain patch",
+        "no resin fill",
+        "no wide gouge"
+      ],
+      "prompt": "Edit the image to add a single bore hole defect at severe severity, caused by a wood-boring insect (pinhole or shot-hole borer) tunnels into the wood, removing material and leaving a small round dark-walled hole, often with staining around the opening. The defect must appear as: On the flat wood face, bore a well-defined round hole with a dark interior and a clean rim, ringed by dark brown-black staining around the opening, with a little fine frass beside it. Add exactly one such defect. Apply this change only within the flat wood face and leave every other part of the image unchanged. Constraints: not a linear scratch or crack; no broad diffuse stain patch; no resin fill; no wide gouge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "resin_pocket",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain band on the wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a round bore hole",
+        "no fibrous torn edges",
+        "not a bluish stain",
+        "no material loss"
+      ],
+      "prompt": "Edit the image to add a single resin pocket defect at minimal severity, caused by resin accumulates in an opening between adjacent growth layers, forming a resin-filled lens-shaped pocket elongated along the grain; a naturally occurring softwood characteristic. The defect must appear as: On a grain band on the wood face, seep a thin dull amber trace along a growth ring, level with the planed surface and carrying no gloss. Keep its extent hard to fix against the surrounding grain. Add exactly one such defect. Apply this change only within the grain band on the wood face and leave every other part of the image unchanged. Constraints: not a round bore hole; no fibrous torn edges; not a bluish stain; no material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "resin_pocket",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain band on the wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a round bore hole",
+        "no fibrous torn edges",
+        "not a bluish stain",
+        "no material loss"
+      ],
+      "prompt": "Edit the image to add a single resin pocket defect at slight severity, caused by resin accumulates in an opening between adjacent growth layers, forming a resin-filled lens-shaped pocket elongated along the grain; a naturally occurring softwood characteristic. The defect must appear as: On a grain band on the wood face, lay a small faint amber resin streak along a growth ring, lightly glossed and barely recessed below the planed surface. Add exactly one such defect. Apply this change only within the grain band on the wood face and leave every other part of the image unchanged. Constraints: not a round bore hole; no fibrous torn edges; not a bluish stain; no material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "resin_pocket",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain band on the wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a round bore hole",
+        "no fibrous torn edges",
+        "not a bluish stain",
+        "no material loss"
+      ],
+      "prompt": "Edit the image to add a single resin pocket defect at moderate severity, caused by resin accumulates in an opening between adjacent growth layers, forming a resin-filled lens-shaped pocket elongated along the grain; a naturally occurring softwood characteristic. The defect must appear as: On a grain band on the wood face, open an elongated resin-filled pocket along the growth ring, glossy amber-brown and slightly recessed below the surface. Add exactly one such defect. Apply this change only within the grain band on the wood face and leave every other part of the image unchanged. Constraints: not a round bore hole; no fibrous torn edges; not a bluish stain; no material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "resin_pocket",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain band on the wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a round bore hole",
+        "no fibrous torn edges",
+        "not a bluish stain",
+        "no material loss"
+      ],
+      "prompt": "Edit the image to add a single resin pocket defect at severe severity, caused by resin accumulates in an opening between adjacent growth layers, forming a resin-filled lens-shaped pocket elongated along the grain; a naturally occurring softwood characteristic. The defect must appear as: On a grain band on the wood face, open a pronounced lens-shaped resin pocket running along the grain, filled with glossy dark amber resin and slightly sunken below the planed surface. Add exactly one such defect. Apply this change only within the grain band on the wood face and leave every other part of the image unchanged. Constraints: not a round bore hole; no fibrous torn edges; not a bluish stain; no material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "planed wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a round hole",
+        "no resin fill",
+        "not a diffuse stain",
+        "no wide gouge"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at minimal severity, caused by a hard edge or abrasive grit rubs, cuts, and plows across the wood surface, tearing and chipping fibers out below the line of cut and leaving a linear groove with raised fuzzy fibers. The defect must appear as: On the planed wood face, draw a faint burnished line so the fibres are pressed rather than parted. Cut no groove into the surface and leave every fibre anchored in place. Add exactly one such defect. Apply this change only within the planed wood face and leave every other part of the image unchanged. Constraints: not a round hole; no resin fill; not a diffuse stain; no wide gouge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "planed wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a round hole",
+        "no resin fill",
+        "not a diffuse stain",
+        "no wide gouge"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at slight severity, caused by a hard edge or abrasive grit rubs, cuts, and plows across the wood surface, tearing and chipping fibers out below the line of cut and leaving a linear groove with raised fuzzy fibers. The defect must appear as: On the planed wood face, score a short shallow scratch line whose fibres are lightly disturbed along the cut. Tear no fibres free of the surface and leave the grain readable through the line. Add exactly one such defect. Apply this change only within the planed wood face and leave every other part of the image unchanged. Constraints: not a round hole; no resin fill; not a diffuse stain; no wide gouge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "planed wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a round hole",
+        "no resin fill",
+        "not a diffuse stain",
+        "no wide gouge"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at moderate severity, caused by a hard edge or abrasive grit rubs, cuts, and plows across the wood surface, tearing and chipping fibers out below the line of cut and leaving a linear groove with raised fuzzy fibers. The defect must appear as: On the planed wood face, cut a thin linear groove across or along the grain with torn fibres in it, reading as a light or dark line breaking the grain. Add exactly one such defect. Apply this change only within the planed wood face and leave every other part of the image unchanged. Constraints: not a round hole; no resin fill; not a diffuse stain; no wide gouge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "planed wood face",
+      "instance_count": "single",
+      "negatives": [
+        "not a round hole",
+        "no resin fill",
+        "not a diffuse stain",
+        "no wide gouge"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at severe severity, caused by a hard edge or abrasive grit rubs, cuts, and plows across the wood surface, tearing and chipping fibers out below the line of cut and leaving a linear groove with raised fuzzy fibers. The defect must appear as: On the planed wood face, cut a long scratch groove deep enough to chip and tear fibres out from below the surface, with fuzzy raised fibres along its edges. Add exactly one such defect. Apply this change only within the planed wood face and leave every other part of the image unchanged. Constraints: not a round hole; no resin fill; not a diffuse stain; no wide gouge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat planed wood board surface filling the frame, its warm reddish-brown to tan tone and prominent near-vertical straight grain with darker grain streaks, the even soft diffuse lighting without strong speculars, the top-down flat viewpoint, and the sharp macro capture; alter nothing except the defect edit."
+    }
+  ],
+  "counts": {
+    "modes": 4,
+    "prompts": 16
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

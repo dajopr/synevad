@@ -1,0 +1,234 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "bottle",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "rim_chip",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outermost mouth rim and lip edge",
+      "instance_count": "single",
+      "negatives": [
+        "no rounded intact rim",
+        "no smooth rounded edge",
+        "no surface mark without material loss",
+        "no dark stain or discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single rim chip defect at minimal severity, caused by brittle conchoidal fracture removing a glass fragment from the mouth rim under impact or contact load. The defect must appear as: On the outermost mouth rim and lip edge, remove a minute speck of glass at a single point so the rim outline is interrupted there. Leave no fracture scar face; the bright edge highlight breaks only faintly at that spot. The rest of the rim stays whole. Add exactly one such defect. Apply this change only within the outermost mouth rim and lip edge and leave every other part of the image unchanged. Constraints: no rounded intact rim; no smooth rounded edge; no surface mark without material loss; no dark stain or discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "rim_chip",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outermost mouth rim and lip edge",
+      "instance_count": "single",
+      "negatives": [
+        "no rounded intact rim",
+        "no smooth rounded edge",
+        "no surface mark without material loss",
+        "no dark stain or discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single rim chip defect at slight severity, caused by brittle conchoidal fracture removing a glass fragment from the mouth rim under impact or contact load. The defect must appear as: On the outermost mouth rim and lip edge, notch out a tiny nick where a small piece of glass is gone. The fracture face is too small to show a scar pattern; the notch is shallow and low in contrast against the amber rim, and the rest of the rim stays whole. Add exactly one such defect. Apply this change only within the outermost mouth rim and lip edge and leave every other part of the image unchanged. Constraints: no rounded intact rim; no smooth rounded edge; no surface mark without material loss; no dark stain or discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "rim_chip",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outermost mouth rim and lip edge",
+      "instance_count": "single",
+      "negatives": [
+        "no rounded intact rim",
+        "no smooth rounded edge",
+        "no surface mark without material loss",
+        "no dark stain or discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single rim chip defect at moderate severity, caused by brittle conchoidal fracture removing a glass fragment from the mouth rim under impact or contact load. The defect must appear as: On the outermost mouth rim and lip edge, break out a single small chip leaving a shallow conchoidal scar. Glass is clearly missing from the lip and the broken edge is sharp and angular against the surrounding rim. Add exactly one such defect. Apply this change only within the outermost mouth rim and lip edge and leave every other part of the image unchanged. Constraints: no rounded intact rim; no smooth rounded edge; no surface mark without material loss; no dark stain or discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "rim_chip",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outermost mouth rim and lip edge",
+      "instance_count": "single",
+      "negatives": [
+        "no rounded intact rim",
+        "no smooth rounded edge",
+        "no surface mark without material loss",
+        "no dark stain or discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single rim chip defect at severe severity, caused by brittle conchoidal fracture removing a glass fragment from the mouth rim under impact or contact load. The defect must appear as: On the outermost mouth rim and lip edge, break out a larger multi-facet chip forming a deep concavity in the lip. The broken edges are ragged and sharp, and several concentric ripples mark the fracture scar. Add exactly one such defect. Apply this change only within the outermost mouth rim and lip edge and leave every other part of the image unchanged. Constraints: no rounded intact rim; no smooth rounded edge; no surface mark without material loss; no dark stain or discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "glass_crack",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "rim wall or neck body glass",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or notch",
+        "no opaque deposit",
+        "no discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single glass crack defect at minimal severity, caused by subcritical then dynamic crack propagation from a surface flaw, splitting glass without removing material. The defect must appear as: In the rim wall or neck body glass, place an extremely short hairline mark broken into two barely visible segments. It is so low in contrast that it reads only as a faint interruption of the amber transparency. The glass surface stays otherwise clear and unmarked. Add exactly one such defect. Apply this change only within the rim wall or neck body glass and leave every other part of the image unchanged. Constraints: no material loss or notch; no opaque deposit; no discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "glass_crack",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "rim wall or neck body glass",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or notch",
+        "no opaque deposit",
+        "no discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single glass crack defect at slight severity, caused by subcritical then dynamic crack propagation from a surface flaw, splitting glass without removing material. The defect must appear as: In the rim wall or neck body glass, draw a short discontinuous hairline crack that breaks into separate segments along its path. Keep it very low in contrast against the amber glass and unbranched, splitting the glass without removing any material. Add exactly one such defect. Apply this change only within the rim wall or neck body glass and leave every other part of the image unchanged. Constraints: no material loss or notch; no opaque deposit; no discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "glass_crack",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "rim wall or neck body glass",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or notch",
+        "no opaque deposit",
+        "no discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single glass crack defect at moderate severity, caused by subcritical then dynamic crack propagation from a surface flaw, splitting glass without removing material. The defect must appear as: In the rim wall or neck body glass, draw a single continuous fine crack line running across the rim wall. Keep the line sharp and unbranched along its whole length, splitting the glass without removing any material. Add exactly one such defect. Apply this change only within the rim wall or neck body glass and leave every other part of the image unchanged. Constraints: no material loss or notch; no opaque deposit; no discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "glass_crack",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "rim wall or neck body glass",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or notch",
+        "no opaque deposit",
+        "no discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single glass crack defect at severe severity, caused by subcritical then dynamic crack propagation from a surface flaw, splitting glass without removing material. The defect must appear as: In the rim wall or neck body glass, draw a long crack that forks into branches, with faint radiating hackle roughening the glass near the split. Keep the crack a clean split with no glass removed. Add exactly one such defect. Apply this change only within the rim wall or neck body glass and leave every other part of the image unchanged. Constraints: no material loss or notch; no opaque deposit; no discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "foreign_particle",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inner mouth opening and rim seat",
+      "instance_count": "single",
+      "negatives": [
+        "no glass crack or fracture",
+        "not integral to or fused into the glass",
+        "no transparent bubble"
+      ],
+      "prompt": "Edit the image to add a single foreign particle defect at minimal severity, caused by extrinsic particulate deposition: a fiber, fragment or speck settles on the rim seat or inner mouth surface. The defect must appear as: On the inner mouth opening and rim seat, add the faintest fleck of foreign matter, barely darker than the glass beneath it and with no resolvable outline, so it could be mistaken for a variation in the glass tone. It sits loose on the surface. Add exactly one such defect. Apply this change only within the inner mouth opening and rim seat and leave every other part of the image unchanged. Constraints: no glass crack or fracture; not integral to or fused into the glass; no transparent bubble. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "foreign_particle",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inner mouth opening and rim seat",
+      "instance_count": "single",
+      "negatives": [
+        "no glass crack or fracture",
+        "not integral to or fused into the glass",
+        "no transparent bubble"
+      ],
+      "prompt": "Edit the image to add a single foreign particle defect at slight severity, caused by extrinsic particulate deposition: a fiber, fragment or speck settles on the rim seat or inner mouth surface. The defect must appear as: On the inner mouth opening and rim seat, add a single small speck of foreign matter whose tone is close to the glass and whose outline is soft, so it reads as a light smudge rather than a defined object resting on the surface. Add exactly one such defect. Apply this change only within the inner mouth opening and rim seat and leave every other part of the image unchanged. Constraints: no glass crack or fracture; not integral to or fused into the glass; no transparent bubble. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "foreign_particle",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inner mouth opening and rim seat",
+      "instance_count": "single",
+      "negatives": [
+        "no glass crack or fracture",
+        "not integral to or fused into the glass",
+        "no transparent bubble"
+      ],
+      "prompt": "Edit the image to add a single foreign particle defect at moderate severity, caused by extrinsic particulate deposition: a fiber, fragment or speck settles on the rim seat or inner mouth surface. The defect must appear as: On the inner mouth opening and rim seat, add one discrete dark speck or short fiber lying on the glass, clearly outlined against it and plainly a separate object sitting on the surface. Add exactly one such defect. Apply this change only within the inner mouth opening and rim seat and leave every other part of the image unchanged. Constraints: no glass crack or fracture; not integral to or fused into the glass; no transparent bubble. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "foreign_particle",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inner mouth opening and rim seat",
+      "instance_count": "cluster",
+      "negatives": [
+        "no glass crack or fracture",
+        "not integral to or fused into the glass",
+        "no transparent bubble"
+      ],
+      "prompt": "Edit the image to add a single foreign particle defect at severe severity, caused by extrinsic particulate deposition: a fiber, fragment or speck settles on the rim seat or inner mouth surface. The defect must appear as: On the inner mouth opening and rim seat, add several larger opaque particles and fibers clustered together on the mouth, strongly contrasting against the glass and plainly foreign matter resting loose on the surface. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the inner mouth opening and rim seat and leave every other part of the image unchanged. Constraints: no glass crack or fracture; not integral to or fused into the glass; no transparent bubble. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "glass shoulder and neck surface",
+      "instance_count": "single",
+      "negatives": [
+        "no deep notch or large material loss",
+        "no opaque deposit",
+        "no branching fork"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at minimal severity, caused by plastic-deformation ploughing and micro-abrasion by a harder body, forming a shallow groove on the glass. The defect must appear as: On the glass shoulder and neck surface, graze a very short mark that only dulls the sheen where a hard body has passed. There is no whitening and no defined groove edge, just a slight interruption of the reflection on the amber glass. Add exactly one such defect. Apply this change only within the glass shoulder and neck surface and leave every other part of the image unchanged. Constraints: no deep notch or large material loss; no opaque deposit; no branching fork. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "glass shoulder and neck surface",
+      "instance_count": "single",
+      "negatives": [
+        "no deep notch or large material loss",
+        "no opaque deposit",
+        "no branching fork"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at slight severity, caused by plastic-deformation ploughing and micro-abrasion by a harder body, forming a shallow groove on the glass. The defect must appear as: On the glass shoulder and neck surface, add a faint short shallow scuff where a hard body has ploughed the glass. Keep it very low in contrast with no striation detail visible and no whitened line. Add exactly one such defect. Apply this change only within the glass shoulder and neck surface and leave every other part of the image unchanged. Constraints: no deep notch or large material loss; no opaque deposit; no branching fork. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "glass shoulder and neck surface",
+      "instance_count": "single",
+      "negatives": [
+        "no deep notch or large material loss",
+        "no opaque deposit",
+        "no branching fork"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at moderate severity, caused by plastic-deformation ploughing and micro-abrasion by a harder body, forming a shallow groove on the glass. The defect must appear as: On the glass shoulder and neck surface, add a single thin whitish scratch line with sharp narrow edges, ploughed into the glass by a harder body. Keep it a clean unbranched line. Add exactly one such defect. Apply this change only within the glass shoulder and neck surface and leave every other part of the image unchanged. Constraints: no deep notch or large material loss; no opaque deposit; no branching fork. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "glass shoulder and neck surface",
+      "instance_count": "single",
+      "negatives": [
+        "no deep notch or large material loss",
+        "no opaque deposit",
+        "no branching fork"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at severe severity, caused by plastic-deformation ploughing and micro-abrasion by a harder body, forming a shallow groove on the glass. The defect must appear as: On the glass shoulder and neck surface, add a long deep scratch showing fine parallel striations along its floor, with minor chipping of the glass at its edges. Add exactly one such defect. Apply this change only within the glass shoulder and neck surface and leave every other part of the image unchanged. Constraints: no deep notch or large material loss; no opaque deposit; no branching fork. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse top-down lighting with warm copper speculars on the threaded rim, the plain white seamless background, the centered axial view of the bottle mouth, the amber-glass warm color cast, and the sharp high-resolution image character unchanged."
+    }
+  ],
+  "counts": {
+    "modes": 4,
+    "prompts": 16
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

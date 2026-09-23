@@ -1,0 +1,282 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "leather",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "incision_cut",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "anywhere on the grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no raised fold ridge",
+        "no surface film deposit",
+        "no colour change without an opening in the surface"
+      ],
+      "prompt": "Edit the image to add a single incision cut defect at minimal severity, caused by sharp blade severs the grain layer along a line, rupturing collagen fibres and exposing the coarser corium beneath. The defect must appear as: Somewhere on the pebbled grain surface, score a fine incised line into the leather. Its two lips still meet along the whole length, so the surface stays closed: the dyed grain is scored but not parted, and nothing of the interior shows. Add exactly one such defect. Apply this change only within the anywhere on the grain surface field and leave every other part of the image unchanged. Constraints: no raised fold ridge; no surface film deposit; no colour change without an opening in the surface. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "incision_cut",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "anywhere on the grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no raised fold ridge",
+        "no surface film deposit",
+        "no colour change without an opening in the surface"
+      ],
+      "prompt": "Edit the image to add a single incision cut defect at slight severity, caused by sharp blade severs the grain layer along a line, rupturing collagen fibres and exposing the coarser corium beneath. The defect must appear as: Somewhere on the pebbled grain surface, part the leather along a short slit. The two lips separate just enough to read as a fine dark line of shadow. The cut walls stay flush, with no severed fibre ends and no paler subsurface legible anywhere along it. Add exactly one such defect. Apply this change only within the anywhere on the grain surface field and leave every other part of the image unchanged. Constraints: no raised fold ridge; no surface film deposit; no colour change without an opening in the surface. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "incision_cut",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "anywhere on the grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no raised fold ridge",
+        "no surface film deposit",
+        "no colour change without an opening in the surface"
+      ],
+      "prompt": "Edit the image to add a single incision cut defect at moderate severity, caused by sharp blade severs the grain layer along a line, rupturing collagen fibres and exposing the coarser corium beneath. The defect must appear as: Somewhere on the pebbled grain surface, cut a single clean linear slit through the grain layer. Its edges gape slightly apart, and the severed fibre ends stand visible along both lips of the cut. Add exactly one such defect. Apply this change only within the anywhere on the grain surface field and leave every other part of the image unchanged. Constraints: no raised fold ridge; no surface film deposit; no colour change without an opening in the surface. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "incision_cut",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "anywhere on the grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no raised fold ridge",
+        "no surface film deposit",
+        "no colour change without an opening in the surface"
+      ],
+      "prompt": "Edit the image to add a single incision cut defect at severe severity, caused by sharp blade severs the grain layer along a line, rupturing collagen fibres and exposing the coarser corium beneath. The defect must appear as: Somewhere on the pebbled grain surface, cut a long open gash. Its edges gape widely apart, laying bare the paler, coarser corium fibres beneath and the ragged severed fibre ends along both lips. Add exactly one such defect. Apply this change only within the anywhere on the grain surface field and leave every other part of the image unchanged. Constraints: no raised fold ridge; no surface film deposit; no colour change without an opening in the surface. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "puncture_perforation",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no long linear slit",
+        "no raised fold ridge",
+        "no surface film deposit"
+      ],
+      "prompt": "Edit the image to add a single puncture perforation defect at minimal severity, caused by a pointed object pushes through the grain at a point, tearing fibres radially outward into a hole. The defect must appear as: On the grain surface field, press a shallow dimple into the leather where a point has pushed the surface inward without breaking it. The pebbled texture stretches unbroken over the depression, with no puncture opening and no torn fibres anywhere around it. Add exactly one such defect. Apply this change only within the grain surface field and leave every other part of the image unchanged. Constraints: no long linear slit; no raised fold ridge; no surface film deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "puncture_perforation",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no long linear slit",
+        "no raised fold ridge",
+        "no surface film deposit"
+      ],
+      "prompt": "Edit the image to add a single puncture perforation defect at slight severity, caused by a pointed object pushes through the grain at a point, tearing fibres radially outward into a hole. The defect must appear as: On the grain surface field, pierce the grain at a single point. It reads as a dark pinprick with the surrounding pebbling pulled inward toward it. The opening stays closed, with no shadowed void behind it and no tears running outward from the point. Add exactly one such defect. Apply this change only within the grain surface field and leave every other part of the image unchanged. Constraints: no long linear slit; no raised fold ridge; no surface film deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "puncture_perforation",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no long linear slit",
+        "no raised fold ridge",
+        "no surface film deposit"
+      ],
+      "prompt": "Edit the image to add a single puncture perforation defect at moderate severity, caused by a pointed object pushes through the grain at a point, tearing fibres radially outward into a hole. The defect must appear as: On the grain surface field, punch a small round puncture hole through the leather. Short tears radiate outward from its edge, and the rim carries frayed torn fibre ends all around. Add exactly one such defect. Apply this change only within the grain surface field and leave every other part of the image unchanged. Constraints: no long linear slit; no raised fold ridge; no surface film deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "puncture_perforation",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no long linear slit",
+        "no raised fold ridge",
+        "no surface film deposit"
+      ],
+      "prompt": "Edit the image to add a single puncture perforation defect at severe severity, caused by a pointed object pushes through the grain at a point, tearing fibres radially outward into a hole. The defect must appear as: On the grain surface field, tear a large star-shaped perforation through the leather. A deep shadowed void opens behind it, long tears run outward from the centre, and ragged frayed fibres bristle around the whole rim. Add exactly one such defect. Apply this change only within the grain surface field and leave every other part of the image unchanged. Constraints: no long linear slit; no raised fold ridge; no surface film deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "contamination_stain",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no cut or torn opening",
+        "no raised fold ridge",
+        "no broken grain fibres"
+      ],
+      "prompt": "Edit the image to add a single contamination stain defect at minimal severity, caused by extraneous adhesive or oily matter is deposited on the grain and dries into a film that sits on the surface. The defect must appear as: On the grain surface field, leave a barely-there residue that shows only as a patch of altered sheen, catching the light a touch differently from the surface around it. It has no body and no discernible edge, and the pebbled texture and colour read through it unchanged. Add exactly one such defect. Apply this change only within the grain surface field and leave every other part of the image unchanged. Constraints: no cut or torn opening; no raised fold ridge; no broken grain fibres. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "contamination_stain",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no cut or torn opening",
+        "no raised fold ridge",
+        "no broken grain fibres"
+      ],
+      "prompt": "Edit the image to add a single contamination stain defect at slight severity, caused by extraneous adhesive or oily matter is deposited on the grain and dries into a film that sits on the surface. The defect must appear as: On the grain surface field, lay a small translucent smear of deposit on the leather, with a legible but soft outline. It carries a faint gloss of its own and thins toward its edges, and the pebbling stays clearly readable through the whole of it. Add exactly one such defect. Apply this change only within the grain surface field and leave every other part of the image unchanged. Constraints: no cut or torn opening; no raised fold ridge; no broken grain fibres. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "contamination_stain",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no cut or torn opening",
+        "no raised fold ridge",
+        "no broken grain fibres"
+      ],
+      "prompt": "Edit the image to add a single contamination stain defect at moderate severity, caused by extraneous adhesive or oily matter is deposited on the grain and dries into a film that sits on the surface. The defect must appear as: On the grain surface field, lay a distinct irregular patch of dried deposit on the leather. A glossy or crusted film covers it and masks the pebbled grain within its outline, sitting on top of the surface with a defined deposit edge. Add exactly one such defect. Apply this change only within the grain surface field and leave every other part of the image unchanged. Constraints: no cut or torn opening; no raised fold ridge; no broken grain fibres. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "contamination_stain",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "grain surface field",
+      "instance_count": "single",
+      "negatives": [
+        "no cut or torn opening",
+        "no raised fold ridge",
+        "no broken grain fibres"
+      ],
+      "prompt": "Edit the image to add a single contamination stain defect at severe severity, caused by extraneous adhesive or oily matter is deposited on the grain and dries into a film that sits on the surface. The defect must appear as: On the grain surface field, lay a large opaque blotch of dried film on the leather. It carries a strong sheen or a whitish bloom across its whole area, and the pebbled grain is fully obscured beneath it. Add exactly one such defect. Apply this change only within the grain surface field and leave every other part of the image unchanged. Constraints: no cut or torn opening; no raised fold ridge; no broken grain fibres. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "discoloration_fading",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a region of the grain surface",
+      "instance_count": "single",
+      "negatives": [
+        "no surface film deposit",
+        "no cut or torn opening",
+        "no topographic ridge or hole in the surface relief"
+      ],
+      "prompt": "Edit the image to add a single discoloration fading defect at minimal severity, caused by photo-oxidation and dye migration alter the colourants, shifting hue or lightness with no change to grain topography. The defect must appear as: Over a region of the grain surface, introduce an almost imperceptible unevenness of tone, reading as a faint variation in the lay of the dye rather than as a mark. No patch can be located and no edge can be traced, and the grain relief is entirely unchanged. Add exactly one such defect. Apply this change only within the a region of the grain surface and leave every other part of the image unchanged. Constraints: no surface film deposit; no cut or torn opening; no topographic ridge or hole in the surface relief. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "discoloration_fading",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a region of the grain surface",
+      "instance_count": "single",
+      "negatives": [
+        "no surface film deposit",
+        "no cut or torn opening",
+        "no topographic ridge or hole in the surface relief"
+      ],
+      "prompt": "Edit the image to add a single discoloration fading defect at slight severity, caused by photo-oxidation and dye migration alter the colourants, shifting hue or lightness with no change to grain topography. The defect must appear as: Over a region of the grain surface, set a locatable patch off-tone from its surroundings, drifting toward a paler or yellower cast. Its extent is hard to pin down because the tone melts away without any traceable edge. The pebbled relief is untouched. Add exactly one such defect. Apply this change only within the a region of the grain surface and leave every other part of the image unchanged. Constraints: no surface film deposit; no cut or torn opening; no topographic ridge or hole in the surface relief. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "discoloration_fading",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a region of the grain surface",
+      "instance_count": "single",
+      "negatives": [
+        "no surface film deposit",
+        "no cut or torn opening",
+        "no topographic ridge or hole in the surface relief"
+      ],
+      "prompt": "Edit the image to add a single discoloration fading defect at moderate severity, caused by photo-oxidation and dye migration alter the colourants, shifting hue or lightness with no change to grain topography. The defect must appear as: Over a region of the grain surface, place a clear diffuse patch that reads lighter or yellowed against the surrounding grain, with feathered edges. The colour alone changes; the pebbled relief carries the same texture across the patch as outside it. Add exactly one such defect. Apply this change only within the a region of the grain surface and leave every other part of the image unchanged. Constraints: no surface film deposit; no cut or torn opening; no topographic ridge or hole in the surface relief. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "discoloration_fading",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a region of the grain surface",
+      "instance_count": "single",
+      "negatives": [
+        "no surface film deposit",
+        "no cut or torn opening",
+        "no topographic ridge or hole in the surface relief"
+      ],
+      "prompt": "Edit the image to add a single discoloration fading defect at severe severity, caused by photo-oxidation and dye migration alter the colourants, shifting hue or lightness with no change to grain topography. The defect must appear as: Over a large region of the grain surface, place a strongly faded and discoloured area with a marked off-tone shift against the surrounding grain. The colour alone changes; the pebbled grain topography stays fully intact across the whole region. Add exactly one such defect. Apply this change only within the a region of the grain surface and leave every other part of the image unchanged. Constraints: no surface film deposit; no cut or torn opening; no topographic ridge or hole in the surface relief. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "crease_fold",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "across the grain surface",
+      "instance_count": "single",
+      "negatives": [
+        "no cut or torn opening",
+        "no surface film deposit",
+        "no colour change without a raised ridge"
+      ],
+      "prompt": "Edit the image to add a single crease fold defect at minimal severity, caused by bending past recovery folds the fibre network; the stiffer grain breaks from the corium forming a raised ridge. The defect must appear as: Across the grain surface, run a line where the leather has been flexed without taking a set. It shows only as a narrow band catching the light differently from the field on either side. The surface stays flat, with no raised crest, no furrow and no compression of the pebbling. Add exactly one such defect. Apply this change only within the across the grain surface and leave every other part of the image unchanged. Constraints: no cut or torn opening; no surface film deposit; no colour change without a raised ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "crease_fold",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "across the grain surface",
+      "instance_count": "single",
+      "negatives": [
+        "no cut or torn opening",
+        "no surface film deposit",
+        "no colour change without a raised ridge"
+      ],
+      "prompt": "Edit the image to add a single crease fold defect at slight severity, caused by bending past recovery folds the fibre network; the stiffer grain breaks from the corium forming a raised ridge. The defect must appear as: Across the grain surface, run a shallow crease that has taken a faint set, its low crest picking up a thin highlight along one flank. No furrow accompanies it, and the pebbling over the crest keeps its original relief, uncompressed and uncracked. Add exactly one such defect. Apply this change only within the across the grain surface and leave every other part of the image unchanged. Constraints: no cut or torn opening; no surface film deposit; no colour change without a raised ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "crease_fold",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "across the grain surface",
+      "instance_count": "single",
+      "negatives": [
+        "no cut or torn opening",
+        "no surface film deposit",
+        "no colour change without a raised ridge"
+      ],
+      "prompt": "Edit the image to add a single crease fold defect at moderate severity, caused by bending past recovery folds the fibre network; the stiffer grain breaks from the corium forming a raised ridge. The defect must appear as: Across the grain surface, raise a clear crease ridge with a furrow running alongside it as a paired band. The pebbled grain along the crest is compressed and flattened where the fold has set, and the crest catches the light differently from the flat grain. Add exactly one such defect. Apply this change only within the across the grain surface and leave every other part of the image unchanged. Constraints: no cut or torn opening; no surface film deposit; no colour change without a raised ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    },
+    {
+      "mode": "crease_fold",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "across the grain surface",
+      "instance_count": "single",
+      "negatives": [
+        "no cut or torn opening",
+        "no surface film deposit",
+        "no colour change without a raised ridge"
+      ],
+      "prompt": "Edit the image to add a single crease fold defect at severe severity, caused by bending past recovery folds the fibre network; the stiffer grain breaks from the corium forming a raised ridge. The defect must appear as: Across the grain surface, raise a pronounced fold ridge. Fine grain cracking runs along the crest where the compressed grain layer has broken, and the crest stands out in strong sheen contrast against the flat grain on either side. Add exactly one such defect. Apply this change only within the across the grain surface and leave every other part of the image unchanged. Constraints: no cut or torn opening; no surface film deposit; no colour change without a raised ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the pebbled leather grain, the even diffuse illumination with no strong speculars, the uniform mid-brown grain texture filling the frame, and the sharp high-resolution matte image character unchanged."
+    }
+  ],
+  "counts": {
+    "modes": 5,
+    "prompts": 20
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

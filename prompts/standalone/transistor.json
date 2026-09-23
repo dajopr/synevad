@@ -1,0 +1,246 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "transistor",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "lead_plastic_deformation",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "the free lead span below the package body, at or just above the existing formed bend",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or severed lead",
+        "no cracks in the moulded body",
+        "no brown corrosion patches",
+        "no missing lead"
+      ],
+      "prompt": "Edit the image to add a single lead plastic deformation defect at minimal severity, caused by a handling, insertion or transport moment exceeds the yield strength of the ductile plated lead-frame strip, so bending strain localises into a plastic hinge and a permanent angular offset remains after elastic springback. The defect must appear as: In the free span of one lead below the package body, just above its formed bend, deflect that lead faintly over a long gentle curve so its tip sits only just off the even three-lead spacing. Keep the highlight running along the lead continuous and barely diminished. Leave the other two leads untouched. Add exactly one such defect. Apply this change only within the the free lead span below the package body, at or just above the existing formed bend and leave every other part of the image unchanged. Constraints: no broken or severed lead; no cracks in the moulded body; no brown corrosion patches; no missing lead. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "lead_plastic_deformation",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "the free lead span below the package body, at or just above the existing formed bend",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or severed lead",
+        "no cracks in the moulded body",
+        "no brown corrosion patches",
+        "no missing lead"
+      ],
+      "prompt": "Edit the image to add a single lead plastic deformation defect at slight severity, caused by a handling, insertion or transport moment exceeds the yield strength of the ductile plated lead-frame strip, so bending strain localises into a plastic hinge and a permanent angular offset remains after elastic springback. The defect must appear as: In the free span of one lead below the package body, just above its formed bend, bend that lead over a broad soft hinge so its tip sits plainly off the even three-lead spacing. Soften and spread the specular highlight across the hinge without flattening it to matte. Leave the other two leads untouched. Add exactly one such defect. Apply this change only within the the free lead span below the package body, at or just above the existing formed bend and leave every other part of the image unchanged. Constraints: no broken or severed lead; no cracks in the moulded body; no brown corrosion patches; no missing lead. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "lead_plastic_deformation",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "the free lead span below the package body, at or just above the existing formed bend",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or severed lead",
+        "no cracks in the moulded body",
+        "no brown corrosion patches",
+        "no missing lead"
+      ],
+      "prompt": "Edit the image to add a single lead plastic deformation defect at moderate severity, caused by a handling, insertion or transport moment exceeds the yield strength of the ductile plated lead-frame strip, so bending strain localises into a plastic hinge and a permanent angular offset remains after elastic springback. The defect must appear as: In the free span of one lead below the package body, just above its formed bend, kink that lead at a single sharp hinge so its tip sits clearly outside the even three-lead spacing, with the segments above and below it straight. Replace the highlight across the hinge with a dull matte band. Add exactly one such defect. Apply this change only within the the free lead span below the package body, at or just above the existing formed bend and leave every other part of the image unchanged. Constraints: no broken or severed lead; no cracks in the moulded body; no brown corrosion patches; no missing lead. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "lead_plastic_deformation",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "the free lead span below the package body, at or just above the existing formed bend",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or severed lead",
+        "no cracks in the moulded body",
+        "no brown corrosion patches",
+        "no missing lead"
+      ],
+      "prompt": "Edit the image to add a single lead plastic deformation defect at severe severity, caused by a handling, insertion or transport moment exceeds the yield strength of the ductile plated lead-frame strip, so bending strain localises into a plastic hinge and a permanent angular offset remains after elastic springback. The defect must appear as: In the free span of one lead below the package body, just above its formed bend, kink that lead at a large angle so its tip swings far out of line toward a neighbouring lead. Crack and flake the tin finish on the outer, stretched side of the hinge, exposing brighter base metal. Add exactly one such defect. Apply this change only within the the free lead span below the package body, at or just above the existing formed bend and leave every other part of the image unchanged. Constraints: no broken or severed lead; no cracks in the moulded body; no brown corrosion patches; no missing lead. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "encapsulant_body_crack",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "the moulded body face adjacent to the lead-exit edge, propagating inward across the front surface",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or cavity",
+        "no rough granular floor",
+        "no altered lead geometry",
+        "no discolouration halo"
+      ],
+      "prompt": "Edit the image to add a single encapsulant body crack defect at minimal severity, caused by differential thermal expansion and absorbed-moisture pressure at the moulding-compound to lead-frame interface nucleate a crack that propagates into the bulk encapsulant without removing material. The defect must appear as: On the glossy black moulded face where the leads exit the body, place one or two isolated hairline flecks, only just darker than the surrounding black, too short and too far apart to read as a line. Keep their edges hard and their faces closed. Add exactly one such defect. Apply this change only within the the moulded body face adjacent to the lead-exit edge, propagating inward across the front surface and leave every other part of the image unchanged. Constraints: no material loss or cavity; no rough granular floor; no altered lead geometry; no discolouration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "encapsulant_body_crack",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "the moulded body face adjacent to the lead-exit edge, propagating inward across the front surface",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or cavity",
+        "no rough granular floor",
+        "no altered lead geometry",
+        "no discolouration halo"
+      ],
+      "prompt": "Edit the image to add a single encapsulant body crack defect at slight severity, caused by differential thermal expansion and absorbed-moisture pressure at the moulding-compound to lead-frame interface nucleate a crack that propagates into the bulk encapsulant without removing material. The defect must appear as: On the glossy black moulded face where the leads exit the body, place a broken run of short hairline segments, each plainly darker than the black around it, the run stopping well short of the face centre. Keep every segment hard-edged, of constant thinness, and closed. Add exactly one such defect. Apply this change only within the the moulded body face adjacent to the lead-exit edge, propagating inward across the front surface and leave every other part of the image unchanged. Constraints: no material loss or cavity; no rough granular floor; no altered lead geometry; no discolouration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "encapsulant_body_crack",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "the moulded body face adjacent to the lead-exit edge, propagating inward across the front surface",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or cavity",
+        "no rough granular floor",
+        "no altered lead geometry",
+        "no discolouration halo"
+      ],
+      "prompt": "Edit the image to add a single encapsulant body crack defect at moderate severity, caused by differential thermal expansion and absorbed-moisture pressure at the moulding-compound to lead-frame interface nucleate a crack that propagates into the bulk encapsulant without removing material. The defect must appear as: On the glossy black moulded face, draw a single continuous dark hairline running from the lead-exit edge inward across the front surface. Keep it thin and of constant width, hard-edged with no halo, its two faces still in contact and no material lost. Add exactly one such defect. Apply this change only within the the moulded body face adjacent to the lead-exit edge, propagating inward across the front surface and leave every other part of the image unchanged. Constraints: no material loss or cavity; no rough granular floor; no altered lead geometry; no discolouration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "encapsulant_body_crack",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "the moulded body face adjacent to the lead-exit edge, propagating inward across the front surface",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or cavity",
+        "no rough granular floor",
+        "no altered lead geometry",
+        "no discolouration halo"
+      ],
+      "prompt": "Edit the image to add a single encapsulant body crack defect at severe severity, caused by differential thermal expansion and absorbed-moisture pressure at the moulding-compound to lead-frame interface nucleate a crack that propagates into the bulk encapsulant without removing material. The defect must appear as: On the glossy black moulded face, open a branching fissure running from the lead-exit edge inward across the front surface, wide and slightly parted at its edges, revealing a matte light-grey fracture face along part of its length. Add exactly one such defect. Apply this change only within the the moulded body face adjacent to the lead-exit edge, propagating inward across the front surface and leave every other part of the image unchanged. Constraints: no material loss or cavity; no rough granular floor; no altered lead geometry; no discolouration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "encapsulant_edge_chip",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "an outer edge or corner of the moulded body, most often the top edge or a side wall",
+      "instance_count": "single",
+      "negatives": [
+        "no glossy smooth chip floor",
+        "no rounded melted rim",
+        "no soot or dark halo",
+        "no altered lead geometry"
+      ],
+      "prompt": "Edit the image to add a single encapsulant edge chip defect at minimal severity, caused by a concentrated contact load near a package edge drives a median crack that curves outward as it senses the free side wall, becoming unstable and spalling a chip of filled moulding compound away. The defect must appear as: On an outer edge of the moulded body, most often the top edge or a side wall, lift a thin flake away so the edge roughens slightly. Keep the exposed floor barely distinguishable from the moulded skin and let the silhouette carry only a faint waver. Add exactly one such defect. Apply this change only within the an outer edge or corner of the moulded body, most often the top edge or a side wall and leave every other part of the image unchanged. Constraints: no glossy smooth chip floor; no rounded melted rim; no soot or dark halo; no altered lead geometry. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "encapsulant_edge_chip",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "an outer edge or corner of the moulded body, most often the top edge or a side wall",
+      "instance_count": "single",
+      "negatives": [
+        "no glossy smooth chip floor",
+        "no rounded melted rim",
+        "no soot or dark halo",
+        "no altered lead geometry"
+      ],
+      "prompt": "Edit the image to add a single encapsulant edge chip defect at slight severity, caused by a concentrated contact load near a package edge drives a median crack that curves outward as it senses the free side wall, becoming unstable and spalling a chip of filled moulding compound away. The defect must appear as: On an outer edge of the moulded body, most often the top edge or a side wall, bite out a small shallow scallop with a dull matte floor and a soft rim, indenting the straight moulded silhouette plainly but shallowly. Add exactly one such defect. Apply this change only within the an outer edge or corner of the moulded body, most often the top edge or a side wall and leave every other part of the image unchanged. Constraints: no glossy smooth chip floor; no rounded melted rim; no soot or dark halo; no altered lead geometry. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "encapsulant_edge_chip",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "an outer edge or corner of the moulded body, most often the top edge or a side wall",
+      "instance_count": "single",
+      "negatives": [
+        "no glossy smooth chip floor",
+        "no rounded melted rim",
+        "no soot or dark halo",
+        "no altered lead geometry"
+      ],
+      "prompt": "Edit the image to add a single encapsulant edge chip defect at moderate severity, caused by a concentrated contact load near a package edge drives a median crack that curves outward as it senses the free side wall, becoming unstable and spalling a chip of filled moulding compound away. The defect must appear as: On an outer edge of the moulded body, most often the top edge or a side wall, remove a scallop-shaped chip wider along the edge than deep, with a rough matte grey-white floor carrying no specular highlight and a sharp curved rim. Notch the straight moulded silhouette visibly. Add exactly one such defect. Apply this change only within the an outer edge or corner of the moulded body, most often the top edge or a side wall and leave every other part of the image unchanged. Constraints: no glossy smooth chip floor; no rounded melted rim; no soot or dark halo; no altered lead geometry. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "encapsulant_edge_chip",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "an outer edge or corner of the moulded body, most often the top edge or a side wall",
+      "instance_count": "single",
+      "negatives": [
+        "no glossy smooth chip floor",
+        "no rounded melted rim",
+        "no soot or dark halo",
+        "no altered lead geometry"
+      ],
+      "prompt": "Edit the image to add a single encapsulant edge chip defect at severe severity, caused by a concentrated contact load near a package edge drives a median crack that curves outward as it senses the free side wall, becoming unstable and spalling a chip of filled moulding compound away. The defect must appear as: At a corner of the moulded body, spall away a large deep piece with a ragged rim and a coarse floor strewn with exposed silica filler grains and small pull-out holes. Break the straight moulded silhouette strongly. Add exactly one such defect. Apply this change only within the an outer edge or corner of the moulded body, most often the top edge or a side wall and leave every other part of the image unchanged. Constraints: no glossy smooth chip floor; no rounded melted rim; no soot or dark halo; no altered lead geometry. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "lead_finish_corrosion",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "exposed lead faces, favouring the lower spans and the formed bends where handling breaks the passive film",
+      "instance_count": "cluster",
+      "negatives": [
+        "no change to lead outline",
+        "no cracks in moulded body",
+        "no sharp-edged scratch lines",
+        "no material removed from body"
+      ],
+      "prompt": "Edit the image to add a single lead finish corrosion defect at minimal severity, caused by adsorbed moisture with sulphur- or chloride-bearing pollutants sets up an electrolyte film on the tin lead finish, converting it locally to oxide and sulphide products and consuming the plating. The defect must appear as: On the exposed lead faces, in their lower spans or at the formed bends, place one or two small patches where the mirror highlight loses a little of its crispness and the tone warms barely perceptibly. Fade their edges gradually into the surrounding bright plating. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the exposed lead faces, favouring the lower spans and the formed bends where handling breaks the passive film and leave every other part of the image unchanged. Constraints: no change to lead outline; no cracks in moulded body; no sharp-edged scratch lines; no material removed from body. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "lead_finish_corrosion",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "exposed lead faces, favouring the lower spans and the formed bends where handling breaks the passive film",
+      "instance_count": "cluster",
+      "negatives": [
+        "no change to lead outline",
+        "no cracks in moulded body",
+        "no sharp-edged scratch lines",
+        "no material removed from body"
+      ],
+      "prompt": "Edit the image to add a single lead finish corrosion defect at slight severity, caused by adsorbed moisture with sulphur- or chloride-bearing pollutants sets up an electrolyte film on the tin lead finish, converting it locally to oxide and sulphide products and consuming the plating. The defect must appear as: On the exposed lead faces, in their lower spans or at the formed bends, place two or three small patches where the mirror highlight goes flat and the tone shifts to a warm grey. Keep their interiors smooth, their edges diffuse, and the plating around them bright. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the exposed lead faces, favouring the lower spans and the formed bends where handling breaks the passive film and leave every other part of the image unchanged. Constraints: no change to lead outline; no cracks in moulded body; no sharp-edged scratch lines; no material removed from body. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "lead_finish_corrosion",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "exposed lead faces, favouring the lower spans and the formed bends where handling breaks the passive film",
+      "instance_count": "cluster",
+      "negatives": [
+        "no change to lead outline",
+        "no cracks in moulded body",
+        "no sharp-edged scratch lines",
+        "no material removed from body"
+      ],
+      "prompt": "Edit the image to add a single lead finish corrosion defect at moderate severity, caused by adsorbed moisture with sulphur- or chloride-bearing pollutants sets up an electrolyte film on the tin lead finish, converting it locally to oxide and sulphide products and consuming the plating. The defect must appear as: On the exposed lead faces, in their lower spans and at the formed bends, spread several ragged dull grey-brown patches that have lost their metallic lustre locally and carry a faint granular texture inside. Fade their edges into the surrounding bright plating with no sharp rim. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the exposed lead faces, favouring the lower spans and the formed bends where handling breaks the passive film and leave every other part of the image unchanged. Constraints: no change to lead outline; no cracks in moulded body; no sharp-edged scratch lines; no material removed from body. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    },
+    {
+      "mode": "lead_finish_corrosion",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "exposed lead faces, favouring the lower spans and the formed bends where handling breaks the passive film",
+      "instance_count": "cluster",
+      "negatives": [
+        "no change to lead outline",
+        "no cracks in moulded body",
+        "no sharp-edged scratch lines",
+        "no material removed from body"
+      ],
+      "prompt": "Edit the image to add a single lead finish corrosion defect at severe severity, caused by adsorbed moisture with sulphur- or chloride-bearing pollutants sets up an electrolyte film on the tin lead finish, converting it locally to oxide and sulphide products and consuming the plating. The defect must appear as: Cover much of the exposed lead surface with dark mottled corrosion product as a raised granular layer showing visible pitting and small flakes, so almost no metallic lustre remains. Keep the lead outline unchanged and let the layer fade at its margins. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the exposed lead faces, favouring the lower spans and the formed bends where handling breaks the passive film and leave every other part of the image unchanged. Constraints: no change to lead outline; no cracks in moulded body; no sharp-edged scratch lines; no material removed from body. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down macro viewpoint, the centred upright moulded package with three tinned leads splaying downward, the copper-clad perforated board background with dark vertical stripes and round holes, the diffuse lighting with soft speculars on the leads, the warm cast, and the sharp 1024x1024 character unchanged."
+    }
+  ],
+  "counts": {
+    "modes": 4,
+    "prompts": 16
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

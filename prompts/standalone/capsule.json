@@ -1,0 +1,322 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "capsule",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "shell_wall_brittle_fracture",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "cylindrical shell wall of the body or cap, near the cap shoulder",
+      "instance_count": "single",
+      "negatives": [
+        "no wide gouge",
+        "no raised pile-up ridge",
+        "no ink smear",
+        "no silhouette change",
+        "no change to the specular highlight streak"
+      ],
+      "prompt": "Edit the image to add a single shell wall brittle fracture defect at minimal severity, caused by moisture loss embrittles the gelatin shell wall, which then fractures in a brittle manner under handling, closing or de-blistering stress. The defect must appear as: On the cylindrical shell wall of the body or cap, near the cap shoulder, add an extremely short faint dark tick: one isolated straight segment, barely separable from the surrounding gloss and unbranched. The shell outline and surface stay otherwise unchanged. Add exactly one such defect. Apply this change only within the cylindrical shell wall of the body or cap, near the cap shoulder and leave every other part of the image unchanged. Constraints: no wide gouge; no raised pile-up ridge; no ink smear; no silhouette change; no change to the specular highlight streak. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "shell_wall_brittle_fracture",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "cylindrical shell wall of the body or cap, near the cap shoulder",
+      "instance_count": "single",
+      "negatives": [
+        "no wide gouge",
+        "no raised pile-up ridge",
+        "no ink smear",
+        "no silhouette change",
+        "no change to the specular highlight streak"
+      ],
+      "prompt": "Edit the image to add a single shell wall brittle fracture defect at slight severity, caused by moisture loss embrittles the gelatin shell wall, which then fractures in a brittle manner under handling, closing or de-blistering stress. The defect must appear as: On the cylindrical shell wall of the body or cap, near the cap shoulder, add a very short dark hairline broken into separate segments, straight and unbranched, low in contrast against the shell and confined to a single wall segment. Add exactly one such defect. Apply this change only within the cylindrical shell wall of the body or cap, near the cap shoulder and leave every other part of the image unchanged. Constraints: no wide gouge; no raised pile-up ridge; no ink smear; no silhouette change; no change to the specular highlight streak. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "shell_wall_brittle_fracture",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "cylindrical shell wall of the body or cap, near the cap shoulder",
+      "instance_count": "single",
+      "negatives": [
+        "no wide gouge",
+        "no raised pile-up ridge",
+        "no ink smear",
+        "no silhouette change",
+        "no change to the specular highlight streak"
+      ],
+      "prompt": "Edit the image to add a single shell wall brittle fracture defect at moderate severity, caused by moisture loss embrittles the gelatin shell wall, which then fractures in a brittle manner under handling, closing or de-blistering stress. The defect must appear as: On the cylindrical shell wall of the body or cap, near the cap shoulder, add a single continuous thin dark line running along the wall on a straight trajectory, with sharp edges. The two sides of the line stay closed with no separation. Add exactly one such defect. Apply this change only within the cylindrical shell wall of the body or cap, near the cap shoulder and leave every other part of the image unchanged. Constraints: no wide gouge; no raised pile-up ridge; no ink smear; no silhouette change; no change to the specular highlight streak. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "shell_wall_brittle_fracture",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "cylindrical shell wall of the body or cap, near the cap shoulder",
+      "instance_count": "single",
+      "negatives": [
+        "no wide gouge",
+        "no raised pile-up ridge",
+        "no ink smear",
+        "no silhouette change",
+        "no change to the specular highlight streak"
+      ],
+      "prompt": "Edit the image to add a single shell wall brittle fracture defect at severe severity, caused by moisture loss embrittles the gelatin shell wall, which then fractures in a brittle manner under handling, closing or de-blistering stress. The defect must appear as: On the cylindrical shell wall of the body or cap, near the cap shoulder, add a long opened fissure that deflects from its path and branches perpendicularly, its edges slightly separated and fringed with faint whitening. Add exactly one such defect. Apply this change only within the cylindrical shell wall of the body or cap, near the cap shoulder and leave every other part of the image unchanged. Constraints: no wide gouge; no raised pile-up ridge; no ink smear; no silhouette change; no change to the specular highlight streak. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "compressive_plastic_buckling",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "mid-body cylindrical wall or cap shoulder",
+      "instance_count": "single",
+      "negatives": [
+        "no cracks or openings",
+        "no material loss",
+        "no sharp-edged rim",
+        "no ink change",
+        "no groove with pile-up"
+      ],
+      "prompt": "Edit the image to add a single compressive plastic buckling defect at minimal severity, caused by compression beyond the shell elastic limit makes the cap and body shoulders buckle into a permanent inward deformation. The defect must appear as: On the mid-body cylindrical wall or cap shoulder, soften the curvature over one small patch so the specular sheen widens where it crosses. The outline still follows the smooth spherocylinder exactly and the surface reads as neither flat nor concave. The shell stays whole and smooth. Add exactly one such defect. Apply this change only within the mid-body cylindrical wall or cap shoulder and leave every other part of the image unchanged. Constraints: no cracks or openings; no material loss; no sharp-edged rim; no ink change; no groove with pile-up. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "compressive_plastic_buckling",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "mid-body cylindrical wall or cap shoulder",
+      "instance_count": "single",
+      "negatives": [
+        "no cracks or openings",
+        "no material loss",
+        "no sharp-edged rim",
+        "no ink change",
+        "no groove with pile-up"
+      ],
+      "prompt": "Edit the image to add a single compressive plastic buckling defect at slight severity, caused by compression beyond the shell elastic limit makes the cap and body shoulders buckle into a permanent inward deformation. The defect must appear as: On the mid-body cylindrical wall or cap shoulder, press one wall segment into a flat facet instead of a curve, while the outline still follows the spherocylinder. The specular sheen runs unbroken but straightens where it crosses the flattened patch. The surface stays smooth and closed. Add exactly one such defect. Apply this change only within the mid-body cylindrical wall or cap shoulder and leave every other part of the image unchanged. Constraints: no cracks or openings; no material loss; no sharp-edged rim; no ink change; no groove with pile-up. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "compressive_plastic_buckling",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "mid-body cylindrical wall or cap shoulder",
+      "instance_count": "single",
+      "negatives": [
+        "no cracks or openings",
+        "no material loss",
+        "no sharp-edged rim",
+        "no ink change",
+        "no groove with pile-up"
+      ],
+      "prompt": "Edit the image to add a single compressive plastic buckling defect at moderate severity, caused by compression beyond the shell elastic limit makes the cap and body shoulders buckle into a permanent inward deformation. The defect must appear as: On the mid-body cylindrical wall or cap shoulder, press a clear shallow concave dent into the cylindrical wall so the outline is visibly flattened there. The specular sheen bends around the depression. The surface stays smooth, continuous and unbroken. Add exactly one such defect. Apply this change only within the mid-body cylindrical wall or cap shoulder and leave every other part of the image unchanged. Constraints: no cracks or openings; no material loss; no sharp-edged rim; no ink change; no groove with pile-up. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "compressive_plastic_buckling",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "mid-body cylindrical wall or cap shoulder",
+      "instance_count": "single",
+      "negatives": [
+        "no cracks or openings",
+        "no material loss",
+        "no sharp-edged rim",
+        "no ink change",
+        "no groove with pile-up"
+      ],
+      "prompt": "Edit the image to add a single compressive plastic buckling defect at severe severity, caused by compression beyond the shell elastic limit makes the cap and body shoulders buckle into a permanent inward deformation. The defect must appear as: On the mid-body cylindrical wall or cap shoulder, collapse the wall into a deep buckled concavity with a longitudinal crease, strongly distorting the outline. The specular sheen breaks across the collapsed area. The shell surface stays continuous with nothing torn away. Add exactly one such defect. Apply this change only within the mid-body cylindrical wall or cap shoulder and leave every other part of the image unchanged. Constraints: no cracks or openings; no material loss; no sharp-edged rim; no ink change; no groove with pile-up. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "abrasive_ploughing_scratch",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "convex mid-body or cap surface crossing the specular sheen",
+      "instance_count": "single",
+      "negatives": [
+        "no through-hole",
+        "no silhouette change",
+        "no ink smear",
+        "not a zero-width dark hairline",
+        "no branching"
+      ],
+      "prompt": "Edit the image to add a single abrasive ploughing scratch defect at minimal severity, caused by a hard asperity slides across the shell under load during manufacture, transport or handling and ploughs the surface plastically. The defect must appear as: On the convex mid-body or cap surface crossing the specular sheen, graze a very short mark that only dulls the gloss where a hard point has passed. There is no groove floor, no raised edge and no whitening; the shell surface stays smooth. Add exactly one such defect. Apply this change only within the convex mid-body or cap surface crossing the specular sheen and leave every other part of the image unchanged. Constraints: no through-hole; no silhouette change; no ink smear; not a zero-width dark hairline; no branching. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "abrasive_ploughing_scratch",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "convex mid-body or cap surface crossing the specular sheen",
+      "instance_count": "single",
+      "negatives": [
+        "no through-hole",
+        "no silhouette change",
+        "no ink smear",
+        "not a zero-width dark hairline",
+        "no branching"
+      ],
+      "prompt": "Edit the image to add a single abrasive ploughing scratch defect at slight severity, caused by a hard asperity slides across the shell under load during manufacture, transport or handling and ploughs the surface plastically. The defect must appear as: On the convex mid-body or cap surface crossing the specular sheen, plough a short shallow groove with barely raised edges. The gloss dulls slightly along it, contrast stays low and the floor shows no whitening. Add exactly one such defect. Apply this change only within the convex mid-body or cap surface crossing the specular sheen and leave every other part of the image unchanged. Constraints: no through-hole; no silhouette change; no ink smear; not a zero-width dark hairline; no branching. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "abrasive_ploughing_scratch",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "convex mid-body or cap surface crossing the specular sheen",
+      "instance_count": "single",
+      "negatives": [
+        "no through-hole",
+        "no silhouette change",
+        "no ink smear",
+        "not a zero-width dark hairline",
+        "no branching"
+      ],
+      "prompt": "Edit the image to add a single abrasive ploughing scratch defect at moderate severity, caused by a hard asperity slides across the shell under load during manufacture, transport or handling and ploughs the surface plastically. The defect must appear as: On the convex mid-body or cap surface crossing the specular sheen, plough a continuous narrow groove with visible pile-up ridges along both edges and a matte, faintly whitened floor. Add exactly one such defect. Apply this change only within the convex mid-body or cap surface crossing the specular sheen and leave every other part of the image unchanged. Constraints: no through-hole; no silhouette change; no ink smear; not a zero-width dark hairline; no branching. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "abrasive_ploughing_scratch",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "convex mid-body or cap surface crossing the specular sheen",
+      "instance_count": "single",
+      "negatives": [
+        "no through-hole",
+        "no silhouette change",
+        "no ink smear",
+        "not a zero-width dark hairline",
+        "no branching"
+      ],
+      "prompt": "Edit the image to add a single abrasive ploughing scratch defect at severe severity, caused by a hard asperity slides across the shell under load during manufacture, transport or handling and ploughs the surface plastically. The defect must appear as: On the convex mid-body or cap surface crossing the specular sheen, plough a long deep groove with pronounced pile-up ridges on both edges, strong stress whitening, and visible micro-cutting striations running along the floor. Add exactly one such defect. Apply this change only within the convex mid-body or cap surface crossing the specular sheen and leave every other part of the image unchanged. Constraints: no through-hole; no silhouette change; no ink smear; not a zero-width dark hairline; no branching. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "point_load_puncture",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "hemispherical end dome or mid-body wall",
+      "instance_count": "single",
+      "negatives": [
+        "no elongated groove",
+        "no global silhouette change",
+        "no printed dot",
+        "no long branching hairline",
+        "no linear pile-up ridge"
+      ],
+      "prompt": "Edit the image to add a single point load puncture defect at minimal severity, caused by a concentrated point load from a pin or sharp asperity drives local plastic indentation of the shell wall and then perforates it. The defect must appear as: On the hemispherical end dome or mid-body wall, press a barely visible circular dimple that reads only as a faint darkening of the shading at one point. It has no raised rim and no radial cracks, and the shell surface stays unbroken. Add exactly one such defect. Apply this change only within the hemispherical end dome or mid-body wall and leave every other part of the image unchanged. Constraints: no elongated groove; no global silhouette change; no printed dot; no long branching hairline; no linear pile-up ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "point_load_puncture",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "hemispherical end dome or mid-body wall",
+      "instance_count": "single",
+      "negatives": [
+        "no elongated groove",
+        "no global silhouette change",
+        "no printed dot",
+        "no long branching hairline",
+        "no linear pile-up ridge"
+      ],
+      "prompt": "Edit the image to add a single point load puncture defect at slight severity, caused by a concentrated point load from a pin or sharp asperity drives local plastic indentation of the shell wall and then perforates it. The defect must appear as: On the hemispherical end dome or mid-body wall, press a small shallow circular indentation visible only as faint local shading. No radial cracks run from it, nothing opens, and the shell surface stays intact. Add exactly one such defect. Apply this change only within the hemispherical end dome or mid-body wall and leave every other part of the image unchanged. Constraints: no elongated groove; no global silhouette change; no printed dot; no long branching hairline; no linear pile-up ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "point_load_puncture",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "hemispherical end dome or mid-body wall",
+      "instance_count": "single",
+      "negatives": [
+        "no elongated groove",
+        "no global silhouette change",
+        "no printed dot",
+        "no long branching hairline",
+        "no linear pile-up ridge"
+      ],
+      "prompt": "Edit the image to add a single point load puncture defect at moderate severity, caused by a concentrated point load from a pin or sharp asperity drives local plastic indentation of the shell wall and then perforates it. The defect must appear as: On the hemispherical end dome or mid-body wall, drive in a distinct circular crater with a raised rim and short radial cracks running from its edge. The shell wall remains closed with no hole through it. Add exactly one such defect. Apply this change only within the hemispherical end dome or mid-body wall and leave every other part of the image unchanged. Constraints: no elongated groove; no global silhouette change; no printed dot; no long branching hairline; no linear pile-up ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "point_load_puncture",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "hemispherical end dome or mid-body wall",
+      "instance_count": "single",
+      "negatives": [
+        "no elongated groove",
+        "no global silhouette change",
+        "no printed dot",
+        "no long branching hairline",
+        "no linear pile-up ridge"
+      ],
+      "prompt": "Edit the image to add a single point load puncture defect at severe severity, caused by a concentrated point load from a pin or sharp asperity drives local plastic indentation of the shell wall and then perforates it. The defect must appear as: On the hemispherical end dome or mid-body wall, punch a perforated hole with a torn, chipped edge and long radial cracks running outward. The dark shell interior shows through the opening. Add exactly one such defect. Apply this change only within the hemispherical end dome or mid-body wall and leave every other part of the image unchanged. Constraints: no elongated groove; no global silhouette change; no printed dot; no long branching hairline; no linear pile-up ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "imprint_ink_transfer_failure",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "printed numerals on the body and printed logo and wordmark on the cap",
+      "instance_count": "cluster",
+      "negatives": [
+        "no shell geometry change",
+        "no new or different characters",
+        "no crack or groove",
+        "no ink outside glyph footprint",
+        "no background change"
+      ],
+      "prompt": "Edit the image to add a single imprint ink transfer failure defect at minimal severity, caused by incomplete or uneven release of shellac-based edible ink during offset gravure roll printing onto the curved shell surface. The defect must appear as: On the printed numerals on the body and the printed logo and wordmark on the cap, make the ink density faintly uneven within one or two strokes. Stroke edges stay clean and every character stays crisp and fully legible, with no ink outside the glyph shapes. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the printed numerals on the body and printed logo and wordmark on the cap and leave every other part of the image unchanged. Constraints: no shell geometry change; no new or different characters; no crack or groove; no ink outside glyph footprint; no background change. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "imprint_ink_transfer_failure",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "printed numerals on the body and printed logo and wordmark on the cap",
+      "instance_count": "cluster",
+      "negatives": [
+        "no shell geometry change",
+        "no new or different characters",
+        "no crack or groove",
+        "no ink outside glyph footprint",
+        "no background change"
+      ],
+      "prompt": "Edit the image to add a single imprint ink transfer failure defect at slight severity, caused by incomplete or uneven release of shellac-based edible ink during offset gravure roll printing onto the curved shell surface. The defect must appear as: On the printed numerals on the body and the printed logo and wordmark on the cap, mottle the ink within a few strokes so they lose slight opacity and their edges turn marginally ragged. Every character stays fully legible and no stroke breaks. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the printed numerals on the body and printed logo and wordmark on the cap and leave every other part of the image unchanged. Constraints: no shell geometry change; no new or different characters; no crack or groove; no ink outside glyph footprint; no background change. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "imprint_ink_transfer_failure",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "printed numerals on the body and printed logo and wordmark on the cap",
+      "instance_count": "cluster",
+      "negatives": [
+        "no shell geometry change",
+        "no new or different characters",
+        "no crack or groove",
+        "no ink outside glyph footprint",
+        "no background change"
+      ],
+      "prompt": "Edit the image to add a single imprint ink transfer failure defect at moderate severity, caused by incomplete or uneven release of shellac-based edible ink during offset gravure roll printing onto the curved shell surface. The defect must appear as: On the printed numerals on the body and the printed logo and wordmark on the cap, make the ink coverage clearly patchy with ragged stroke edges, and break at least one stroke so that one character becomes partly illegible. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the printed numerals on the body and printed logo and wordmark on the cap and leave every other part of the image unchanged. Constraints: no shell geometry change; no new or different characters; no crack or groove; no ink outside glyph footprint; no background change. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    },
+    {
+      "mode": "imprint_ink_transfer_failure",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "printed numerals on the body and printed logo and wordmark on the cap",
+      "instance_count": "cluster",
+      "negatives": [
+        "no shell geometry change",
+        "no new or different characters",
+        "no crack or groove",
+        "no ink outside glyph footprint",
+        "no background change"
+      ],
+      "prompt": "Edit the image to add a single imprint ink transfer failure defect at severe severity, caused by incomplete or uneven release of shellac-based edible ink during offset gravure roll printing onto the curved shell surface. The defect must appear as: On the printed numerals on the body and the printed logo and wordmark on the cap, drop out most of the strokes or thin them into hazy tails along their own paths with strong opacity loss, leaving several characters unreadable. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the printed numerals on the body and printed logo and wordmark on the cap and leave every other part of the image unchanged. Constraints: no shell geometry change; no new or different characters; no crack or groove; no ink outside glyph footprint; no background change. Keep the edit photorealistic and continuous with the surrounding surface. Keep the soft diffuse upper-left lighting, the broad specular sheen on the black cap, the plain matte light-grey speckled background, the single centred near-horizontal capsule pose and framing, and the 1000x1000 slightly soft neutral-to-warm image character unchanged."
+    }
+  ],
+  "counts": {
+    "modes": 5,
+    "prompts": 20
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "toothbrush",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "tuft_splay_deformation",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "leading top-row tufts and the perimeter of the tuft field",
+      "instance_count": "single",
+      "negatives": [
+        "no missing tufts or grid gaps",
+        "no granular opaque deposits",
+        "no change to the moulded head outline",
+        "no broken-off filament fragments"
+      ],
+      "prompt": "Edit the image to add a single tuft splay deformation defect at minimal severity, caused by repeated reversing bending loads during brushing exceed the monofilaments' elastic recovery, so filaments take a permanent outward set; tuft crowns fan, tips curl and mat, and the projected brush-head outline grows. The defect must appear as: On a single leading top-row tuft, tip one or two filaments at the crown edge out of line so that crown's outline reads a shade less crisp than the others. Crown width, tuft spacing and the dark channels between crowns stay exactly as they are, and every tuft stands upright. Add exactly one such defect. Apply this change only within the leading top-row tufts and the perimeter of the tuft field and leave every other part of the image unchanged. Constraints: no missing tufts or grid gaps; no granular opaque deposits; no change to the moulded head outline; no broken-off filament fragments. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "tuft_splay_deformation",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "leading top-row tufts and the perimeter of the tuft field",
+      "instance_count": "single",
+      "negatives": [
+        "no missing tufts or grid gaps",
+        "no granular opaque deposits",
+        "no change to the moulded head outline",
+        "no broken-off filament fragments"
+      ],
+      "prompt": "Edit the image to add a single tuft splay deformation defect at slight severity, caused by repeated reversing bending loads during brushing exceed the monofilaments' elastic recovery, so filaments take a permanent outward set; tuft crowns fan, tips curl and mat, and the projected brush-head outline grows. The defect must appear as: Lean the outermost filaments of the leading top-row tufts outward at their tips, so those crowns read a little wider and lose their crisp point. Every crown still stands separate, with clear dark channels running between it and its neighbours across the tuft field. Add exactly one such defect. Apply this change only within the leading top-row tufts and the perimeter of the tuft field and leave every other part of the image unchanged. Constraints: no missing tufts or grid gaps; no granular opaque deposits; no change to the moulded head outline; no broken-off filament fragments. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "tuft_splay_deformation",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "leading top-row tufts and the perimeter of the tuft field",
+      "instance_count": "single",
+      "negatives": [
+        "no missing tufts or grid gaps",
+        "no granular opaque deposits",
+        "no change to the moulded head outline",
+        "no broken-off filament fragments"
+      ],
+      "prompt": "Edit the image to add a single tuft splay deformation defect at moderate severity, caused by repeated reversing bending loads during brushing exceed the monofilaments' elastic recovery, so filaments take a permanent outward set; tuft crowns fan, tips curl and mat, and the projected brush-head outline grows. The defect must appear as: Fan the crowns of the leading top-row and perimeter tufts outward until each touches its neighbours, and curl the filament tips over. The tuft grid outline reads blurred where the crowns meet but stays intact, with every tuft still seated in its own site. Add exactly one such defect. Apply this change only within the leading top-row tufts and the perimeter of the tuft field and leave every other part of the image unchanged. Constraints: no missing tufts or grid gaps; no granular opaque deposits; no change to the moulded head outline; no broken-off filament fragments. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "tuft_splay_deformation",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "leading top-row tufts and the perimeter of the tuft field",
+      "instance_count": "single",
+      "negatives": [
+        "no missing tufts or grid gaps",
+        "no granular opaque deposits",
+        "no change to the moulded head outline",
+        "no broken-off filament fragments"
+      ],
+      "prompt": "Edit the image to add a single tuft splay deformation defect at severe severity, caused by repeated reversing bending loads during brushing exceed the monofilaments' elastic recovery, so filaments take a permanent outward set; tuft crowns fan, tips curl and mat, and the projected brush-head outline grows. The defect must appear as: Splay the leading top-row and perimeter tuft crowns broadly outward, matting the filaments together so crowns overlap across rows. The outermost tufts overhang the moulded head silhouette, while the moulded head itself keeps its own outline. Add exactly one such defect. Apply this change only within the leading top-row tufts and the perimeter of the tuft field and leave every other part of the image unchanged. Constraints: no missing tufts or grid gaps; no granular opaque deposits; no change to the moulded head outline; no broken-off filament fragments. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "filament_tip_wear",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "crown zone of the tufts, strongest in the top row",
+      "instance_count": "cluster",
+      "negatives": [
+        "no whole tufts fanning outward",
+        "no missing tufts or grid gaps",
+        "no granular opaque deposits",
+        "no filaments bent sideways"
+      ],
+      "prompt": "Edit the image to add a single filament tip wear defect at minimal severity, caused by abrasive sliding against tooth surfaces and dentifrice particles blunts the moulded filament end; the rounded or tapered tip first flattens, then cracks and splits longitudinally into short fibrils. The defect must appear as: In the top-row tuft crowns, take the point off a handful of filament tips so they read a shade less pointed than their neighbours. The crown speckle elsewhere stays an even field of fine bright points, and tuft body, spacing and direction are untouched. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the crown zone of the tufts, strongest in the top row and leave every other part of the image unchanged. Constraints: no whole tufts fanning outward; no missing tufts or grid gaps; no granular opaque deposits; no filaments bent sideways. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "filament_tip_wear",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "crown zone of the tufts, strongest in the top row",
+      "instance_count": "cluster",
+      "negatives": [
+        "no whole tufts fanning outward",
+        "no missing tufts or grid gaps",
+        "no granular opaque deposits",
+        "no filaments bent sideways"
+      ],
+      "prompt": "Edit the image to add a single filament tip wear defect at slight severity, caused by abrasive sliding against tooth surfaces and dentifrice particles blunts the moulded filament end; the rounded or tapered tip first flattens, then cracks and splits longitudinally into short fibrils. The defect must appear as: Across the tuft crowns, especially the top row, round off scattered filament tips into small blunt ends that no longer read as fine points. The speckle around them stays smooth and evenly dotted, and every tuft keeps its body, spacing and upright direction. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the crown zone of the tufts, strongest in the top row and leave every other part of the image unchanged. Constraints: no whole tufts fanning outward; no missing tufts or grid gaps; no granular opaque deposits; no filaments bent sideways. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "filament_tip_wear",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "crown zone of the tufts, strongest in the top row",
+      "instance_count": "cluster",
+      "negatives": [
+        "no whole tufts fanning outward",
+        "no missing tufts or grid gaps",
+        "no granular opaque deposits",
+        "no filaments bent sideways"
+      ],
+      "prompt": "Edit the image to add a single filament tip wear defect at moderate severity, caused by abrasive sliding against tooth surfaces and dentifrice particles blunts the moulded filament end; the rounded or tapered tip first flattens, then cracks and splits longitudinally into short fibrils. The defect must appear as: Across the tuft crowns, especially the top row, flatten and square off most filament ends so the taper is gone. The crowns read as blunt roughened dots rather than fine points, while tuft body, spacing and direction stay untouched below the crown zone. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the crown zone of the tufts, strongest in the top row and leave every other part of the image unchanged. Constraints: no whole tufts fanning outward; no missing tufts or grid gaps; no granular opaque deposits; no filaments bent sideways. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "filament_tip_wear",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "crown zone of the tufts, strongest in the top row",
+      "instance_count": "cluster",
+      "negatives": [
+        "no whole tufts fanning outward",
+        "no missing tufts or grid gaps",
+        "no granular opaque deposits",
+        "no filaments bent sideways"
+      ],
+      "prompt": "Edit the image to add a single filament tip wear defect at severe severity, caused by abrasive sliding against tooth surfaces and dentifrice particles blunts the moulded filament end; the rounded or tapered tip first flattens, then cracks and splits longitudinally into short fibrils. The defect must appear as: In the tuft crowns, crack the flattened filament ends into two or three short longitudinal fibrils, so the crown speckle reads visibly frayed and irregular. The change stays inside the crown zone; tuft body, spacing and upright direction are untouched. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the crown zone of the tufts, strongest in the top row and leave every other part of the image unchanged. Constraints: no whole tufts fanning outward; no missing tufts or grid gaps; no granular opaque deposits; no filaments bent sideways. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "tuft_loss",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a single tuft site on the tuft-hole surface",
+      "instance_count": "single",
+      "negatives": [
+        "no fanned or curled neighbouring tufts",
+        "no granular opaque deposits",
+        "no change to grid spacing",
+        "no dark linear crack"
+      ],
+      "prompt": "Edit the image to add a single tuft loss defect at minimal severity, caused by the anchor securing a filament bundle loses grip in its tuft hole, so brushing loads progressively pull filaments free and finally empty the hole, leaving a gap in the otherwise regular tuft grid. The defect must appear as: At one interior tuft site on the tuft-hole surface, thin that tuft so it reads a little sparser than its neighbours and its filaments part enough to show a faint dark line at the crown centre. No head plastic shows through, and grid spacing is unchanged. Add exactly one such defect. Apply this change only within the a single tuft site on the tuft-hole surface and leave every other part of the image unchanged. Constraints: no fanned or curled neighbouring tufts; no granular opaque deposits; no change to grid spacing; no dark linear crack. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "tuft_loss",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a single tuft site on the tuft-hole surface",
+      "instance_count": "single",
+      "negatives": [
+        "no fanned or curled neighbouring tufts",
+        "no granular opaque deposits",
+        "no change to grid spacing",
+        "no dark linear crack"
+      ],
+      "prompt": "Edit the image to add a single tuft loss defect at slight severity, caused by the anchor securing a filament bundle loses grip in its tuft hole, so brushing loads progressively pull filaments free and finally empty the hole, leaving a gap in the otherwise regular tuft grid. The defect must appear as: At one interior tuft site on the tuft-hole surface, remove enough filaments that the tuft carries visibly fewer than its neighbours and a narrow dark gap opens down its centre. The bore beneath stays hidden and the grid cell still reads as occupied. Add exactly one such defect. Apply this change only within the a single tuft site on the tuft-hole surface and leave every other part of the image unchanged. Constraints: no fanned or curled neighbouring tufts; no granular opaque deposits; no change to grid spacing; no dark linear crack. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "tuft_loss",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a single tuft site on the tuft-hole surface",
+      "instance_count": "single",
+      "negatives": [
+        "no fanned or curled neighbouring tufts",
+        "no granular opaque deposits",
+        "no change to grid spacing",
+        "no dark linear crack"
+      ],
+      "prompt": "Edit the image to add a single tuft loss defect at moderate severity, caused by the anchor securing a filament bundle loses grip in its tuft hole, so brushing loads progressively pull filaments free and finally empty the hole, leaving a gap in the otherwise regular tuft grid. The defect must appear as: At one tuft site on the tuft-hole surface, empty most of that tuft so its bore shows partly through a ring of short residual filament stubs. Every other tuft keeps its filaments, size and spacing, and the head surface elsewhere is untouched. Add exactly one such defect. Apply this change only within the a single tuft site on the tuft-hole surface and leave every other part of the image unchanged. Constraints: no fanned or curled neighbouring tufts; no granular opaque deposits; no change to grid spacing; no dark linear crack. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "tuft_loss",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a single tuft site on the tuft-hole surface",
+      "instance_count": "single",
+      "negatives": [
+        "no fanned or curled neighbouring tufts",
+        "no granular opaque deposits",
+        "no change to grid spacing",
+        "no dark linear crack"
+      ],
+      "prompt": "Edit the image to add a single tuft loss defect at severe severity, caused by the anchor securing a filament bundle loses grip in its tuft hole, so brushing loads progressively pull filaments free and finally empty the hole, leaving a gap in the otherwise regular tuft grid. The defect must appear as: At one tuft site on the tuft-hole surface, leave the tuft entirely absent: a clean open tuft hole with a visible rim and a shadowed recessed bore. Every other tuft keeps its filaments, size, direction and spacing. Add exactly one such defect. Apply this change only within the a single tuft site on the tuft-hole surface and leave every other part of the image unchanged. Constraints: no fanned or curled neighbouring tufts; no granular opaque deposits; no change to grid spacing; no dark linear crack. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "foreign_material_deposit",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inter-tuft channels and tuft bases near the head surface",
+      "instance_count": "single",
+      "negatives": [
+        "no filaments bent or fanned",
+        "no missing tufts or grid gaps",
+        "no linear or straight-edged shape",
+        "no metallic sheen"
+      ],
+      "prompt": "Edit the image to add a single foreign material deposit defect at minimal severity, caused by retained dentifrice and oral debris are held in the interfilament and inter-tuft spaces of the densely filled head and dry into an adherent opaque residue at the tuft bases. The defect must appear as: In one channel between two neighbouring tufts near the head surface, lay a barely-there sheen so the shadow there reads a touch less deep than the channels beside it. The filaments stay fully crisp through it, and its edge is irregular and indistinct. Add exactly one such defect. Apply this change only within the inter-tuft channels and tuft bases near the head surface and leave every other part of the image unchanged. Constraints: no filaments bent or fanned; no missing tufts or grid gaps; no linear or straight-edged shape; no metallic sheen. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "foreign_material_deposit",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inter-tuft channels and tuft bases near the head surface",
+      "instance_count": "single",
+      "negatives": [
+        "no filaments bent or fanned",
+        "no missing tufts or grid gaps",
+        "no linear or straight-edged shape",
+        "no metallic sheen"
+      ],
+      "prompt": "Edit the image to add a single foreign material deposit defect at slight severity, caused by retained dentifrice and oral debris are held in the interfilament and inter-tuft spaces of the densely filled head and dry into an adherent opaque residue at the tuft bases. The defect must appear as: In one or two channels between neighbouring tufts near the head surface, lay a thin translucent film that lifts the shadow there to a dull grey. Every filament outline stays readable through it, and the film keeps an irregular, feathered edge. Add exactly one such defect. Apply this change only within the inter-tuft channels and tuft bases near the head surface and leave every other part of the image unchanged. Constraints: no filaments bent or fanned; no missing tufts or grid gaps; no linear or straight-edged shape; no metallic sheen. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "foreign_material_deposit",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inter-tuft channels and tuft bases near the head surface",
+      "instance_count": "single",
+      "negatives": [
+        "no filaments bent or fanned",
+        "no missing tufts or grid gaps",
+        "no linear or straight-edged shape",
+        "no metallic sheen"
+      ],
+      "prompt": "Edit the image to add a single foreign material deposit defect at moderate severity, caused by retained dentifrice and oral debris are held in the interfilament and inter-tuft spaces of the densely filled head and dry into an adherent opaque residue at the tuft bases. The defect must appear as: At the tuft bases near the head surface, fill several inter-tuft channels with an opaque off-white granular patch that partly obscures the filaments it covers. Its edge is irregular and amorphous with no preferred axis, feathering into clean filaments around it. Add exactly one such defect. Apply this change only within the inter-tuft channels and tuft bases near the head surface and leave every other part of the image unchanged. Constraints: no filaments bent or fanned; no missing tufts or grid gaps; no linear or straight-edged shape; no metallic sheen. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    },
+    {
+      "mode": "foreign_material_deposit",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inter-tuft channels and tuft bases near the head surface",
+      "instance_count": "single",
+      "negatives": [
+        "no filaments bent or fanned",
+        "no missing tufts or grid gaps",
+        "no linear or straight-edged shape",
+        "no metallic sheen"
+      ],
+      "prompt": "Edit the image to add a single foreign material deposit defect at severe severity, caused by retained dentifrice and oral debris are held in the interfilament and inter-tuft spaces of the densely filled head and dry into an adherent opaque residue at the tuft bases. The defect must appear as: At the tuft bases near the head surface, lay a thick pale beige granular crust that bridges adjacent tuft bases across a wide area and hides the filament outlines beneath it. Its edge stays diffuse and irregular, feathering into clean filaments. Add exactly one such defect. Apply this change only within the inter-tuft channels and tuft bases near the head surface and leave every other part of the image unchanged. Constraints: no filaments bent or fanned; no missing tufts or grid gaps; no linear or straight-edged shape; no metallic sheen. Keep the edit photorealistic and continuous with the surrounding surface. Keep the toothbrush head centred and upright on the plain black background, the bristle-side top-down viewpoint with the handle stub entering at the bottom edge, the soft diffuse frontal lighting with faint speculars on the head rim, the cool bluish-white cast, and the sharp 1024x1024 macro character unchanged."
+    }
+  ],
+  "counts": {
+    "modes": 4,
+    "prompts": 16
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

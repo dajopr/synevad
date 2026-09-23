@@ -1,0 +1,187 @@
+# Sweep config for scripts/generate_standalone_sweep.py over a **cropped**
+# high-resolution dataset: frames far larger than the editor's working resolution, where
+# the regions worth inspecting are fixed windows rather than the whole frame.
+#
+# It differs from standalone_sweep.yaml (whole-frame MVTec) only in the source frames and
+# the `cropping:` block, and it is the config to copy when your frames are thousands of
+# pixels on a side. The mask and negative-control settings below are calibrated for dark,
+# low-contrast metal surfaces at a 1024 px window; read the notes before reusing them on
+# brighter material.
+#
+# The driver always overrides sources / out_dir / category / num_per_source / run-id via
+# CLI; the placeholders below keep generate_standalone.main() happy if invoked alone.
+#
+#   PYTHONPATH=$PWD python scripts/generate_standalone_sweep.py \
+#     --config synevad/synthesis/configs/cropped_example.yaml \
+#     --sources-root data/synevad/<dataset> --source-subdir source \
+#     --prompts-dir prompts/<your prompt set> \
+#     --out-root data/bench/<dataset> \
+#     --categories crop_a,crop_b,crop_c
+
+continue_run: true
+
+# Raw frames, unprocessed. Whatever builds the train/gen split symlinks them here; the
+# prompts should describe the lighting these frames actually have and ask FLUX to keep it.
+sources: data/synevad/cropped/crop_a/source
+# One JSON per category, as written by the standalone prompt compiler.
+prompts_dir: prompts/standalone
+out_dir: data/bench/cropped/crop_a/images
+
+category: crop_a
+modes: null
+stages: null
+limit: 10
+
+# Carries each crop category's window centre. Whatever cuts the detector's train/test
+# crops must read the same file, so the two can never disagree on a box.
+overrides: synevad/synthesis/configs/category_overrides_cropped.yaml
+
+# Fixed windows, one per category. On a 4504x4504 frame a whole-frame edit resampled to
+# 1024 would shrink every pit and hairline 4.4x; a native 1024 window is edited at full
+# resolution with no resampling at all. `layout: centers` with no centre fails loudly, so
+# a category missing from the overrides file cannot fall back to some other framing.
+cropping:
+  crop_size: 1024
+  resize_to: 1024
+  layout: centers
+  overlap: 0.0
+  crop_centers: null  # per category, in category_overrides_cropped.yaml
+
+generation:
+  steps: 4
+  guidance: 4.0
+  seed: 0
+  num_per_source: 1
+  base_model: black-forest-labs/FLUX.2-klein-9B
+  quantization: 8bit
+  devices: null
+  device: cuda:0
+  cpu_offload: false
+
+blending:
+  feather_px: 24
+  color_strength: 1.0
+  color_sigma_frac: 0.1
+  grain_strength: 1.0
+  grain_seed: 0
+
+# Calibrated on dark metal (mean brightness 16/255), far darker than MVTec. Read the
+# mask_status counts of a smoke run before trusting these thresholds on other material.
+masks:
+  device: cuda:0
+  encoder: dinov3
+  detrend_degree: 2
+  detrend_trim: 0.10
+  smooth_px: 3.0
+  k_sigma: 4.0
+  k_sweep: [2.0, 3.0, 4.0, 5.0, 6.0, 8.0]
+  min_area_px: 64
+  dilate_px: 12
+  alpha_feather_px: 12
+
+  # Coverage a mask must have for its severity bucket (minimal/slight -> localized,
+  # moderate -> regional, severe -> object_scale), as a fraction of the 1024 crop.
+  # **This is the block to retune first on a new corpus.** The whole-frame floors
+  # (regional 0.02, object_scale 0.10) are sized for objects filling a frame; on a crop of
+  # a much larger surface a moderate crack covers ~0.4%, a severe crack ~1-2% and a
+  # severe impact crater ~6%, so every one of them comes back `under_coverage` until
+  # these are lowered. Measured on a 48-defect smoke run: 7 under_coverage -> ok, all of
+  # them masks on the drawn crack or crater, no ok lost, no new over_coverage.
+  extent:
+    localized: [0.0002, 0.05]
+    regional: [0.002, 0.25]
+    object_scale: [0.005, 0.80]
+
+  extent_overrides: {}
+
+  bg_quantile: 0.20
+  clip_sigma: 3.0
+  clip_iters: 5
+
+  dinov3:
+    model: dinov3_vits16
+    layers: [-1]
+    shift_remove: 1.0
+    cosine_weight: 1.0
+    l2_weight: 0.0
+    min_change: 0.02
+
+  resnet:
+    model: resnet18
+    layers: [layer3, layer4]
+    shift_remove: 1.0
+    cosine_weight: 1.0
+    l2_weight: 0.0
+    min_change: 0.3
+
+  post_blend:
+    enabled: true
+    constrain_to_alpha: true
+    guided: true
+    guide_radius: 48
+    dilate_r: 48
+    layers: [-1]
+    shift_remove: 1.0
+    cosine_weight: 1.0
+    l2_weight: 0.0
+    min_change: 0.02
+
+# Negative controls (`--negatives`): the same cells as the defects, but each is a region
+# shaped and sized like that cell's defect, inpainted with a clean surface and pasted back
+# through the same blend (masks.dilate_px / alpha_feather_px, colour match, grain). Rows
+# are `class: good` with an empty mask, so a detector that has simply learned "this area
+# was edited" scores them as anomalies too. Generate them into their own --out-root:
+#   PYTHONPATH=$PWD python scripts/generate_standalone_sweep.py --negatives \
+#     --config synevad/synthesis/configs/cropped_example.yaml \
+#     --sources-root data/synevad/<dataset> --source-subdir source \
+#     --prompts-dir prompts/<your prompt set> \
+#     --out-root data/bench/<dataset>_negatives \
+#     --categories crop_a,crop_b,crop_c --gpus 0 --mask-gpu 0
+negatives:
+  enabled: false
+  # Descriptive, not an edit instruction: the inpainter fills the masked area with what
+  # the prompt describes, so it must describe *nothing happening*. A prompt mentioning
+  # lighting ("soft specular highlights") made the inpainter paint glowing blobs, flares
+  # and objects into the moderate/severe regions of these dark frames — region change up
+  # to 69 levels, against ~5 with the prompt below. Rewrite it for your own surface.
+  prompt: >-
+    A seamless continuation of the dark, dimly lit steel surface around it, with the same
+    colour, the same low brightness and the same fine grain. Nothing new: no highlight, no
+    reflection, no glow, no object, no mark, no pit, crack or stain.
+  # 1.0 regenerates the region from noise (the full-recreation control); 0.7 keeps more of
+  # the original, which helps where a window contains a bright specular edge.
+  strength: 1.0
+  min_change: 1.0        # 8-bit levels; composites changing the region less are reported as weak
+  # Region shape per defect mode. A prompt entry's own `region_shape` wins; unknown modes use
+  # default_shape. blob | line | cluster (synevad/synthesis/regions.py).
+  # Keyed by the defect mode names your prompt files use.
+  shapes:
+    cavitation: blob          # a gloss-loss zone growing into a merged pit patch
+    abrasive_erosion: blob    # a worn band / patch along the flow
+    fatigue_crack: line       # a contour-following line, branched at higher severity
+    stone_impact: blob        # one strike point, see mode_sizes
+  default_shape: blob
+  # Partial overrides of synevad.synthesis.regions.DEFAULT_SIZES (px at a 1024 crop edge), e.g.
+  #   sizes: {line: {severe: {length: 600}}}
+  sizes: {}
+  # Per defect type, where its extent differs from its shape's default. A single impact
+  # is a point that grows into one crater, far smaller than a cavitation or erosion patch.
+  mode_sizes:
+    stone_impact:
+      minimal: {radius: 8}
+      slight: {radius: 14}
+      moderate: {radius: 22}
+      severe: {radius: 36}
+  placement:
+    surface_level: 0.25    # lit = brighter than 25% of the way from the crop's dark floor to its highlights
+    margin_px: 96          # keep region centres this far from the crop border
+    min_inside: 0.9        # share of the region that must lie on that surface
+    max_tries: 50
+
+# Off, as in every sweep: scripts/score_manifests.py scores the whole corpus afterwards.
+scoring:
+  enabled: false
+  editreward_checkpoint: ${oc.env:EDITREWARD_CHECKPOINT,''}
+  editreward_config: ${oc.env:EDITREWARD_CONFIG,''}
+  accept_margin: 0.0
+  device: cuda:0

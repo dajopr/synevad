@@ -1,0 +1,110 @@
+# Sweep config for scripts/generate_standalone_sweep.py.
+# This file is the source of truth for generation / blending / mask knobs; scoring stays
+# off. The driver always overrides sources / out_dir / category / num_per_source / run-id
+# via CLI; placeholders below keep generate_standalone.main() happy if invoked alone.
+#
+# Run via the sweep driver:
+#   PYTHONPATH=$PWD python scripts/generate_standalone_sweep.py \
+#     --config synevad/synthesis/configs/standalone_sweep.yaml
+
+# When true, skip any (source, mode, stage, attempt) already present in any
+# generation_manifest*.jsonl under out_dir and only generate the remainder.
+continue_run: true
+
+# Clean source frames (dir / file / glob). Driver overrides per category.
+sources: data/synevad/MVTec/screw/source
+prompts_dir: prompts/standalone
+out_dir: data/bench/mvtec/screw/images
+
+# Prompt filters (null = no filter). modes/stages may be a list or a comma-separated string.
+category: screw
+modes: null
+stages: null
+limit: 10  # cap number of sources; sweep keeps this at 10 for stable seeds
+
+# Per-category overlays of generation / blending / masks.
+overrides: synevad/synthesis/configs/category_overrides.yaml
+
+cropping:
+  crop_size: 1024
+  resize_to: 1024
+  crop_centers: null  # whole-image
+
+generation:
+  steps: 4  # Klein 9B is 4-step distilled; 28 is the FLUX.2-dev / Klein-base recipe
+  guidance: 4.0
+  seed: 0
+  num_per_source: 1
+  base_model: black-forest-labs/FLUX.2-klein-9B
+  quantization: 8bit  # 24 GB recipe: DiT 4-bit NF4; Qwen3 4-bit on the first gen GPU
+  devices: [0, 1, 2]   # FLUX workers; override with --gpus
+  device: cuda:0       # fallback when devices is empty / single-GPU
+  cpu_offload: false
+
+blending:
+  feather_px: 24
+  color_strength: 1.0
+  color_sigma_frac: 0.1
+  grain_strength: 1.0
+  grain_seed: 0
+
+# Mask estimator knobs; see synevad/synthesis/masks.py for the rationale of each.
+masks:
+  device: cuda:0         # encoder placement; override with --mask-gpu
+  encoder: dinov3        # dinov3 | resnet18
+  detrend_degree: 2
+  detrend_trim: 0.10
+  smooth_px: 3.0
+  k_sigma: 4.0
+  k_sweep: [2.0, 3.0, 4.0, 5.0, 6.0, 8.0]
+  min_area_px: 64
+  dilate_px: 12
+  alpha_feather_px: 12
+
+  extent:
+    localized: [0.0002, 0.05]
+    regional: [0.02, 0.25]
+    object_scale: [0.10, 0.80]
+
+  # Empty pending re-derivation against a run of this pipeline.
+  extent_overrides: {}
+
+  # Noise floor for the seed threshold; see synevad/synthesis/masks.py:_noise_level.
+  bg_quantile: 0.20
+  clip_sigma: 3.0
+  clip_iters: 5
+
+  dinov3:
+    model: dinov3_vits16
+    layers: [-1]
+    shift_remove: 1.0
+    cosine_weight: 1.0
+    l2_weight: 0.0
+    min_change: 0.02
+
+  resnet:
+    model: resnet18
+    layers: [layer3, layer4]
+    shift_remove: 1.0
+    cosine_weight: 1.0
+    l2_weight: 0.0
+    min_change: 0.25
+
+  post_blend:
+    enabled: true
+    constrain_to_alpha: true
+    guided: true
+    guide_radius: 48  # ~3 DINOv3 patches
+    dilate_r: 48
+    layers: [-1]
+    shift_remove: 1.0
+    cosine_weight: 1.0
+    l2_weight: 0.0
+    min_change: 0.02
+
+scoring:
+  enabled: false
+  editreward_checkpoint: ${oc.env:EDITREWARD_CHECKPOINT,''}
+  editreward_config: ${oc.env:EDITREWARD_CONFIG,''}
+  accept_margin: 0.0
+  device: cuda:0

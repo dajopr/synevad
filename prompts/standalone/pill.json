@@ -1,0 +1,246 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "pill",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "compaction_split_crack",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet rim and band, parallel to the face plane",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss",
+        "no granular debris",
+        "no colour tint",
+        "no raised ridge"
+      ],
+      "prompt": "Edit the image to add a single compaction split crack defect at minimal severity, caused by concentrated shear and tensile stress released during punch unloading splits the compact along a plane parallel to the faces, at the land-cup limit or through the band. The defect must appear as: On the tablet rim and band, parallel to the face plane, darken a very short stretch of the rim by the barest amount so it reads as a shading of the surface rather than a line. Keep the darkening discontinuous and low in contrast, and keep the compact fully closed. Add exactly one such defect. Apply this change only within the tablet rim and band, parallel to the face plane and leave every other part of the image unchanged. Constraints: no material loss; no granular debris; no colour tint; no raised ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "compaction_split_crack",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet rim and band, parallel to the face plane",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss",
+        "no granular debris",
+        "no colour tint",
+        "no raised ridge"
+      ],
+      "prompt": "Edit the image to add a single compaction split crack defect at slight severity, caused by concentrated shear and tensile stress released during punch unloading splits the compact along a plane parallel to the faces, at the land-cup limit or through the band. The defect must appear as: On the tablet rim and band, parallel to the face plane, place a short broken darker line whose separate segments stand plainly distinct against the matte surface. Keep the compact fully closed with the mating faces held tight against one another. Add exactly one such defect. Apply this change only within the tablet rim and band, parallel to the face plane and leave every other part of the image unchanged. Constraints: no material loss; no granular debris; no colour tint; no raised ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "compaction_split_crack",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet rim and band, parallel to the face plane",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss",
+        "no granular debris",
+        "no colour tint",
+        "no raised ridge"
+      ],
+      "prompt": "Edit the image to add a single compaction split crack defect at moderate severity, caused by concentrated shear and tensile stress released during punch unloading splits the compact along a plane parallel to the faces, at the land-cup limit or through the band. The defect must appear as: On the tablet rim and band, parallel to the face plane, draw a single continuous thin dark split line following the rim parallel to the face. Keep the mating faces held tight with no separation between them. Add exactly one such defect. Apply this change only within the tablet rim and band, parallel to the face plane and leave every other part of the image unchanged. Constraints: no material loss; no granular debris; no colour tint; no raised ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "compaction_split_crack",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet rim and band, parallel to the face plane",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss",
+        "no granular debris",
+        "no colour tint",
+        "no raised ridge"
+      ],
+      "prompt": "Edit the image to add a single compaction split crack defect at severe severity, caused by concentrated shear and tensile stress released during punch unloading splits the compact along a plane parallel to the faces, at the land-cup limit or through the band. The defect must appear as: On the tablet rim and band, parallel to the face plane, open a long split running around most of the rim, with the upper layer lifting slightly along it. Keep the mating faces aligned against one another. Add exactly one such defect. Apply this change only within the tablet rim and band, parallel to the face plane and leave every other part of the image unchanged. Constraints: no material loss; no granular debris; no colour tint; no raised ridge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "edge_chip",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet perimeter rim and adjacent face border",
+      "instance_count": "single",
+      "negatives": [
+        "no straight clean cut",
+        "no colour tint",
+        "no polished smooth notch",
+        "no added deposit"
+      ],
+      "prompt": "Edit the image to add a single edge chip defect at minimal severity, caused by impact and attrition against other tablets and equipment detach material from the low-density, low-stiffness tablet rim, which is the weakest region of the compact. The defect must appear as: On the tablet perimeter rim and adjacent face border, remove a trace of material at a pinpoint on the rim edge so the spot reads as a faint dullness against the matte surface. Keep the elliptical outline running on unbroken through it. Add exactly one such defect. Apply this change only within the tablet perimeter rim and adjacent face border and leave every other part of the image unchanged. Constraints: no straight clean cut; no colour tint; no polished smooth notch; no added deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "edge_chip",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet perimeter rim and adjacent face border",
+      "instance_count": "single",
+      "negatives": [
+        "no straight clean cut",
+        "no colour tint",
+        "no polished smooth notch",
+        "no added deposit"
+      ],
+      "prompt": "Edit the image to add a single edge chip defect at slight severity, caused by impact and attrition against other tablets and equipment detach material from the low-density, low-stiffness tablet rim, which is the weakest region of the compact. The defect must appear as: On the tablet perimeter rim and adjacent face border, notch the rim edge with a small shallow nick whose floor is faintly granular. Keep the elliptical outline dented but smoothly continuous through the nick. Add exactly one such defect. Apply this change only within the tablet perimeter rim and adjacent face border and leave every other part of the image unchanged. Constraints: no straight clean cut; no colour tint; no polished smooth notch; no added deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "edge_chip",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet perimeter rim and adjacent face border",
+      "instance_count": "single",
+      "negatives": [
+        "no straight clean cut",
+        "no colour tint",
+        "no polished smooth notch",
+        "no added deposit"
+      ],
+      "prompt": "Edit the image to add a single edge chip defect at moderate severity, caused by impact and attrition against other tablets and equipment detach material from the low-density, low-stiffness tablet rim, which is the weakest region of the compact. The defect must appear as: On the tablet perimeter rim and adjacent face border, break the elliptical outline with a clear shallow concave notch, its granular recess exposing the porous compact interior. Add exactly one such defect. Apply this change only within the tablet perimeter rim and adjacent face border and leave every other part of the image unchanged. Constraints: no straight clean cut; no colour tint; no polished smooth notch; no added deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "edge_chip",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet perimeter rim and adjacent face border",
+      "instance_count": "single",
+      "negatives": [
+        "no straight clean cut",
+        "no colour tint",
+        "no polished smooth notch",
+        "no added deposit"
+      ],
+      "prompt": "Edit the image to add a single edge chip defect at severe severity, caused by impact and attrition against other tablets and equipment detach material from the low-density, low-stiffness tablet rim, which is the weakest region of the compact. The defect must appear as: On the tablet perimeter rim and adjacent face border, chip away a large irregular segment of the rim into a deep granular crater, flattening the silhouette visibly over that arc. Add exactly one such defect. Apply this change only within the tablet perimeter rim and adjacent face border and leave every other part of the image unchanged. Constraints: no straight clean cut; no colour tint; no polished smooth notch; no added deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "punch_pick_pitting",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "debossed character strokes on the tablet face",
+      "instance_count": "cluster",
+      "negatives": [
+        "no rim outline damage",
+        "no long crack line",
+        "no colour tint",
+        "no added deposit"
+      ],
+      "prompt": "Edit the image to add a single punch pick pitting defect at minimal severity, caused by adhesion of the compact to the punch face exceeds its internal cohesion, so particles are torn off the face on release, worst where powder wedges into the engraved characters. The defect must appear as: On the debossed character strokes on the tablet face, take the sheen off the surface immediately beside the strokes so it reads faintly duller than the rest of the face. Keep the stroke edges crisp and leave the surface unbroken by any pit. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the debossed character strokes on the tablet face and leave every other part of the image unchanged. Constraints: no rim outline damage; no long crack line; no colour tint; no added deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "punch_pick_pitting",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "debossed character strokes on the tablet face",
+      "instance_count": "cluster",
+      "negatives": [
+        "no rim outline damage",
+        "no long crack line",
+        "no colour tint",
+        "no added deposit"
+      ],
+      "prompt": "Edit the image to add a single punch pick pitting defect at slight severity, caused by adhesion of the compact to the punch face exceeds its internal cohesion, so particles are torn off the face on release, worst where powder wedges into the engraved characters. The defect must appear as: On the debossed character strokes on the tablet face, roughen and dull the surface around the strokes and scatter a few shallow pits across it. Keep the stroke edges reading crisply against the dulled ground. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the debossed character strokes on the tablet face and leave every other part of the image unchanged. Constraints: no rim outline damage; no long crack line; no colour tint; no added deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "punch_pick_pitting",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "debossed character strokes on the tablet face",
+      "instance_count": "cluster",
+      "negatives": [
+        "no rim outline damage",
+        "no long crack line",
+        "no colour tint",
+        "no added deposit"
+      ],
+      "prompt": "Edit the image to add a single punch pick pitting defect at moderate severity, caused by adhesion of the compact to the punch face exceeds its internal cohesion, so particles are torn off the face on release, worst where powder wedges into the engraved characters. The defect must appear as: On the debossed character strokes on the tablet face, dull and roughen a clear patch carrying distinct small pits in and beside the strokes, letting the stroke edges lose their crispness. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the debossed character strokes on the tablet face and leave every other part of the image unchanged. Constraints: no rim outline damage; no long crack line; no colour tint; no added deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "punch_pick_pitting",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "debossed character strokes on the tablet face",
+      "instance_count": "cluster",
+      "negatives": [
+        "no rim outline damage",
+        "no long crack line",
+        "no colour tint",
+        "no added deposit"
+      ],
+      "prompt": "Edit the image to add a single punch pick pitting defect at severe severity, caused by adhesion of the compact to the punch face exceeds its internal cohesion, so particles are torn off the face on release, worst where powder wedges into the engraved characters. The defect must appear as: On the debossed character strokes on the tablet face, tear material out of the strokes to leave ragged granular cavities, rendering the debossed marking partly illegible. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the debossed character strokes on the tablet face and leave every other part of the image unchanged. Constraints: no rim outline damage; no long crack line; no colour tint; no added deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "degradative_discoloration",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet face, broad region rather than a point",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss",
+        "no crack line",
+        "no raised relief",
+        "no sharp edge"
+      ],
+      "prompt": "Edit the image to add a single degradative discoloration defect at minimal severity, caused by light exposure and moisture-driven chemical degradation of drug and excipients form coloured products at the compact surface, tinting it without altering its shape. The defect must appear as: Over a broad region of the tablet face, dull the off-white so little that the shift reads as uneven lighting across the surface. Keep the relief, the speckling and the outline untouched, with no defined edge to the tinted area. Add exactly one such defect. Apply this change only within the tablet face, broad region rather than a point and leave every other part of the image unchanged. Constraints: no material loss; no crack line; no raised relief; no sharp edge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "degradative_discoloration",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet face, broad region rather than a point",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss",
+        "no crack line",
+        "no raised relief",
+        "no sharp edge"
+      ],
+      "prompt": "Edit the image to add a single degradative discoloration defect at slight severity, caused by light exposure and moisture-driven chemical degradation of drug and excipients form coloured products at the compact surface, tinting it without altering its shape. The defect must appear as: Over a broad region of the tablet face, warm the off-white lightly and unevenly towards cream without reaching yellow. Keep the relief, the speckling and the outline untouched, with the tint fading gradually into the surround. Add exactly one such defect. Apply this change only within the tablet face, broad region rather than a point and leave every other part of the image unchanged. Constraints: no material loss; no crack line; no raised relief; no sharp edge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "degradative_discoloration",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet face, broad region rather than a point",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss",
+        "no crack line",
+        "no raised relief",
+        "no sharp edge"
+      ],
+      "prompt": "Edit the image to add a single degradative discoloration defect at moderate severity, caused by light exposure and moisture-driven chemical degradation of drug and excipients form coloured products at the compact surface, tinting it without altering its shape. The defect must appear as: Over a broad region of the tablet face, lay a clear cream to pale yellow tonal patch. Keep the relief and the outline unchanged, and let the patch fade gradually into the surrounding surface with no defined edge. Add exactly one such defect. Apply this change only within the tablet face, broad region rather than a point and leave every other part of the image unchanged. Constraints: no material loss; no crack line; no raised relief; no sharp edge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    },
+    {
+      "mode": "degradative_discoloration",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "tablet face, broad region rather than a point",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss",
+        "no crack line",
+        "no raised relief",
+        "no sharp edge"
+      ],
+      "prompt": "Edit the image to add a single degradative discoloration defect at severe severity, caused by light exposure and moisture-driven chemical degradation of drug and excipients form coloured products at the compact surface, tinting it without altering its shape. The defect must appear as: Over most of the tablet face, lay a pronounced yellow to brown discolouration. Keep the relief and the outline unchanged, and let the discoloured region fade into the surround through soft gradual edges. Add exactly one such defect. Apply this change only within the tablet face, broad region rather than a point and leave every other part of the image unchanged. Constraints: no material loss; no crack line; no raised relief; no sharp edge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single centred oval tablet on the plain near-black background, the soft top-down illumination with its faint lower-edge shadow, the matte off-white surface with scattered reddish speckles, the debossed FF marking, and the sharp square high-resolution framing unchanged."
+    }
+  ],
+  "counts": {
+    "modes": 4,
+    "prompts": 16
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

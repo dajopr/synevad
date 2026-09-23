@@ -1,0 +1,178 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "metal_nut",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "surface_scratch",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat annular top face between the central bore and the outer rim, crossing the concentric turning marks",
+      "instance_count": "single",
+      "negatives": [
+        "no bent or warped form",
+        "no colour tint without groove",
+        "no material added on top"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at minimal severity, caused by a harder body ploughs across the machined face, displacing material sideways into a groove flanked by pile-up ridges. The defect must appear as: On the flat annular top face between the central bore and the outer rim, score a short hairline mark crossing the concentric turning marks. Let it catch the light only faintly, keep its floor level with the surrounding finish and leave its flanks undisturbed. Add exactly one such defect. Apply this change only within the flat annular top face between the central bore and the outer rim, crossing the concentric turning marks and leave every other part of the image unchanged. Constraints: no bent or warped form; no colour tint without groove; no material added on top. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat annular top face between the central bore and the outer rim, crossing the concentric turning marks",
+      "instance_count": "single",
+      "negatives": [
+        "no bent or warped form",
+        "no colour tint without groove",
+        "no material added on top"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at slight severity, caused by a harder body ploughs across the machined face, displacing material sideways into a groove flanked by pile-up ridges. The defect must appear as: On the flat annular top face between the central bore and the outer rim, cut a short shallow scratch line crossing the concentric turning marks, plainly brighter than the green-grey finish along its length, with no raised material along its flanks. Add exactly one such defect. Apply this change only within the flat annular top face between the central bore and the outer rim, crossing the concentric turning marks and leave every other part of the image unchanged. Constraints: no bent or warped form; no colour tint without groove; no material added on top. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat annular top face between the central bore and the outer rim, crossing the concentric turning marks",
+      "instance_count": "single",
+      "negatives": [
+        "no bent or warped form",
+        "no colour tint without groove",
+        "no material added on top"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at moderate severity, caused by a harder body ploughs across the machined face, displacing material sideways into a groove flanked by pile-up ridges. The defect must appear as: On the flat annular top face between the central bore and the outer rim, cut a single thin brighter scratch groove with fine ploughed flanks, crossing the concentric turning marks. Add exactly one such defect. Apply this change only within the flat annular top face between the central bore and the outer rim, crossing the concentric turning marks and leave every other part of the image unchanged. Constraints: no bent or warped form; no colour tint without groove; no material added on top. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "surface_scratch",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat annular top face between the central bore and the outer rim, crossing the concentric turning marks",
+      "instance_count": "single",
+      "negatives": [
+        "no bent or warped form",
+        "no colour tint without groove",
+        "no material added on top"
+      ],
+      "prompt": "Edit the image to add a single surface scratch defect at severe severity, caused by a harder body ploughs across the machined face, displacing material sideways into a groove flanked by pile-up ridges. The defect must appear as: On the flat annular top face between the central bore and the outer rim, cut a long deep groove with raised burr ridges on both flanks and bright exposed bare metal along its floor, crossing the concentric turning marks. Add exactly one such defect. Apply this change only within the flat annular top face between the central bore and the outer rim, crossing the concentric turning marks and leave every other part of the image unchanged. Constraints: no bent or warped form; no colour tint without groove; no material added on top. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "plastic_bend",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "one of the four protruding lobes, or the whole part outline",
+      "instance_count": "single",
+      "negatives": [
+        "no surface scratch groove",
+        "no colour tint change",
+        "no torn or cracked metal"
+      ],
+      "prompt": "Edit the image to add a single plastic bend defect at minimal severity, caused by load past the yield point permanently bends the part; outer fibre stretches, inner compresses, form deviates after elastic springback. The defect must appear as: Take one of the four protruding lobes barely out of the flat plane, so the deviation shows only as a shift in how its face catches the light. Keep its outline reading as flat and leave the machined finish and turning marks intact. Add exactly one such defect. Apply this change only within the one of the four protruding lobes, or the whole part outline and leave every other part of the image unchanged. Constraints: no surface scratch groove; no colour tint change; no torn or cracked metal. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "plastic_bend",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "one of the four protruding lobes, or the whole part outline",
+      "instance_count": "single",
+      "negatives": [
+        "no surface scratch groove",
+        "no colour tint change",
+        "no torn or cracked metal"
+      ],
+      "prompt": "Edit the image to add a single plastic bend defect at slight severity, caused by load past the yield point permanently bends the part; outer fibre stretches, inner compresses, form deviates after elastic springback. The defect must appear as: Tilt one of the four protruding lobes just clear of the flat plane so its far edge rides visibly above the others. Keep the machined finish and the concentric turning marks intact across the tilted face. Add exactly one such defect. Apply this change only within the one of the four protruding lobes, or the whole part outline and leave every other part of the image unchanged. Constraints: no surface scratch groove; no colour tint change; no torn or cracked metal. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "plastic_bend",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "one of the four protruding lobes, or the whole part outline",
+      "instance_count": "single",
+      "negatives": [
+        "no surface scratch groove",
+        "no colour tint change",
+        "no torn or cracked metal"
+      ],
+      "prompt": "Edit the image to add a single plastic bend defect at moderate severity, caused by load past the yield point permanently bends the part; outer fibre stretches, inner compresses, form deviates after elastic springback. The defect must appear as: Bend one of the four protruding lobes visibly, tilting it out of the flat plane along a curved bend line. Keep the machined finish and the concentric turning marks intact across the bent lobe. Add exactly one such defect. Apply this change only within the one of the four protruding lobes, or the whole part outline and leave every other part of the image unchanged. Constraints: no surface scratch groove; no colour tint change; no torn or cracked metal. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "plastic_bend",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "one of the four protruding lobes, or the whole part outline",
+      "instance_count": "single",
+      "negatives": [
+        "no surface scratch groove",
+        "no colour tint change",
+        "no torn or cracked metal"
+      ],
+      "prompt": "Edit the image to add a single plastic bend defect at severe severity, caused by load past the yield point permanently bends the part; outer fibre stretches, inner compresses, form deviates after elastic springback. The defect must appear as: Bend one of the four protruding lobes into a large angular deviation, leaving it clearly warped from its nominal form. Keep the machined finish and the concentric turning marks intact across the warped lobe. Add exactly one such defect. Apply this change only within the one of the four protruding lobes, or the whole part outline and leave every other part of the image unchanged. Constraints: no surface scratch groove; no colour tint change; no torn or cracked metal. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "oxidation_discoloration",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a region of the annular top face or one lobe",
+      "instance_count": "single",
+      "negatives": [
+        "no surface groove or scratch",
+        "no bent or warped form",
+        "no raised relief or pit"
+      ],
+      "prompt": "Edit the image to add a single oxidation discoloration defect at minimal severity, caused by the surface oxide layer thickens under heat or oxidation, changing colour by light interference with no change to surface relief. The defect must appear as: Over a region of the annular top face or one lobe, lay the faintest warm cast on the metal, stopping short of any definite yellow. Keep the surface relief and the concentric turning marks unchanged, and let the cast feather away into untinted metal. Add exactly one such defect. Apply this change only within the a region of the annular top face or one lobe and leave every other part of the image unchanged. Constraints: no surface groove or scratch; no bent or warped form; no raised relief or pit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "oxidation_discoloration",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a region of the annular top face or one lobe",
+      "instance_count": "single",
+      "negatives": [
+        "no surface groove or scratch",
+        "no bent or warped form",
+        "no raised relief or pit"
+      ],
+      "prompt": "Edit the image to add a single oxidation discoloration defect at slight severity, caused by the surface oxide layer thickens under heat or oxidation, changing colour by light interference with no change to surface relief. The defect must appear as: Over a region of the annular top face or one lobe, lay a pale-yellow tint, definite in hue but light in strength. Keep the surface relief and the concentric turning marks unchanged, and let the tint feather away into untinted metal. Add exactly one such defect. Apply this change only within the a region of the annular top face or one lobe and leave every other part of the image unchanged. Constraints: no surface groove or scratch; no bent or warped form; no raised relief or pit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "oxidation_discoloration",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a region of the annular top face or one lobe",
+      "instance_count": "single",
+      "negatives": [
+        "no surface groove or scratch",
+        "no bent or warped form",
+        "no raised relief or pit"
+      ],
+      "prompt": "Edit the image to add a single oxidation discoloration defect at moderate severity, caused by the surface oxide layer thickens under heat or oxidation, changing colour by light interference with no change to surface relief. The defect must appear as: Over a region of the annular top face or one lobe, lay a diffuse straw-to-brown tint on the metal. Keep the surface relief and the concentric turning marks unchanged, and let the tint feather away into untinted metal. Add exactly one such defect. Apply this change only within the a region of the annular top face or one lobe and leave every other part of the image unchanged. Constraints: no surface groove or scratch; no bent or warped form; no raised relief or pit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    },
+    {
+      "mode": "oxidation_discoloration",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a region of the annular top face or one lobe",
+      "instance_count": "single",
+      "negatives": [
+        "no surface groove or scratch",
+        "no bent or warped form",
+        "no raised relief or pit"
+      ],
+      "prompt": "Edit the image to add a single oxidation discoloration defect at severe severity, caused by the surface oxide layer thickens under heat or oxidation, changing colour by light interference with no change to surface relief. The defect must appear as: Over a region of the annular top face or one lobe, lay a strong purple-to-blue oxide tint across a broad area. Keep the surface smooth with its relief and turning marks unchanged, and let the tint feather away into untinted metal. Add exactly one such defect. Apply this change only within the a region of the annular top face or one lobe and leave every other part of the image unchanged. Constraints: no surface groove or scratch; no bent or warped form; no raised relief or pit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the top-down centred framing of the four-lobed metal nut on its pure black uniform background, the diffuse near-coaxial lighting with soft speculars on chamfered edges, the pale green-grey machined finish with concentric turning marks, and the sharp 700x700 image character unchanged."
+    }
+  ],
+  "counts": {
+    "modes": 3,
+    "prompts": 12
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

@@ -1,0 +1,25 @@
+# Environment
+.env
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.vscode
+.cspell/
+.pytest_cache/
+.ruff_cache/
+
+# Datasets and split trees (symlink trees built by scripts/make_split*.py|sh)
+/data/
+
+# Generated corpora and analysis output
+bench/
+outputs/
+runs/
+.smoke/
+
+# Private fixtures. The `.real` suffix is the convention for the non-example version of
+# a config or source list, so it names real machines and real frames: never commit one.
+*.real.json
+*.real.yaml
+config.real.yaml

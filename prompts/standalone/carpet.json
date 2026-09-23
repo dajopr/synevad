@@ -1,0 +1,322 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "carpet",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "photolytic_dye_fading_patch",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no protruding fibres",
+        "no hard edge",
+        "no particulate crust",
+        "no weave distortion"
+      ],
+      "prompt": "Edit the image to add a single photolytic dye fading patch defect at minimal severity, caused by photo-oxidative cleavage of dye chromophores under locally elevated light dose, shifting local lightness and hue while leaving the weave structure entirely intact. The defect must appear as: In the open field of the weave, away from any image border, lighten or darken the fabric tone across a few weave repeats so the zone sits close to the threshold of visibility. Keep the shift achromatic with no change of hue, and let it merge into the surround with no locatable boundary. Leave the weave structure untouched. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no protruding fibres; no hard edge; no particulate crust; no weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "photolytic_dye_fading_patch",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no protruding fibres",
+        "no hard edge",
+        "no particulate crust",
+        "no weave distortion"
+      ],
+      "prompt": "Edit the image to add a single photolytic dye fading patch defect at slight severity, caused by photo-oxidative cleavage of dye chromophores under locally elevated light dose, shifting local lightness and hue while leaving the weave structure entirely intact. The defect must appear as: In the open field of the weave, away from any image border, lay a faint tonal veil over a compact stretch of fabric, carrying only a trace of hue drift away from the surrounding grey-brown. Let it merge into the surround with no locatable boundary, and leave the weave geometry and yarn relief untouched. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no protruding fibres; no hard edge; no particulate crust; no weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "photolytic_dye_fading_patch",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no protruding fibres",
+        "no hard edge",
+        "no particulate crust",
+        "no weave distortion"
+      ],
+      "prompt": "Edit the image to add a single photolytic dye fading patch defect at moderate severity, caused by photo-oxidative cleavage of dye chromophores under locally elevated light dose, shifting local lightness and hue while leaving the weave structure entirely intact. The defect must appear as: In the open field of the weave, away from any image border, render a clearly visible lighter or darker patch with a noticeable hue drift, spanning many weave repeats. Keep its edges soft and gradual, and leave the weave geometry and yarn relief entirely unchanged. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no protruding fibres; no hard edge; no particulate crust; no weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "photolytic_dye_fading_patch",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no protruding fibres",
+        "no hard edge",
+        "no particulate crust",
+        "no weave distortion"
+      ],
+      "prompt": "Edit the image to add a single photolytic dye fading patch defect at severe severity, caused by photo-oxidative cleavage of dye chromophores under locally elevated light dose, shifting local lightness and hue while leaving the weave structure entirely intact. The defect must appear as: In the open field of the weave, away from any image border, render a large strongly shifted region with a pronounced lightness and hue departure, spreading along the warp and weft directions. Bound it only by a broad gradient, and leave the weave geometry and yarn relief entirely unchanged. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no protruding fibres; no hard edge; no particulate crust; no weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "blade_severance_of_weave",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, crossing both warp and weft yarns",
+      "instance_count": "single",
+      "negatives": [
+        "no rounded compact opening",
+        "no particulate crust",
+        "no areal tone change",
+        "no intact continuous yarn lifted above the surface",
+        "no global weave distortion"
+      ],
+      "prompt": "Edit the image to add a single blade severance of weave defect at minimal severity, caused by a sharp edge under contact pressure severs warp and weft yarns along its path; the freed yarn ends lose edge stability and fray away from the cut line. The defect must appear as: In the open field of the weave, crossing both warp and weft yarns, sever a few yarns along a short straight path so the cut ends still lie closed against one another. Show it as a faint dark hairline with no open gap and no stray fibres. Leave the surrounding weave intact. Add exactly one such defect. Apply this change only within the open field of the weave, crossing both warp and weft yarns and leave every other part of the image unchanged. Constraints: no rounded compact opening; no particulate crust; no areal tone change; no intact continuous yarn lifted above the surface; no global weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "blade_severance_of_weave",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, crossing both warp and weft yarns",
+      "instance_count": "single",
+      "negatives": [
+        "no rounded compact opening",
+        "no particulate crust",
+        "no areal tone change",
+        "no intact continuous yarn lifted above the surface",
+        "no global weave distortion"
+      ],
+      "prompt": "Edit the image to add a single blade severance of weave defect at slight severity, caused by a sharp edge under contact pressure severs warp and weft yarns along its path; the freed yarn ends lose edge stability and fray away from the cut line. The defect must appear as: In the open field of the weave, crossing both warp and weft yarns, cut a short straight break so the parted yarn ends stand just clear of one another. Keep the separation narrow and shallow, with at most one or two loosened fibres beside it and the surrounding weave intact. Add exactly one such defect. Apply this change only within the open field of the weave, crossing both warp and weft yarns and leave every other part of the image unchanged. Constraints: no rounded compact opening; no particulate crust; no areal tone change; no intact continuous yarn lifted above the surface; no global weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "blade_severance_of_weave",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, crossing both warp and weft yarns",
+      "instance_count": "single",
+      "negatives": [
+        "no rounded compact opening",
+        "no particulate crust",
+        "no areal tone change",
+        "no intact continuous yarn lifted above the surface",
+        "no global weave distortion"
+      ],
+      "prompt": "Edit the image to add a single blade severance of weave defect at moderate severity, caused by a sharp edge under contact pressure severs warp and weft yarns along its path; the freed yarn ends lose edge stability and fray away from the cut line. The defect must appear as: In the open field of the weave, crossing both warp and weft yarns, cut a continuous straight severance across several weave repeats. Part the yarn ends clearly so a dark gap shows through, and let short stray fibres lie along its length. Add exactly one such defect. Apply this change only within the open field of the weave, crossing both warp and weft yarns and leave every other part of the image unchanged. Constraints: no rounded compact opening; no particulate crust; no areal tone change; no intact continuous yarn lifted above the surface; no global weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "blade_severance_of_weave",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, crossing both warp and weft yarns",
+      "instance_count": "single",
+      "negatives": [
+        "no rounded compact opening",
+        "no particulate crust",
+        "no areal tone change",
+        "no intact continuous yarn lifted above the surface",
+        "no global weave distortion"
+      ],
+      "prompt": "Edit the image to add a single blade severance of weave defect at severe severity, caused by a sharp edge under contact pressure severs warp and weft yarns along its path; the freed yarn ends lose edge stability and fray away from the cut line. The defect must appear as: In the open field of the weave, crossing both warp and weft yarns, cut a long open severance with the weave separated on both sides and a wide dark gap between them. Let pronounced frayed yarn ends stray well away from the cut line. Add exactly one such defect. Apply this change only within the open field of the weave, crossing both warp and weft yarns and leave every other part of the image unchanged. Constraints: no rounded compact opening; no particulate crust; no areal tone change; no intact continuous yarn lifted above the surface; no global weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "abrasive_perforation_of_weave",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no straight linear slit",
+        "no particulate crust",
+        "no areal tone change",
+        "no single intact protruding yarn",
+        "no clean sealed edge"
+      ],
+      "prompt": "Edit the image to add a single abrasive perforation of weave defect at minimal severity, caused by repeated rubbing deflects fibres until they fatigue and rupture, progressively thinning and loosening the yarns until they snap and a compact opening develops. The defect must appear as: In the open field of the weave, away from any image border, wear a small compact zone so its yarns look thinned and their surfaces slightly disordered. Keep the weave closed with no opening, and let the tone at the centre read only faintly duller than the surround. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no straight linear slit; no particulate crust; no areal tone change; no single intact protruding yarn; no clean sealed edge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "abrasive_perforation_of_weave",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no straight linear slit",
+        "no particulate crust",
+        "no areal tone change",
+        "no single intact protruding yarn",
+        "no clean sealed edge"
+      ],
+      "prompt": "Edit the image to add a single abrasive perforation of weave defect at slight severity, caused by repeated rubbing deflects fibres until they fatigue and rupture, progressively thinning and loosening the yarns until they snap and a compact opening develops. The defect must appear as: In the open field of the weave, away from any image border, thin and part the yarns over a compact worn zone until a small dark chink shows between them. Loosen the immediately surrounding weave slightly and keep the rim of the chink unfrayed. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no straight linear slit; no particulate crust; no areal tone change; no single intact protruding yarn; no clean sealed edge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "abrasive_perforation_of_weave",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no straight linear slit",
+        "no particulate crust",
+        "no areal tone change",
+        "no single intact protruding yarn",
+        "no clean sealed edge"
+      ],
+      "prompt": "Edit the image to add a single abrasive perforation of weave defect at moderate severity, caused by repeated rubbing deflects fibres until they fatigue and rupture, progressively thinning and loosening the yarns until they snap and a compact opening develops. The defect must appear as: In the open field of the weave, away from any image border, open a distinct rounded hole with a frayed thinned rim of broken fibre ends and a clearly dark interior. Loosen the surrounding weave visibly around it. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no straight linear slit; no particulate crust; no areal tone change; no single intact protruding yarn; no clean sealed edge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "abrasive_perforation_of_weave",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no straight linear slit",
+        "no particulate crust",
+        "no areal tone change",
+        "no single intact protruding yarn",
+        "no clean sealed edge"
+      ],
+      "prompt": "Edit the image to add a single abrasive perforation of weave defect at severe severity, caused by repeated rubbing deflects fibres until they fatigue and rupture, progressively thinning and loosening the yarns until they snap and a compact opening develops. The defect must appear as: In the open field of the weave, away from any image border, open a large rounded perforation with a heavily frayed disordered rim and a deep dark interior. Let the weave lose cohesion well beyond the edge of the opening. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no straight linear slit; no particulate crust; no areal tone change; no single intact protruding yarn; no clean sealed edge. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "ferrous_particle_contact_contamination",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no protruding fibres",
+        "no pure lightness change",
+        "no straight linear slit",
+        "no weave distortion"
+      ],
+      "prompt": "Edit the image to add a single ferrous particle contact contamination defect at minimal severity, caused by a corroding ferrous body resting on the fabric transfers iron corrosion products, which precipitate on and between the fibres as an adherent particulate deposit. The defect must appear as: In the open field of the weave, away from any image border, cast the faintest warm reddish tint over a couple of weave repeats. Keep it essentially smooth with no discernible grain, and leave every yarn surface and the weave relief untouched beneath it. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no protruding fibres; no pure lightness change; no straight linear slit; no weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "ferrous_particle_contact_contamination",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no protruding fibres",
+        "no pure lightness change",
+        "no straight linear slit",
+        "no weave distortion"
+      ],
+      "prompt": "Edit the image to add a single ferrous particle contact contamination defect at slight severity, caused by a corroding ferrous body resting on the fabric transfers iron corrosion products, which precipitate on and between the fibres as an adherent particulate deposit. The defect must appear as: In the open field of the weave, away from any image border, stain a small group of weave repeats a light reddish-brown and set a fine sparse grain of deposit on the yarn crowns. Keep the weave relief fully readable through the stain. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no protruding fibres; no pure lightness change; no straight linear slit; no weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "ferrous_particle_contact_contamination",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no protruding fibres",
+        "no pure lightness change",
+        "no straight linear slit",
+        "no weave distortion"
+      ],
+      "prompt": "Edit the image to add a single ferrous particle contact contamination defect at moderate severity, caused by a corroding ferrous body resting on the fabric transfers iron corrosion products, which precipitate on and between the fibres as an adherent particulate deposit. The defect must appear as: In the open field of the weave, away from any image border, lay a distinct reddish-brown deposit with a visible granular crust on the yarns, flattening the local weave relief. Surround it with a soft stained fringe. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no protruding fibres; no pure lightness change; no straight linear slit; no weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "ferrous_particle_contact_contamination",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no protruding fibres",
+        "no pure lightness change",
+        "no straight linear slit",
+        "no weave distortion"
+      ],
+      "prompt": "Edit the image to add a single ferrous particle contact contamination defect at severe severity, caused by a corroding ferrous body resting on the fabric transfers iron corrosion products, which precipitate on and between the fibres as an adherent particulate deposit. The defect must appear as: In the open field of the weave, away from any image border, build a dense dark opaque encrustation that obscures the weave beneath it, strongly granular in texture, ringed by a wide diffuse reddish-brown fringe spreading outward. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no protruding fibres; no pure lightness change; no straight linear slit; no weave distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "snag_pull_yarn_protrusion",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no severed yarn ends",
+        "no areal tone change",
+        "no particulate crust",
+        "no rounded opening"
+      ],
+      "prompt": "Edit the image to add a single snag pull yarn protrusion defect at minimal severity, caused by a sharp or rough object catches an individual yarn and draws it out of the weave plane, displacing it above the surface while it remains anchored and unbroken. The defect must appear as: In the open field of the weave, away from any image border, set one intact yarn riding on top of the weave over a short run so its crown sits just above its neighbours. Show no daylight beneath it and no cast shadow, with both ends anchored and the fabric undisturbed. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no severed yarn ends; no areal tone change; no particulate crust; no rounded opening. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "snag_pull_yarn_protrusion",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no severed yarn ends",
+        "no areal tone change",
+        "no particulate crust",
+        "no rounded opening"
+      ],
+      "prompt": "Edit the image to add a single snag pull yarn protrusion defect at slight severity, caused by a sharp or rough object catches an individual yarn and draws it out of the weave plane, displacing it above the surface while it remains anchored and unbroken. The defect must appear as: In the open field of the weave, away from any image border, lift a short loop of one intact yarn clear of the weave plane so a thin line of shadow shows beneath it. Pick the strand out only dimly, keep both ends anchored and leave the fabric beneath undisturbed. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no severed yarn ends; no areal tone change; no particulate crust; no rounded opening. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "snag_pull_yarn_protrusion",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no severed yarn ends",
+        "no areal tone change",
+        "no particulate crust",
+        "no rounded opening"
+      ],
+      "prompt": "Edit the image to add a single snag pull yarn protrusion defect at moderate severity, caused by a sharp or rough object catches an individual yarn and draws it out of the weave plane, displacing it above the surface while it remains anchored and unbroken. The defect must appear as: In the open field of the weave, away from any image border, draw one distinct intact yarn clearly above the surface across several weave repeats. Give it a highlight along its length and a narrow cast shadow, with both ends anchored in the weave. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no severed yarn ends; no areal tone change; no particulate crust; no rounded opening. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    },
+    {
+      "mode": "snag_pull_yarn_protrusion",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open field of the weave, away from any image border",
+      "instance_count": "single",
+      "negatives": [
+        "no structural gap",
+        "no severed yarn ends",
+        "no areal tone change",
+        "no particulate crust",
+        "no rounded opening"
+      ],
+      "prompt": "Edit the image to add a single snag pull yarn protrusion defect at severe severity, caused by a sharp or rough object catches an individual yarn and draws it out of the weave plane, displacing it above the surface while it remains anchored and unbroken. The defect must appear as: In the open field of the weave, away from any image border, arc one long intact yarn well above the weave over many repeats, with a strong highlight and shadow. Pucker the surrounding weave visibly where the yarn is drawn tight, keeping both ends anchored. Add exactly one such defect. Apply this change only within the open field of the weave, away from any image border and leave every other part of the image unchanged. Constraints: no structural gap; no severed yarn ends; no areal tone change; no particulate crust; no rounded opening. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down full-frame view of the coarse grey-brown woven textile, the even diffuse shadowless lighting, the uniform weave scale and slubby staple-yarn character, and the 1024x1024 moderately sharp neutral slightly warm image quality unchanged. No background, edges or object silhouette."
+    }
+  ],
+  "counts": {
+    "modes": 5,
+    "prompts": 20
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

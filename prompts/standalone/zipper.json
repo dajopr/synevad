@@ -1,0 +1,302 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "zipper",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "element_monofilament_fracture",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "interlocked coil element row along the vertical centre line",
+      "instance_count": "single",
+      "negatives": [
+        "no clean machined cut",
+        "no damage on the woven tape",
+        "no whole row missing",
+        "no overall colour cast shift"
+      ],
+      "prompt": "Edit the image to add a single element monofilament fracture defect at minimal severity, caused by tensile or flex-fatigue rupture of the helically wound synthetic-resin monofilament under crosswise stress, removing individual coil turns from the row. The defect must appear as: In the interlocked coil element row along the vertical centre line, run a hairline fissure across the head of one turn. Keep the two sides touching along their whole length, the break irregular rather than cleanly cut, and the pitch of the row entirely unchanged. Add exactly one such defect. Apply this change only within the interlocked coil element row along the vertical centre line and leave every other part of the image unchanged. Constraints: no clean machined cut; no damage on the woven tape; no whole row missing; no overall colour cast shift. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "element_monofilament_fracture",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "interlocked coil element row along the vertical centre line",
+      "instance_count": "single",
+      "negatives": [
+        "no clean machined cut",
+        "no damage on the woven tape",
+        "no whole row missing",
+        "no overall colour cast shift"
+      ],
+      "prompt": "Edit the image to add a single element monofilament fracture defect at slight severity, caused by tensile or flex-fatigue rupture of the helically wound synthetic-resin monofilament under crosswise stress, removing individual coil turns from the row. The defect must appear as: In the interlocked coil element row along the vertical centre line, split one turn through at its head and part the two ends just enough to show a dark line between them. Keep the break irregular and splintered rather than cleanly cut, and the row pitch even. Add exactly one such defect. Apply this change only within the interlocked coil element row along the vertical centre line and leave every other part of the image unchanged. Constraints: no clean machined cut; no damage on the woven tape; no whole row missing; no overall colour cast shift. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "element_monofilament_fracture",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "interlocked coil element row along the vertical centre line",
+      "instance_count": "single",
+      "negatives": [
+        "no clean machined cut",
+        "no damage on the woven tape",
+        "no whole row missing",
+        "no overall colour cast shift"
+      ],
+      "prompt": "Edit the image to add a single element monofilament fracture defect at moderate severity, caused by tensile or flex-fatigue rupture of the helically wound synthetic-resin monofilament under crosswise stress, removing individual coil turns from the row. The defect must appear as: In the interlocked coil element row along the vertical centre line, rupture one turn completely so irregular splintered stub ends leave a single-pitch gap in the otherwise regular row. Show a small dark void at the gap and pale whitened stub ends against the dark glossy coil. Add exactly one such defect. Apply this change only within the interlocked coil element row along the vertical centre line and leave every other part of the image unchanged. Constraints: no clean machined cut; no damage on the woven tape; no whole row missing; no overall colour cast shift. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "element_monofilament_fracture",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "interlocked coil element row along the vertical centre line",
+      "instance_count": "single",
+      "negatives": [
+        "no clean machined cut",
+        "no damage on the woven tape",
+        "no whole row missing",
+        "no overall colour cast shift"
+      ],
+      "prompt": "Edit the image to add a single element monofilament fracture defect at severe severity, caused by tensile or flex-fatigue rupture of the helically wound synthetic-resin monofilament under crosswise stress, removing individual coil turns from the row. The defect must appear as: In the interlocked coil element row along the vertical centre line, break several adjacent turns away, leaving a wide gap flanked on both sides by splayed, whitened, splintered stub ends. Keep the fracture irregular rather than cleanly cut and the woven tape undamaged. Add exactly one such defect. Apply this change only within the interlocked coil element row along the vertical centre line and leave every other part of the image unchanged. Constraints: no clean machined cut; no damage on the woven tape; no whole row missing; no overall colour cast shift. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "element_plastic_deformation",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "interlocked coil element row along the vertical centre line",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or missing turns",
+        "no damage on the woven tape",
+        "no sharp fracture edges",
+        "no abrupt boundary"
+      ],
+      "prompt": "Edit the image to add a single element plastic deformation defect at minimal severity, caused by plastic yielding of the coiled monofilament under lateral or compressive overload; bending portions displaced and cross-section flattened so pitch is no longer uniform. The defect must appear as: In the interlocked coil element row along the vertical centre line, set a couple of turns fractionally off the row axis so the pitch between them is only just irregular. Keep their round profile intact, the specular highlight along the row unbroken, and any milky tinge barely perceptible. Add exactly one such defect. Apply this change only within the interlocked coil element row along the vertical centre line and leave every other part of the image unchanged. Constraints: no broken or missing turns; no damage on the woven tape; no sharp fracture edges; no abrupt boundary. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "element_plastic_deformation",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "interlocked coil element row along the vertical centre line",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or missing turns",
+        "no damage on the woven tape",
+        "no sharp fracture edges",
+        "no abrupt boundary"
+      ],
+      "prompt": "Edit the image to add a single element plastic deformation defect at slight severity, caused by plastic yielding of the coiled monofilament under lateral or compressive overload; bending portions displaced and cross-section flattened so pitch is no longer uniform. The defect must appear as: In the interlocked coil element row along the vertical centre line, lean two or three turns off the row axis so the pitch between them is plainly uneven. Keep their round profile intact and add a faint milky blush on the leaning turns, blending gradually into their neighbours. Add exactly one such defect. Apply this change only within the interlocked coil element row along the vertical centre line and leave every other part of the image unchanged. Constraints: no broken or missing turns; no damage on the woven tape; no sharp fracture edges; no abrupt boundary. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "element_plastic_deformation",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "interlocked coil element row along the vertical centre line",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or missing turns",
+        "no damage on the woven tape",
+        "no sharp fracture edges",
+        "no abrupt boundary"
+      ],
+      "prompt": "Edit the image to add a single element plastic deformation defect at moderate severity, caused by plastic yielding of the coiled monofilament under lateral or compressive overload; bending portions displaced and cross-section flattened so pitch is no longer uniform. The defect must appear as: In the interlocked coil element row along the vertical centre line, flatten and tilt a short run of turns off the row axis so their pitch is visibly uneven and their filament profile widened. Lay a milky-white blush over the yielded turns, blending gradually into undeformed neighbours. Add exactly one such defect. Apply this change only within the interlocked coil element row along the vertical centre line and leave every other part of the image unchanged. Constraints: no broken or missing turns; no damage on the woven tape; no sharp fracture edges; no abrupt boundary. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "element_plastic_deformation",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "interlocked coil element row along the vertical centre line",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or missing turns",
+        "no damage on the woven tape",
+        "no sharp fracture edges",
+        "no abrupt boundary"
+      ],
+      "prompt": "Edit the image to add a single element plastic deformation defect at severe severity, caused by plastic yielding of the coiled monofilament under lateral or compressive overload; bending portions displaced and cross-section flattened so pitch is no longer uniform. The defect must appear as: In the interlocked coil element row along the vertical centre line, crush a longer run of turns so their heads are pushed off the centre line and their profile is flattened and widened. Whiten them pronouncedly and break the continuous specular highlight along the row clearly. Add exactly one such defect. Apply this change only within the interlocked coil element row along the vertical centre line and leave every other part of the image unchanged. Constraints: no broken or missing turns; no damage on the woven tape; no sharp fracture edges; no abrupt boundary. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "chain_unmeshing",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "centre line of the meshed element chain",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or missing turns",
+        "no frayed tape yarns",
+        "no whitened deformation blush",
+        "no coil row displaced onto tape"
+      ],
+      "prompt": "Edit the image to add a single chain unmeshing defect at minimal severity, caused by loss of interengagement between opposed coil heads under side stress; heads slide clear of one another and the two element rows part while remaining undamaged. The defect must appear as: Along the centre line of the meshed element chain, let the opposed coil heads nest slightly less deeply over a couple of pitches, leaving a faint dark thread along the centre line barely darker than the shadow between turns. Keep every turn intact and undeformed. Add exactly one such defect. Apply this change only within the centre line of the meshed element chain and leave every other part of the image unchanged. Constraints: no broken or missing turns; no frayed tape yarns; no whitened deformation blush; no coil row displaced onto tape. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "chain_unmeshing",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "centre line of the meshed element chain",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or missing turns",
+        "no frayed tape yarns",
+        "no whitened deformation blush",
+        "no coil row displaced onto tape"
+      ],
+      "prompt": "Edit the image to add a single chain unmeshing defect at slight severity, caused by loss of interengagement between opposed coil heads under side stress; heads slide clear of one another and the two element rows part while remaining undamaged. The defect must appear as: Along the centre line of the meshed element chain, reduce the overlap of the opposed coil heads over a short run so they still touch but no longer nest fully, showing a thin dark line between the rows. Keep every turn intact, smooth and undeformed. Add exactly one such defect. Apply this change only within the centre line of the meshed element chain and leave every other part of the image unchanged. Constraints: no broken or missing turns; no frayed tape yarns; no whitened deformation blush; no coil row displaced onto tape. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "chain_unmeshing",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "centre line of the meshed element chain",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or missing turns",
+        "no frayed tape yarns",
+        "no whitened deformation blush",
+        "no coil row displaced onto tape"
+      ],
+      "prompt": "Edit the image to add a single chain unmeshing defect at moderate severity, caused by loss of interengagement between opposed coil heads under side stress; heads slide clear of one another and the two element rows part while remaining undamaged. The defect must appear as: Along the centre line of the meshed element chain, draw the opposed coil heads fully clear of each other over a short run so a narrow dark slot opens between the rows, tapering at each end. Keep every turn intact, smooth-headed and undeformed. Add exactly one such defect. Apply this change only within the centre line of the meshed element chain and leave every other part of the image unchanged. Constraints: no broken or missing turns; no frayed tape yarns; no whitened deformation blush; no coil row displaced onto tape. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "chain_unmeshing",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "centre line of the meshed element chain",
+      "instance_count": "single",
+      "negatives": [
+        "no broken or missing turns",
+        "no frayed tape yarns",
+        "no whitened deformation blush",
+        "no coil row displaced onto tape"
+      ],
+      "prompt": "Edit the image to add a single chain unmeshing defect at severe severity, caused by loss of interengagement between opposed coil heads under side stress; heads slide clear of one another and the two element rows part while remaining undamaged. The defect must appear as: Along the centre line of the meshed element chain, part the two element rows over a long run into a wide parallel slot with the black woven tape showing between them. Keep every coil turn intact, smooth-headed and undeformed, and each row on its own tape. Add exactly one such defect. Apply this change only within the centre line of the meshed element chain and leave every other part of the image unchanged. Constraints: no broken or missing turns; no frayed tape yarns; no whitened deformation blush; no coil row displaced onto tape. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "tape_yarn_rupture",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "woven tape band flanking the coil element row",
+      "instance_count": "single",
+      "negatives": [
+        "no defect on the coil elements",
+        "no uniform hairy haze",
+        "no clean cut without broken ends",
+        "no whole tape colour change"
+      ],
+      "prompt": "Edit the image to add a single tape yarn rupture defect at minimal severity, caused by sequential tensile breakage of yarns along a line through the woven tape; once one yarn fails the load transfers to its neighbour and the break propagates. The defect must appear as: In the black woven tape band flanking the coil element row, let one or two yarns give way along a single yarn line, leaving a fine parting no wider than a yarn. Keep the broken ends lying in the weave plane and the interlacing around them undisturbed. Add exactly one such defect. Apply this change only within the woven tape band flanking the coil element row and leave every other part of the image unchanged. Constraints: no defect on the coil elements; no uniform hairy haze; no clean cut without broken ends; no whole tape colour change. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "tape_yarn_rupture",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "woven tape band flanking the coil element row",
+      "instance_count": "single",
+      "negatives": [
+        "no defect on the coil elements",
+        "no uniform hairy haze",
+        "no clean cut without broken ends",
+        "no whole tape colour change"
+      ],
+      "prompt": "Edit the image to add a single tape yarn rupture defect at slight severity, caused by sequential tensile breakage of yarns along a line through the woven tape; once one yarn fails the load transfers to its neighbour and the break propagates. The defect must appear as: In the black woven tape band flanking the coil element row, part a few yarns along one yarn line into a narrow slit. Keep the broken ends lying flat against the weave and pull the surrounding interlacing only mildly out of square. Leave the coil elements untouched. Add exactly one such defect. Apply this change only within the woven tape band flanking the coil element row and leave every other part of the image unchanged. Constraints: no defect on the coil elements; no uniform hairy haze; no clean cut without broken ends; no whole tape colour change. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "tape_yarn_rupture",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "woven tape band flanking the coil element row",
+      "instance_count": "single",
+      "negatives": [
+        "no defect on the coil elements",
+        "no uniform hairy haze",
+        "no clean cut without broken ends",
+        "no whole tape colour change"
+      ],
+      "prompt": "Edit the image to add a single tape yarn rupture defect at moderate severity, caused by sequential tensile breakage of yarns along a line through the woven tape; once one yarn fails the load transfers to its neighbour and the break propagates. The defect must appear as: In the black woven tape band flanking the coil element row, open a slit running along a yarn line, with broken yarn ends standing proud at its edges and a triangular zone of distorted weave ahead of its tip. Show lighter yarn ends bordering the dark opening. Add exactly one such defect. Apply this change only within the woven tape band flanking the coil element row and leave every other part of the image unchanged. Constraints: no defect on the coil elements; no uniform hairy haze; no clean cut without broken ends; no whole tape colour change. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "tape_yarn_rupture",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "woven tape band flanking the coil element row",
+      "instance_count": "single",
+      "negatives": [
+        "no defect on the coil elements",
+        "no uniform hairy haze",
+        "no clean cut without broken ends",
+        "no whole tape colour change"
+      ],
+      "prompt": "Edit the image to add a single tape yarn rupture defect at severe severity, caused by sequential tensile breakage of yarns along a line through the woven tape; once one yarn fails the load transfers to its neighbour and the break propagates. The defect must appear as: In the black woven tape band flanking the coil element row, open a gaping tear along a yarn line, fringed on both edges by many broken yarn ends and surrounded by weave pulled apart and disrupted. Keep the coil elements themselves undamaged. Add exactly one such defect. Apply this change only within the woven tape band flanking the coil element row and leave every other part of the image unchanged. Constraints: no defect on the coil elements; no uniform hairy haze; no clean cut without broken ends; no whole tape colour change. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "tape_surface_abrasion_fuzz",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "woven tape band flanking the coil element row",
+      "instance_count": "single",
+      "negatives": [
+        "no torn yarns or opening",
+        "no sharp-edged boundary",
+        "no defect on the coil elements",
+        "no single deep scratch line"
+      ],
+      "prompt": "Edit the image to add a single tape surface abrasion fuzz defect at minimal severity, caused by repeated frictional contact wears the raised interlacing points of the woven tape, pulling loose fibre ends to the surface where they form a hairy layer and later entangle. The defect must appear as: In the black woven tape band flanking the coil element row, lift a handful of fibre ends from the raised weave points over a very small area. Keep the peaks' sheen intact, the tone indistinguishable from the surrounding tape, and the affected area without any defined edge. Add exactly one such defect. Apply this change only within the woven tape band flanking the coil element row and leave every other part of the image unchanged. Constraints: no torn yarns or opening; no sharp-edged boundary; no defect on the coil elements; no single deep scratch line. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "tape_surface_abrasion_fuzz",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "woven tape band flanking the coil element row",
+      "instance_count": "single",
+      "negatives": [
+        "no torn yarns or opening",
+        "no sharp-edged boundary",
+        "no defect on the coil elements",
+        "no single deep scratch line"
+      ],
+      "prompt": "Edit the image to add a single tape surface abrasion fuzz defect at slight severity, caused by repeated frictional contact wears the raised interlacing points of the woven tape, pulling loose fibre ends to the surface where they form a hairy layer and later entangle. The defect must appear as: In the black woven tape band flanking the coil element row, raise scattered fibre ends from the weave points over a small patch so they stand away from the surface. Dull those peaks a touch and lighten the tone marginally, with no defined edge to the patch. Add exactly one such defect. Apply this change only within the woven tape band flanking the coil element row and leave every other part of the image unchanged. Constraints: no torn yarns or opening; no sharp-edged boundary; no defect on the coil elements; no single deep scratch line. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "tape_surface_abrasion_fuzz",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "woven tape band flanking the coil element row",
+      "instance_count": "single",
+      "negatives": [
+        "no torn yarns or opening",
+        "no sharp-edged boundary",
+        "no defect on the coil elements",
+        "no single deep scratch line"
+      ],
+      "prompt": "Edit the image to add a single tape surface abrasion fuzz defect at moderate severity, caused by repeated frictional contact wears the raised interlacing points of the woven tape, pulling loose fibre ends to the surface where they form a hairy layer and later entangle. The defect must appear as: In the black woven tape band flanking the coil element row, cover a larger patch with a dense hairy layer of loose fibre ends over flattened weave peaks. Make the patch slightly lighter, hazier and more matte than the tape around it, fading out with no defined edge. Add exactly one such defect. Apply this change only within the woven tape band flanking the coil element row and leave every other part of the image unchanged. Constraints: no torn yarns or opening; no sharp-edged boundary; no defect on the coil elements; no single deep scratch line. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    },
+    {
+      "mode": "tape_surface_abrasion_fuzz",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "woven tape band flanking the coil element row",
+      "instance_count": "single",
+      "negatives": [
+        "no torn yarns or opening",
+        "no sharp-edged boundary",
+        "no defect on the coil elements",
+        "no single deep scratch line"
+      ],
+      "prompt": "Edit the image to add a single tape surface abrasion fuzz defect at severe severity, caused by repeated frictional contact wears the raised interlacing points of the woven tape, pulling loose fibre ends to the surface where they form a hairy layer and later entangle. The defect must appear as: In the black woven tape band flanking the coil element row, build a dense fuzz of loose fibre ends knotted into small entangled pills, obscuring the weave pattern beneath. Make the patch clearly lighter and matte with dulled speculars, fading out with no defined edge. Add exactly one such defect. Apply this change only within the woven tape band flanking the coil element row and leave every other part of the image unchanged. Constraints: no torn yarns or opening; no sharp-edged boundary; no defect on the coil elements; no single deep scratch line. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat frontal viewpoint, the closed black coil zipper running vertically through the centre, black woven tape either side, white background at the left and right edges, soft even frontal lighting with faint specular highlights on the coil, and the same sharp high-resolution detail."
+    }
+  ],
+  "counts": {
+    "modes": 5,
+    "prompts": 20
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

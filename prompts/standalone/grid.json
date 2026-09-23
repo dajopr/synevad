@@ -1,0 +1,282 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "grid",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "strand_fracture",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "mid-span of a strand between two node bonds",
+      "instance_count": "single",
+      "negatives": [
+        "no smooth uninterrupted strand bending",
+        "no tonal staining without a gap",
+        "no added foreign object"
+      ],
+      "prompt": "Edit the image to add a single strand fracture defect at minimal severity, caused by fatigue microcracks initiate at worn or corroded strand surfaces and propagate under cyclic load until a strand separates, merging the cells it divided. The defect must appear as: At the mid-span of a strand between two node bonds, break the strand so its two ends still touch, visible only as a faint dark nick interrupting the highlight running along the strand crown. The cells on either side stay fully separated by the strand. Add exactly one such defect. Apply this change only within the mid-span of a strand between two node bonds and leave every other part of the image unchanged. Constraints: no smooth uninterrupted strand bending; no tonal staining without a gap; no added foreign object. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "strand_fracture",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "mid-span of a strand between two node bonds",
+      "instance_count": "single",
+      "negatives": [
+        "no smooth uninterrupted strand bending",
+        "no tonal staining without a gap",
+        "no added foreign object"
+      ],
+      "prompt": "Edit the image to add a single strand fracture defect at slight severity, caused by fatigue microcracks initiate at worn or corroded strand surfaces and propagate under cyclic load until a strand separates, merging the cells it divided. The defect must appear as: At the mid-span of a strand between two node bonds, open a faint hairline discontinuity, barely apart with the two ends nearly touching and low in contrast. The adjacent cells stay clearly separated from each other. Add exactly one such defect. Apply this change only within the mid-span of a strand between two node bonds and leave every other part of the image unchanged. Constraints: no smooth uninterrupted strand bending; no tonal staining without a gap; no added foreign object. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "strand_fracture",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "mid-span of a strand between two node bonds",
+      "instance_count": "single",
+      "negatives": [
+        "no smooth uninterrupted strand bending",
+        "no tonal staining without a gap",
+        "no added foreign object"
+      ],
+      "prompt": "Edit the image to add a single strand fracture defect at moderate severity, caused by fatigue microcracks initiate at worn or corroded strand surfaces and propagate under cyclic load until a strand separates, merging the cells it divided. The defect must appear as: At the mid-span of a strand between two node bonds, sever the strand completely, leaving a short open gap with necked ends. The two cells it divided merge into one enlarged opening in the lattice. Add exactly one such defect. Apply this change only within the mid-span of a strand between two node bonds and leave every other part of the image unchanged. Constraints: no smooth uninterrupted strand bending; no tonal staining without a gap; no added foreign object. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "strand_fracture",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "mid-span of a strand between two node bonds",
+      "instance_count": "single",
+      "negatives": [
+        "no smooth uninterrupted strand bending",
+        "no tonal staining without a gap",
+        "no added foreign object"
+      ],
+      "prompt": "Edit the image to add a single strand fracture defect at severe severity, caused by fatigue microcracks initiate at worn or corroded strand surfaces and propagate under cyclic load until a strand separates, merging the cells it divided. The defect must appear as: At the mid-span of a strand between two node bonds, sever several adjacent strands along one line to form an elongated tear. The severed ends splay apart and the lattice hangs locally slack around the opening. Add exactly one such defect. Apply this change only within the mid-span of a strand between two node bonds and leave every other part of the image unchanged. Constraints: no smooth uninterrupted strand bending; no tonal staining without a gap; no added foreign object. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "lattice_deformation",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a patch of the open lattice field spanning several cell rows",
+      "instance_count": "single",
+      "negatives": [
+        "no severed strand or open gap",
+        "no added foreign object",
+        "no rust staining or pits"
+      ],
+      "prompt": "Edit the image to add a single lattice deformation defect at minimal severity, caused by cyclic mechanical loading or a local impact plastically flattens, elongates and rotates strands at their node contacts, changing aperture geometry without rupturing any strand. The defect must appear as: Within a patch of the open lattice field spanning several cell rows, set one single cell marginally out of square against its neighbours. The lattice rhythm elsewhere reads as uniform, every row runs straight and every strand stays continuous and unbroken. Add exactly one such defect. Apply this change only within the a patch of the open lattice field spanning several cell rows and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no added foreign object; no rust staining or pits. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "lattice_deformation",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a patch of the open lattice field spanning several cell rows",
+      "instance_count": "single",
+      "negatives": [
+        "no severed strand or open gap",
+        "no added foreign object",
+        "no rust staining or pits"
+      ],
+      "prompt": "Edit the image to add a single lattice deformation defect at slight severity, caused by cyclic mechanical loading or a local impact plastically flattens, elongates and rotates strands at their node contacts, changing aperture geometry without rupturing any strand. The defect must appear as: Within a patch of the open lattice field spanning several cell rows, push two or three cells slightly out of square while their rows still run straight. The lattice reads as regular apart from this small local irregularity, and every strand stays continuous. Add exactly one such defect. Apply this change only within the a patch of the open lattice field spanning several cell rows and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no added foreign object; no rust staining or pits. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "lattice_deformation",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a patch of the open lattice field spanning several cell rows",
+      "instance_count": "single",
+      "negatives": [
+        "no severed strand or open gap",
+        "no added foreign object",
+        "no rust staining or pits"
+      ],
+      "prompt": "Edit the image to add a single lattice deformation defect at moderate severity, caused by cyclic mechanical loading or a local impact plastically flattens, elongates and rotates strands at their node contacts, changing aperture geometry without rupturing any strand. The defect must appear as: Within a patch of the open lattice field spanning several cell rows, distort the openings so they are flattened, elongated and rotated, and bow the rows off the regular lattice rhythm. Every strand stays continuous and unbroken. Add exactly one such defect. Apply this change only within the a patch of the open lattice field spanning several cell rows and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no added foreign object; no rust staining or pits. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "lattice_deformation",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "a patch of the open lattice field spanning several cell rows",
+      "instance_count": "single",
+      "negatives": [
+        "no severed strand or open gap",
+        "no added foreign object",
+        "no rust staining or pits"
+      ],
+      "prompt": "Edit the image to add a single lattice deformation defect at severe severity, caused by cyclic mechanical loading or a local impact plastically flattens, elongates and rotates strands at their node contacts, changing aperture geometry without rupturing any strand. The defect must appear as: Within a patch of the open lattice field spanning several cell rows, warp a broad zone so cells are markedly stretched in one direction and crowded in another, with rows bowed well off the lattice rhythm. Every strand stays intact and unsevered. Add exactly one such defect. Apply this change only within the a patch of the open lattice field spanning several cell rows and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no added foreign object; no rust staining or pits. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "corrosion_pitting",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "strand surfaces and node bonds within the lattice field",
+      "instance_count": "cluster",
+      "negatives": [
+        "no severed strand or open gap",
+        "no added foreign object",
+        "no cell shape distortion"
+      ],
+      "prompt": "Edit the image to add a single corrosion pitting defect at minimal severity, caused by electrochemical attack nucleates pits on the strand surface, roughening it and depositing oxide corrosion products that discolour the metal. The defect must appear as: On the strand surfaces and node bonds within the lattice field, subdue the brightness of one or two strand crowns so their highlights dim slightly and the surface reads as marginally less smooth. No staining and no pits appear, and the lattice geometry stays exactly as it is. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the strand surfaces and node bonds within the lattice field and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no added foreign object; no cell shape distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "corrosion_pitting",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "strand surfaces and node bonds within the lattice field",
+      "instance_count": "cluster",
+      "negatives": [
+        "no severed strand or open gap",
+        "no added foreign object",
+        "no cell shape distortion"
+      ],
+      "prompt": "Edit the image to add a single corrosion pitting defect at slight severity, caused by electrochemical attack nucleates pits on the strand surface, roughening it and depositing oxide corrosion products that discolour the metal. The defect must appear as: On the strand surfaces and node bonds within the lattice field, lay a faint dull tonal cast over a few strands so their crowns look slightly roughened. The surface stays unbroken by any distinct pit and the lattice geometry is unchanged. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the strand surfaces and node bonds within the lattice field and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no added foreign object; no cell shape distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "corrosion_pitting",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "strand surfaces and node bonds within the lattice field",
+      "instance_count": "cluster",
+      "negatives": [
+        "no severed strand or open gap",
+        "no added foreign object",
+        "no cell shape distortion"
+      ],
+      "prompt": "Edit the image to add a single corrosion pitting defect at moderate severity, caused by electrochemical attack nucleates pits on the strand surface, roughening it and depositing oxide corrosion products that discolour the metal. The defect must appear as: On the strand surfaces and node bonds within the lattice field, stain a group of strands with irregular mottled darkening that has diffuse edges, and roughen their surface with small visible pits. The lattice geometry stays unchanged. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the strand surfaces and node bonds within the lattice field and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no added foreign object; no cell shape distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "corrosion_pitting",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "strand surfaces and node bonds within the lattice field",
+      "instance_count": "cluster",
+      "negatives": [
+        "no severed strand or open gap",
+        "no added foreign object",
+        "no cell shape distortion"
+      ],
+      "prompt": "Edit the image to add a single corrosion pitting defect at severe severity, caused by electrochemical attack nucleates pits on the strand surface, roughening it and depositing oxide corrosion products that discolour the metal. The defect must appear as: On the strand surfaces and node bonds within the lattice field, corrode an extensive dark region across many cells with dense coalescing pits and a heavily roughened, crusted surface. Strand highlights are fully dulled and every strand stays continuous. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the strand surfaces and node bonds within the lattice field and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no added foreign object; no cell shape distortion. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "particulate_lodging",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inside a single aperture in the open lattice field",
+      "instance_count": "single",
+      "negatives": [
+        "no severed strand or open gap",
+        "no elongated flexible filament",
+        "no diffuse tonal staining"
+      ],
+      "prompt": "Edit the image to add a single particulate lodging defect at minimal severity, caused by a near-size hard particle wedges into a single aperture under vibration and remains lodged there, occluding the opening. The defect must appear as: Inside a single aperture in the open lattice field, lodge a minute speck where two strands meet at one corner. It is barely darker than the strands, has no resolvable outline, and leaves that cell effectively fully open. Surrounding cells stay clear. Add exactly one such defect. Apply this change only within the inside a single aperture in the open lattice field and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no elongated flexible filament; no diffuse tonal staining. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "particulate_lodging",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inside a single aperture in the open lattice field",
+      "instance_count": "single",
+      "negatives": [
+        "no severed strand or open gap",
+        "no elongated flexible filament",
+        "no diffuse tonal staining"
+      ],
+      "prompt": "Edit the image to add a single particulate lodging defect at slight severity, caused by a near-size hard particle wedges into a single aperture under vibration and remains lodged there, occluding the opening. The defect must appear as: Inside a single aperture in the open lattice field, seat a small faint opaque fleck in one corner of the cell. Keep it low in contrast against the strands, with most of that cell still open and the surrounding cells clear. Add exactly one such defect. Apply this change only within the inside a single aperture in the open lattice field and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no elongated flexible filament; no diffuse tonal staining. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "particulate_lodging",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inside a single aperture in the open lattice field",
+      "instance_count": "single",
+      "negatives": [
+        "no severed strand or open gap",
+        "no elongated flexible filament",
+        "no diffuse tonal staining"
+      ],
+      "prompt": "Edit the image to add a single particulate lodging defect at moderate severity, caused by a near-size hard particle wedges into a single aperture under vibration and remains lodged there, occluding the opening. The defect must appear as: Inside a single aperture in the open lattice field, wedge a compact opaque particle between the strands so it largely occludes that one cell. Give it hard defined edges, and leave the surrounding cells clear and open. Add exactly one such defect. Apply this change only within the inside a single aperture in the open lattice field and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no elongated flexible filament; no diffuse tonal staining. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "particulate_lodging",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "inside a single aperture in the open lattice field",
+      "instance_count": "single",
+      "negatives": [
+        "no severed strand or open gap",
+        "no elongated flexible filament",
+        "no diffuse tonal staining"
+      ],
+      "prompt": "Edit the image to add a single particulate lodging defect at severe severity, caused by a near-size hard particle wedges into a single aperture under vibration and remains lodged there, occluding the opening. The defect must appear as: Inside a single aperture in the open lattice field, plug two or three adjacent cells with one larger opaque particle pressed hard against the strands and protruding above the plane of the lattice. Surrounding cells stay clear. Add exactly one such defect. Apply this change only within the inside a single aperture in the open lattice field and leave every other part of the image unchanged. Constraints: no severed strand or open gap; no elongated flexible filament; no diffuse tonal staining. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "fibrous_bridging",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "across the open cells and around a strand",
+      "instance_count": "single",
+      "negatives": [
+        "no compact opaque blocking particle",
+        "no severed strand or open gap",
+        "no diffuse tonal staining"
+      ],
+      "prompt": "Edit the image to add a single fibrous bridging defect at minimal severity, caused by a flexible fibre partly protrudes through an aperture and, under screen motion, winds around a strand and spans neighbouring openings. The defect must appear as: Across the open cells and around a strand, lay a barely visible short fibre over one corner of a single cell. Its tone sits close to the bright backing behind it and both its ends lie free of any strand. The lattice itself is unchanged. Add exactly one such defect. Apply this change only within the across the open cells and around a strand and leave every other part of the image unchanged. Constraints: no compact opaque blocking particle; no severed strand or open gap; no diffuse tonal staining. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "fibrous_bridging",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "across the open cells and around a strand",
+      "instance_count": "single",
+      "negatives": [
+        "no compact opaque blocking particle",
+        "no severed strand or open gap",
+        "no diffuse tonal staining"
+      ],
+      "prompt": "Edit the image to add a single fibrous bridging defect at slight severity, caused by a flexible fibre partly protrudes through an aperture and, under screen motion, winds around a strand and spans neighbouring openings. The defect must appear as: Across the open cells and around a strand, rest a very short thin filament loose across one cell. Keep it low in contrast against the backing, lying free of the strands and winding around none of them. Add exactly one such defect. Apply this change only within the across the open cells and around a strand and leave every other part of the image unchanged. Constraints: no compact opaque blocking particle; no severed strand or open gap; no diffuse tonal staining. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "fibrous_bridging",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "across the open cells and around a strand",
+      "instance_count": "single",
+      "negatives": [
+        "no compact opaque blocking particle",
+        "no severed strand or open gap",
+        "no diffuse tonal staining"
+      ],
+      "prompt": "Edit the image to add a single fibrous bridging defect at moderate severity, caused by a flexible fibre partly protrudes through an aperture and, under screen motion, winds around a strand and spans neighbouring openings. The defect must appear as: Across the open cells and around a strand, lay a single thin limp filament crossing two or three cells, curving off the straight lattice axes and winding once around a strand. Add exactly one such defect. Apply this change only within the across the open cells and around a strand and leave every other part of the image unchanged. Constraints: no compact opaque blocking particle; no severed strand or open gap; no diffuse tonal staining. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    },
+    {
+      "mode": "fibrous_bridging",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "across the open cells and around a strand",
+      "instance_count": "cluster",
+      "negatives": [
+        "no compact opaque blocking particle",
+        "no severed strand or open gap",
+        "no diffuse tonal staining"
+      ],
+      "prompt": "Edit the image to add a single fibrous bridging defect at severe severity, caused by a flexible fibre partly protrudes through an aperture and, under screen motion, winds around a strand and spans neighbouring openings. The defect must appear as: Across the open cells and around a strand, mat several filaments across many cells, tangled around multiple strands and partly veiling the openings beneath them. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the across the open cells and around a strand and leave every other part of the image unchanged. Constraints: no compact opaque blocking particle; no severed strand or open gap; no diffuse tonal staining. Keep the edit photorealistic and continuous with the surrounding surface. Keep the monochrome grayscale rendering, the regular diagonal diamond lattice of dark strands over a bright diffuse backing, even soft illumination with faint highlights along strand crowns, the same oblique top-down viewpoint and perspective gradient, and identical sharpness, resolution and neutral tone."
+    }
+  ],
+  "counts": {
+    "modes": 5,
+    "prompts": 20
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

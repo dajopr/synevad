@@ -1,0 +1,230 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "screw",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "thread_flank_scoring",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outer thread crests and load flanks along the mid-shank helix",
+      "instance_count": "single",
+      "negatives": [
+        "no transverse crack line",
+        "no brown rust staining",
+        "no changed thread outline"
+      ],
+      "prompt": "Edit the image to add a single thread flank scoring defect at minimal severity, caused by a harder counterface slides along the thread crests and flanks, ploughing a groove and, as sliding continues, tearing ridges and smearing adhered material into protrusions above the original surface. The defect must appear as: On one outer thread crest along the mid-shank helix, rub the matte finish thin in a brief scuff. No open groove floor shows and there is no clear edge where the mark begins or ends; the crest outline stays unchanged. Add exactly one such defect. Apply this change only within the outer thread crests and load flanks along the mid-shank helix and leave every other part of the image unchanged. Constraints: no transverse crack line; no brown rust staining; no changed thread outline. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_flank_scoring",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outer thread crests and load flanks along the mid-shank helix",
+      "instance_count": "single",
+      "negatives": [
+        "no transverse crack line",
+        "no brown rust staining",
+        "no changed thread outline"
+      ],
+      "prompt": "Edit the image to add a single thread flank scoring defect at slight severity, caused by a harder counterface slides along the thread crests and flanks, ploughing a groove and, as sliding continues, tearing ridges and smearing adhered material into protrusions above the original surface. The defect must appear as: On one outer thread crest along the mid-shank helix, plough a short streak whose floor is only slightly brighter than the matte finish. The crest edges either side of it stay unbroken and no ridges are thrown up along it. Add exactly one such defect. Apply this change only within the outer thread crests and load flanks along the mid-shank helix and leave every other part of the image unchanged. Constraints: no transverse crack line; no brown rust staining; no changed thread outline. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_flank_scoring",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outer thread crests and load flanks along the mid-shank helix",
+      "instance_count": "single",
+      "negatives": [
+        "no transverse crack line",
+        "no brown rust staining",
+        "no changed thread outline"
+      ],
+      "prompt": "Edit the image to add a single thread flank scoring defect at moderate severity, caused by a harder counterface slides along the thread crests and flanks, ploughing a groove and, as sliding continues, tearing ridges and smearing adhered material into protrusions above the original surface. The defect must appear as: Across several outer thread crests along the mid-shank helix, plough one continuous groove that reads brighter than the matte finish, with torn ridges standing along both of its edges. Add exactly one such defect. Apply this change only within the outer thread crests and load flanks along the mid-shank helix and leave every other part of the image unchanged. Constraints: no transverse crack line; no brown rust staining; no changed thread outline. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_flank_scoring",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outer thread crests and load flanks along the mid-shank helix",
+      "instance_count": "single",
+      "negatives": [
+        "no transverse crack line",
+        "no brown rust staining",
+        "no changed thread outline"
+      ],
+      "prompt": "Edit the image to add a single thread flank scoring defect at severe severity, caused by a harder counterface slides along the thread crests and flanks, ploughing a groove and, as sliding continues, tearing ridges and smearing adhered material into protrusions above the original surface. The defect must appear as: Across many outer thread crests along the mid-shank helix, score a wide band with coarse torn ridges at its edges and smeared lumps of metal standing above the original surface, its floor roughened by fracture. Add exactly one such defect. Apply this change only within the outer thread crests and load flanks along the mid-shank helix and leave every other part of the image unchanged. Constraints: no transverse crack line; no brown rust staining; no changed thread outline. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_root_crack",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "thread root of the first fully formed thread adjacent to the unthreaded shank",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouge",
+        "no rust halo",
+        "no raised ridges"
+      ],
+      "prompt": "Edit the image to add a single thread root crack defect at minimal severity, caused by stress concentrates at the work-hardened thread root, where cyclic or overload stressing nucleates a separation that extends along the root transverse to the screw axis. The defect must appear as: In the thread root of the first fully formed thread beside the unthreaded shank, seat a single dark tick at the base of the root, so short and so near the tone of the root shadow that it reads as that shadow sitting a shade darker. Add exactly one such defect. Apply this change only within the thread root of the first fully formed thread adjacent to the unthreaded shank and leave every other part of the image unchanged. Constraints: no material loss or gouge; no rust halo; no raised ridges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_root_crack",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "thread root of the first fully formed thread adjacent to the unthreaded shank",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouge",
+        "no rust halo",
+        "no raised ridges"
+      ],
+      "prompt": "Edit the image to add a single thread root crack defect at slight severity, caused by stress concentrates at the work-hardened thread root, where cyclic or overload stressing nucleates a separation that extends along the root transverse to the screw axis. The defect must appear as: In the thread root of the first fully formed thread beside the unthreaded shank, lay a run of short dark hairline segments separated by stretches of intact root fillet, so they never join into one line. Each segment stays closed along its length. Add exactly one such defect. Apply this change only within the thread root of the first fully formed thread adjacent to the unthreaded shank and leave every other part of the image unchanged. Constraints: no material loss or gouge; no rust halo; no raised ridges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_root_crack",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "thread root of the first fully formed thread adjacent to the unthreaded shank",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouge",
+        "no rust halo",
+        "no raised ridges"
+      ],
+      "prompt": "Edit the image to add a single thread root crack defect at moderate severity, caused by stress concentrates at the work-hardened thread root, where cyclic or overload stressing nucleates a separation that extends along the root transverse to the screw axis. The defect must appear as: In the thread root of the first fully formed thread beside the unthreaded shank, seat one continuous fine dark line running transverse to the screw axis and spanning part of the visible root arc, closed along its whole length. Add exactly one such defect. Apply this change only within the thread root of the first fully formed thread adjacent to the unthreaded shank and leave every other part of the image unchanged. Constraints: no material loss or gouge; no rust halo; no raised ridges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_root_crack",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "thread root of the first fully formed thread adjacent to the unthreaded shank",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouge",
+        "no rust halo",
+        "no raised ridges"
+      ],
+      "prompt": "Edit the image to add a single thread root crack defect at severe severity, caused by stress concentrates at the work-hardened thread root, where cyclic or overload stressing nucleates a separation that extends along the root transverse to the screw axis. The defect must appear as: In the thread root of the first fully formed thread beside the unthreaded shank, run a wider darker line across most of the visible root arc in a semi-elliptical sweep, its two edges slightly separated but matched in shape. Add exactly one such defect. Apply this change only within the thread root of the first fully formed thread adjacent to the unthreaded shank and leave every other part of the image unchanged. Constraints: no material loss or gouge; no rust halo; no raised ridges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_crest_deformation",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outer thread crests on the mid-to-lower helix, away from the head",
+      "instance_count": "single",
+      "negatives": [
+        "no open crack line",
+        "no rust discoloration",
+        "no material removed as debris"
+      ],
+      "prompt": "Edit the image to add a single thread crest deformation defect at minimal severity, caused by torque or transverse load exceeds the yield of the thin cold-rolled thread crest, which flattens and folds by plastic flow, cold working the surface and stripping the original finish. The defect must appear as: On one outer thread crest on the mid-to-lower helix, away from the head, take the crispness off the sharp edge over a very short arc so the sheen picks up slightly there. No burnished facet resolves and the crest outline is unchanged. Add exactly one such defect. Apply this change only within the outer thread crests on the mid-to-lower helix, away from the head and leave every other part of the image unchanged. Constraints: no open crack line; no rust discoloration; no material removed as debris. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_crest_deformation",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outer thread crests on the mid-to-lower helix, away from the head",
+      "instance_count": "single",
+      "negatives": [
+        "no open crack line",
+        "no rust discoloration",
+        "no material removed as debris"
+      ],
+      "prompt": "Edit the image to add a single thread crest deformation defect at slight severity, caused by torque or transverse load exceeds the yield of the thin cold-rolled thread crest, which flattens and folds by plastic flow, cold working the surface and stripping the original finish. The defect must appear as: On one outer thread crest on the mid-to-lower helix, away from the head, round off the sharp edge over a short arc and give it a small brighter facet where the finish is burnished away. The crest still stands as high as the threads either side. Add exactly one such defect. Apply this change only within the outer thread crests on the mid-to-lower helix, away from the head and leave every other part of the image unchanged. Constraints: no open crack line; no rust discoloration; no material removed as debris. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_crest_deformation",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outer thread crests on the mid-to-lower helix, away from the head",
+      "instance_count": "single",
+      "negatives": [
+        "no open crack line",
+        "no rust discoloration",
+        "no material removed as debris"
+      ],
+      "prompt": "Edit the image to add a single thread crest deformation defect at moderate severity, caused by torque or transverse load exceeds the yield of the thin cold-rolled thread crest, which flattens and folds by plastic flow, cold working the surface and stripping the original finish. The defect must appear as: On one outer thread crest on the mid-to-lower helix, away from the head, flatten and smear the crest over a longer arc into a brighter burnished facet, leaving its profile clearly shallower than the neighbouring threads. Add exactly one such defect. Apply this change only within the outer thread crests on the mid-to-lower helix, away from the head and leave every other part of the image unchanged. Constraints: no open crack line; no rust discoloration; no material removed as debris. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "thread_crest_deformation",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "outer thread crests on the mid-to-lower helix, away from the head",
+      "instance_count": "single",
+      "negatives": [
+        "no open crack line",
+        "no rust discoloration",
+        "no material removed as debris"
+      ],
+      "prompt": "Edit the image to add a single thread crest deformation defect at severe severity, caused by torque or transverse load exceeds the yield of the thin cold-rolled thread crest, which flattens and folds by plastic flow, cold working the surface and stripping the original finish. The defect must appear as: On one outer thread crest on the mid-to-lower helix, away from the head, fold the crest sideways and strip it partly over a long arc, with a pronounced bright burnished facet and a silhouette departing strongly from the neighbouring threads. Add exactly one such defect. Apply this change only within the outer thread crests on the mid-to-lower helix, away from the head and leave every other part of the image unchanged. Constraints: no open crack line; no rust discoloration; no material removed as debris. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "pitting_corrosion",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat countersunk head top face and the unthreaded shank",
+      "instance_count": "single",
+      "negatives": [
+        "no linear groove",
+        "no open crack",
+        "no changed thread outline"
+      ],
+      "prompt": "Edit the image to add a single pitting corrosion defect at minimal severity, caused by local breakdown of the protective surface layer nucleates pits that roughen the steel, deepen and proliferate, depositing corrosion products that discolour the surrounding area. The defect must appear as: On the flat countersunk head top face, place a single dark speck barely separated in tone from the grey finish and without a sharp outline, reading as a faint mottling of the finish rather than as a pit. The surrounding surface stays smooth. Add exactly one such defect. Apply this change only within the flat countersunk head top face and the unthreaded shank and leave every other part of the image unchanged. Constraints: no linear groove; no open crack; no changed thread outline. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "pitting_corrosion",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat countersunk head top face and the unthreaded shank",
+      "instance_count": "cluster",
+      "negatives": [
+        "no linear groove",
+        "no open crack",
+        "no changed thread outline"
+      ],
+      "prompt": "Edit the image to add a single pitting corrosion defect at slight severity, caused by local breakdown of the protective surface layer nucleates pits that roughen the steel, deepen and proliferate, depositing corrosion products that discolour the surrounding area. The defect must appear as: On the flat countersunk head top face, scatter separated dark specks over a small patch, each a distinct point with clear intact finish between them. Leave no granular roughening and no tint on the surface around the patch. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the flat countersunk head top face and the unthreaded shank and leave every other part of the image unchanged. Constraints: no linear groove; no open crack; no changed thread outline. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "pitting_corrosion",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat countersunk head top face and the unthreaded shank",
+      "instance_count": "cluster",
+      "negatives": [
+        "no linear groove",
+        "no open crack",
+        "no changed thread outline"
+      ],
+      "prompt": "Edit the image to add a single pitting corrosion defect at moderate severity, caused by local breakdown of the protective surface layer nucleates pits that roughen the steel, deepen and proliferate, depositing corrosion products that discolour the surrounding area. The defect must appear as: On the flat countersunk head top face, set a dense cluster of small shallow dark pits with fine granular roughening between them and a faint brown tint on the surface around the cluster. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the flat countersunk head top face and the unthreaded shank and leave every other part of the image unchanged. Constraints: no linear groove; no open crack; no changed thread outline. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    },
+    {
+      "mode": "pitting_corrosion",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "flat countersunk head top face and the unthreaded shank",
+      "instance_count": "cluster",
+      "negatives": [
+        "no linear groove",
+        "no open crack",
+        "no changed thread outline"
+      ],
+      "prompt": "Edit the image to add a single pitting corrosion defect at severe severity, caused by local breakdown of the protective surface layer nucleates pits that roughen the steel, deepen and proliferate, depositing corrosion products that discolour the surrounding area. The defect must appear as: On the flat countersunk head top face, merge deeper pits into a coalesced roughened basin and spread broad reddish-brown staining across the affected face around it, its margin fading softly into the intact grey finish. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the flat countersunk head top face and the unthreaded shank and leave every other part of the image unchanged. Constraints: no linear groove; no open crack; no changed thread outline. Keep the edit photorealistic and continuous with the surrounding surface. Keep the single screw centred on the plain light-grey speckled background, its original in-plane rotation and top-down viewpoint, the soft diffuse lighting with gentle speculars along crests, the matte near-neutral dark-grey steel finish, and the sharp 1024x1024 image character unchanged."
+    }
+  ],
+  "counts": {
+    "modes": 4,
+    "prompts": 16
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

@@ -1,0 +1,99 @@
+category: bottle
+device: cuda:0
+experiment_name: synevad
+version: v3_ablate
+seed: 0
+
+# The FLUX ablation arm, on the v3 corpus, run on the pooled split so it trains on the same
+# frames as the DRAEM arm. The split's `train_pools.json` fixes each seed's frames, so
+# same root + seed + `num_train_samples` gives the same frames and the real arms of the two
+# sweeps score the same models.
+
+model:
+  backbone: wide_resnet50_2
+  coreset_sampling_ratio: 0.1
+  # Module names for a CNN; block indices for a DINO backbone (-1 is the last block).
+  # `default` picks per family (resnet: layer2+layer3 / dino:[-1])
+  layers: default
+  # Feature width as a fraction of what the backbone natively carries (wide_resnet50_2
+  # 1024, resnet18 256, DINO the ViT's embed_dim: 384 for dinov3_vits16, 1024 for
+  # dinov3_vitl16), so one swept value is comparable across backbones instead of asking
+  # the narrow ones to upsample. `model.embed_dimension` overrides the anchor with a
+  # literal width if a run needs the same number everywhere.
+  embed_dimension_factor: 1.0
+  number_of_starting_points: 10
+  dimension_to_project_features_to: 128
+  anomaly_score_num_nn: 3
+
+data:
+  image_size: [224,224]
+  num_train_samples: -1
+  batch_size: 32
+  num_workers: 16
+  # The pooled split (scripts/make_split_pools.py): small per-seed pools in train/good,
+  # none of them among the first 10 frames make_split.sh spends on generation
+  # (--reserve-first), so the FLUX corpus passes the contamination check here too. Reuse
+  # the tree the DRAEM arm trained on; a rebuild with other seeds or shots lists other
+  # frames, so replay a recorded split (make_split_pools.py --pools) rather than re-cut it.
+  root: ${oc.env:MVTEC_SPLIT_PATH,data/synevad/MVTec_pools}
+  synthetic:
+    all:
+      # The v3 standalone corpus, generated from make_split.sh's first 10 frames.
+      root: ${oc.env:FLUX_ABLATE_BENCH,data/bench/v3}/${category}/images/
+      scorer_result: all
+      severity: all
+      good_dir: ${oc.env:MVTEC_SPLIT_PATH,data/synevad/MVTec_pools}/${category}/test/good
+      train_dir: ${oc.env:MVTEC_SPLIT_PATH,data/synevad/MVTec_pools}/${category}/train/good  # checked, not loaded
+      # Pin how many synthetic anomalies this arm is scored on, so the FLUX (v3_ablate)
+      # and DRAEM (v3_draem) arms are compared over the same number.
+      # Stored in `params` below; every category has more than 60 usable defects.
+      max_defects: 60
+      # sample_seed: 0
+
+logging:
+  root: ${oc.env:MLFLOW_DIR}
+  db_name: mlflow.db
+  artifacts_dirname: artifacts
+  experiment_name: ${experiment_name}
+  log_anomaly_maps: false
+
+
+queries:
+  all:
+    all: null
+    minimal: severity == 'minimal'
+  real:
+    all: null
+
+# A mask with no pixels covers no defect and is label noise in every query. Null on
+# `real`, whose masks are ground truth.
+gate:
+  all: "defect_area_frac != 0"
+  real: null
+
+min_num_defects: 15
+
+# Turning `max_defects` on: add it to `params` below as well, so the cap is stored on the
+# run and the analysis can tell a capped arm from an uncapped one — and give the sweep a
+# `version:` of its own in the sweep file, because resume identity is (tags, params) and a
+# stored run that predates the param would otherwise look like a different sweep point and
+# re-run the whole grid. Keep the cap at or above 60: a query taking a quarter of the
+# defects leaves 15, and `min_num_defects: 15` marks any run below that `validity=error`.
+
+# Helper to select tags in mlflow
+tags:
+  experiment_name: ${experiment_name}
+  version: ${version}
+  category: ${category}
+  backbone: ${model.backbone}
+
+
+params:
+  coreset_sampling_ratio: ${model.coreset_sampling_ratio}
+  image_size: ${data.image_size}
+  seed: ${seed}
+  num_train_sample: ${data.num_train_samples}
+  # Logged even when not swept; `apply_overrides` adds swept keys on its own.
+  layers: ${model.layers}
+  embed_dimension_factor: ${model.embed_dimension_factor}
+  max_defects: ${data.synthetic.all.max_defects}

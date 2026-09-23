@@ -1,0 +1,20 @@
+# Per-MVTec-category overlays of generation / blending / masking knobs.
+# Loaded by scripts/generate_standalone.py via `overrides:` in
+# standalone_sweep.yaml, or `--overrides`.
+#
+# Each top-level key is a category. Under it, nest the same section names as the
+# generation config (`generation`, `blending`, `cropping`, `masks`, `scoring`).
+# `post_blend`, `resnet`, `dinov3`, `encoder`, and `extent` at the category root
+# are shorthand for `masks.<name>`. Unlisted knobs keep the base-config default. Deep merge: a
+# partial `post_blend: {min_change: 0.15}` does not reset `guided` / `layers`.
+#
+# Examples (commented — fill in measured values, do not copy these as defaults):
+#
+
+metal_nut:
+  post_blend:
+    enabled: false
+  resnet:
+    min_change: 0.35
+  blending: 
+    feather_px: 12

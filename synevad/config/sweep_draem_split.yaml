@@ -1,0 +1,13 @@
+# Identical grid to sweep_ablate_split.yaml, for draem_split.yaml: DRAEM on the pooled split, capped
+# at 60 defects. A version of its own, because resume identity is (tags, params) and names
+# neither the split nor the synthetic root: under v0_draem these runs would look complete.
+category: [bottle, cable, capsule, carpet, grid, hazelnut, leather, metal_nut, pill, screw, tile, toothbrush, transistor, wood, zipper]
+version: [v3_draem]
+model.backbone: [wide_resnet50_2, dinov3_vitl16, dinov3_vits16, resnet18]
+model.layers: [default]
+data.image_size: [[256,256]]
+# model.embed_dimension_factor: [1.0, 0.75]
+
+model.coreset_sampling_ratio: [0.1,0.2]
+data.num_train_samples: [1,2,4,8]
+seed: [42, 6800, 9999]

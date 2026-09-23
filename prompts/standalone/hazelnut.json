@@ -1,0 +1,178 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "hazelnut",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "shell_crack",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "high-curvature shell ridges and longitudinal ribbing",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouge",
+        "no discoloration halo",
+        "no exposed cavity"
+      ],
+      "prompt": "Edit the image to add a single shell crack defect at minimal severity, caused by brittle fracture of the stiff lignified shell under compressive or impact load. The defect must appear as: On a high-curvature shell ridge, place a single isolated hairline tick inside one ribbing groove. It is so faint that it reads as the groove shadow lying a shade darker rather than as a split in the shell, and the ribbing around it runs on unbroken. Add exactly one such defect. Apply this change only within the high-curvature shell ridges and longitudinal ribbing and leave every other part of the image unchanged. Constraints: no material loss or gouge; no discoloration halo; no exposed cavity. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "shell_crack",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "high-curvature shell ridges and longitudinal ribbing",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouge",
+        "no discoloration halo",
+        "no exposed cavity"
+      ],
+      "prompt": "Edit the image to add a single shell crack defect at slight severity, caused by brittle fracture of the stiff lignified shell under compressive or impact load. The defect must appear as: Along the longitudinal ribbing on a shell ridge, set a broken run of short hairline marks that never join into one line. Each mark is thin and only just darker than the shell it follows, and the shell between the marks stays whole. Add exactly one such defect. Apply this change only within the high-curvature shell ridges and longitudinal ribbing and leave every other part of the image unchanged. Constraints: no material loss or gouge; no discoloration halo; no exposed cavity. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "shell_crack",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "high-curvature shell ridges and longitudinal ribbing",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouge",
+        "no discoloration halo",
+        "no exposed cavity"
+      ],
+      "prompt": "Edit the image to add a single shell crack defect at moderate severity, caused by brittle fracture of the stiff lignified shell under compressive or impact load. The defect must appear as: Along a high-curvature shell ridge or the longitudinal ribbing, split the shell with a single continuous thin dark hairline. The edges either side of it stay matched together with no shell removed, and the line follows the surface contour. Add exactly one such defect. Apply this change only within the high-curvature shell ridges and longitudinal ribbing and leave every other part of the image unchanged. Constraints: no material loss or gouge; no discoloration halo; no exposed cavity. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "shell_crack",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "high-curvature shell ridges and longitudinal ribbing",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouge",
+        "no discoloration halo",
+        "no exposed cavity"
+      ],
+      "prompt": "Edit the image to add a single shell crack defect at severe severity, caused by brittle fracture of the stiff lignified shell under compressive or impact load. The defect must appear as: Along a high-curvature shell ridge or the longitudinal ribbing, open a fissure that branches as it runs, its widened line showing slight separation between the two edges. The fracture edges stay clean and matched in shape with no shell removed. Add exactly one such defect. Apply this change only within the high-curvature shell ridges and longitudinal ribbing and leave every other part of the image unchanged. Constraints: no material loss or gouge; no discoloration halo; no exposed cavity. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bore_hole",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "broad convex shell face near the apex or point",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear crack",
+        "no fuzzy mold growth",
+        "no discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single bore hole defect at minimal severity, caused by insect larva chews and bores a round hole through the shell to exit, removing material. The defect must appear as: On the broad convex shell face near the apex, press a pinprick depression barely darker than the shell around it. It is so shallow that the surface striations run on across it, and no rim stands raised at its edge. Add exactly one such defect. Apply this change only within the broad convex shell face near the apex or point and leave every other part of the image unchanged. Constraints: not a linear crack; no fuzzy mold growth; no discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bore_hole",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "broad convex shell face near the apex or point",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear crack",
+        "no fuzzy mold growth",
+        "no discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single bore hole defect at slight severity, caused by insect larva chews and bores a round hole through the shell to exit, removing material. The defect must appear as: On the broad convex shell face near the apex, sink a tiny shallow round pit with a faintly darker floor and a just-discernible circular rim. Keep it superficial so it does not pierce the shell wall, and leave the surrounding shell unmarked. Add exactly one such defect. Apply this change only within the broad convex shell face near the apex or point and leave every other part of the image unchanged. Constraints: not a linear crack; no fuzzy mold growth; no discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bore_hole",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "broad convex shell face near the apex or point",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear crack",
+        "no fuzzy mold growth",
+        "no discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single bore hole defect at moderate severity, caused by insect larva chews and bores a round hole through the shell to exit, removing material. The defect must appear as: On the broad convex shell face near the apex, punch a small round puncture through the shell surface with a clean circular rim. The opening reads dark against the shell and the surrounding surface stays unmarked. Add exactly one such defect. Apply this change only within the broad convex shell face near the apex or point and leave every other part of the image unchanged. Constraints: not a linear crack; no fuzzy mold growth; no discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bore_hole",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "broad convex shell face near the apex or point",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear crack",
+        "no fuzzy mold growth",
+        "no discoloration halo"
+      ],
+      "prompt": "Edit the image to add a single bore hole defect at severe severity, caused by insect larva chews and bores a round hole through the shell to exit, removing material. The defect must appear as: On the broad convex shell face near the apex, open a well-defined circular hole exposing the dark interior cavity, edged by a pale fresh-cut rim with a small detached shell flap at one side. Add exactly one such defect. Apply this change only within the broad convex shell face near the apex or point and leave every other part of the image unchanged. Constraints: not a linear crack; no fuzzy mold growth; no discoloration halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_mold",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "surface crevices and the fibrous basal scar, spreading onto the shell face",
+      "instance_count": "single",
+      "negatives": [
+        "not a crack line",
+        "no shell hole or material loss",
+        "no hard crisp edges"
+      ],
+      "prompt": "Edit the image to add a single surface mold defect at minimal severity, caused by fungal hyphal colonization and sporulation on the shell surface under humid storage. The defect must appear as: In one surface crevice near the fibrous basal scar, lay the faintest dusting of pale bloom. It sits so close to the shell tone that it reads as a lightening of the crevice rather than as growth, and it has no discernible margin. Add exactly one such defect. Apply this change only within the surface crevices and the fibrous basal scar, spreading onto the shell face and leave every other part of the image unchanged. Constraints: not a crack line; no shell hole or material loss; no hard crisp edges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_mold",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "surface crevices and the fibrous basal scar, spreading onto the shell face",
+      "instance_count": "single",
+      "negatives": [
+        "not a crack line",
+        "no shell hole or material loss",
+        "no hard crisp edges"
+      ],
+      "prompt": "Edit the image to add a single surface mold defect at slight severity, caused by fungal hyphal colonization and sporulation on the shell surface under humid storage. The defect must appear as: In the surface crevices and on the fibrous basal scar, lay a small powdery bloom flat against the shell, pale and close in tone to the surface. The shell striations read clearly through it and nothing stands fuzzy above the surface. Add exactly one such defect. Apply this change only within the surface crevices and the fibrous basal scar, spreading onto the shell face and leave every other part of the image unchanged. Constraints: not a crack line; no shell hole or material loss; no hard crisp edges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_mold",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "surface crevices and the fibrous basal scar, spreading onto the shell face",
+      "instance_count": "single",
+      "negatives": [
+        "not a crack line",
+        "no shell hole or material loss",
+        "no hard crisp edges"
+      ],
+      "prompt": "Edit the image to add a single surface mold defect at moderate severity, caused by fungal hyphal colonization and sporulation on the shell surface under humid storage. The defect must appear as: On the fibrous basal scar and the shell face beside it, grow an irregular roughly circular fuzzy colony, pale greenish-white, its fuzz partly obscuring the shell striations beneath it. Add exactly one such defect. Apply this change only within the surface crevices and the fibrous basal scar, spreading onto the shell face and leave every other part of the image unchanged. Constraints: not a crack line; no shell hole or material loss; no hard crisp edges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "surface_mold",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "surface crevices and the fibrous basal scar, spreading onto the shell face",
+      "instance_count": "single",
+      "negatives": [
+        "not a crack line",
+        "no shell hole or material loss",
+        "no hard crisp edges"
+      ],
+      "prompt": "Edit the image to add a single surface mold defect at severe severity, caused by fungal hyphal colonization and sporulation on the shell surface under humid storage. The defect must appear as: On the fibrous basal scar and across the shell face, grow a raised velvety-to-woolly colony carrying green and olive sporulation, spreading outward into a diffuse discolored margin that fades into the surrounding shell. Add exactly one such defect. Apply this change only within the surface crevices and the fibrous basal scar, spreading onto the shell face and leave every other part of the image unchanged. Constraints: not a crack line; no shell hole or material loss; no hard crisp edges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the diffuse soft top-down lighting with only faint speculars, the plain near-black matte background, a single hazelnut centered and filling much of the frame at the same pose scale, and the sharp high-resolution macro capture with warm reddish-brown color cast; alter nothing except the defect edit."
+    }
+  ],
+  "counts": {
+    "modes": 3,
+    "prompts": 12
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

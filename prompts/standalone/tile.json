@@ -1,0 +1,302 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "tile",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "glaze_crazing",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouging",
+        "no wide dark strokes",
+        "no soft blurred edges",
+        "no color halo"
+      ],
+      "prompt": "Edit the image to add a single glaze crazing defect at minimal severity, caused by tensile stress from glaze-body thermal expansion mismatch exceeds glaze strength, releasing as a through-glaze crack network. The defect must appear as: On the open glazed field, split the glaze with one very short hairline, only just readable as a darker line against the surrounding tone. Keep it unbranched, with nothing else like it nearby, and leave the glaze relief and speckle pattern untouched. Add exactly one such defect. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no material loss or gouging; no wide dark strokes; no soft blurred edges; no color halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "glaze_crazing",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouging",
+        "no wide dark strokes",
+        "no soft blurred edges",
+        "no color halo"
+      ],
+      "prompt": "Edit the image to add a single glaze crazing defect at slight severity, caused by tensile stress from glaze-body thermal expansion mismatch exceeds glaze strength, releasing as a through-glaze crack network. The defect must appear as: On the open glazed field, scatter short hairline splits loosely over one part of the glaze, letting a few meet at shallow angles without forming a connected network. Keep every line razor-thin and only faintly darker than the glaze, with the speckle pattern undisturbed. Add exactly one such defect. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no material loss or gouging; no wide dark strokes; no soft blurred edges; no color halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "glaze_crazing",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouging",
+        "no wide dark strokes",
+        "no soft blurred edges",
+        "no color halo"
+      ],
+      "prompt": "Edit the image to add a single glaze crazing defect at moderate severity, caused by tensile stress from glaze-body thermal expansion mismatch exceeds glaze strength, releasing as a through-glaze crack network. The defect must appear as: On the open glazed field, split the glaze with a connected network of thin darker lines crossing part of the field. Keep every line razor-thin with hard edges, crossing the speckles rather than following them, and leave the glaze relief unchanged. Add exactly one such defect. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no material loss or gouging; no wide dark strokes; no soft blurred edges; no color halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "glaze_crazing",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no material loss or gouging",
+        "no wide dark strokes",
+        "no soft blurred edges",
+        "no color halo"
+      ],
+      "prompt": "Edit the image to add a single glaze crazing defect at severe severity, caused by tensile stress from glaze-body thermal expansion mismatch exceeds glaze strength, releasing as a through-glaze crack network. The defect must appear as: On the open glazed field, split the glaze with a dense spider-web network whose lines run long and dark through many branching junctions. Keep every line razor-thin with hard edges and leave the glaze relief and speckle pattern otherwise unchanged. Add exactly one such defect. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no material loss or gouging; no wide dark strokes; no soft blurred edges; no color halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "glaze_pinholing",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "cluster",
+      "negatives": [
+        "no linear cracks",
+        "no single large crater",
+        "no raised blister dome",
+        "no color halo"
+      ],
+      "prompt": "Edit the image to add a single glaze pinholing defect at minimal severity, caused by gas from body or glaze decomposition bubbles through the melt and bursts; a viscous melt cannot heal the craters before cooling. The defect must appear as: On the open glazed field, stipple one small area of the glaze so faintly that the even sheen is only just broken by the pocking. Give the marks no darkened centres and no raised rims, and keep the speckle pattern and glaze colour unchanged. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no linear cracks; no single large crater; no raised blister dome; no color halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "glaze_pinholing",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "cluster",
+      "negatives": [
+        "no linear cracks",
+        "no single large crater",
+        "no raised blister dome",
+        "no color halo"
+      ],
+      "prompt": "Edit the image to add a single glaze pinholing defect at slight severity, caused by gas from body or glaze decomposition bubbles through the melt and bursts; a viscous melt cannot heal the craters before cooling. The defect must appear as: On the open glazed field, spread shallow round pits loosely over one part of the glaze. Make their centres only faintly darker and round their edges into soft dimples with no sharp rim, keeping every pit tiny and the glaze colour unchanged. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no linear cracks; no single large crater; no raised blister dome; no color halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "glaze_pinholing",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "cluster",
+      "negatives": [
+        "no linear cracks",
+        "no single large crater",
+        "no raised blister dome",
+        "no color halo"
+      ],
+      "prompt": "Edit the image to add a single glaze pinholing defect at moderate severity, caused by gas from body or glaze decomposition bubbles through the melt and bursts; a viscous melt cannot heal the craters before cooling. The defect must appear as: On the open glazed field, open clearly visible round pits across one region of the glaze, each with a dark shadowed centre and a sharp circular rim. Keep the pits pin-point in size and the surrounding glaze colour unchanged. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no linear cracks; no single large crater; no raised blister dome; no color halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "glaze_pinholing",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "cluster",
+      "negatives": [
+        "no linear cracks",
+        "no single large crater",
+        "no raised blister dome",
+        "no color halo"
+      ],
+      "prompt": "Edit the image to add a single glaze pinholing defect at severe severity, caused by gas from body or glaze decomposition bubbles through the melt and bursts; a viscous melt cannot heal the craters before cooling. The defect must appear as: On the open glazed field, open a dense field of larger, deeper round pinholes across one region of the glaze, several of them reading through to the body beneath. Keep their rims sharp and the surrounding glaze colour unchanged. Add a single cluster of this defect, not scattered separate ones. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no linear cracks; no single large crater; no raised blister dome; no color halo. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "impact_chip_spall",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "single point of the glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no hairline crack network",
+        "no diffuse smudge",
+        "no raised deposit",
+        "no soft faded edges"
+      ],
+      "prompt": "Edit the image to add a single impact chip spall defect at minimal severity, caused by localised impact or contact stress fractures the thin glassy glaze layer, popping a flake free and exposing the body beneath. The defect must appear as: At a single point of the glazed field, chip away a speck-sized flake of glaze so the gloss is just interrupted, leaving one short fractured edge and a tone only barely duller than the glaze around it. Keep the body beneath covered. Add exactly one such defect. Apply this change only within the single point of the glazed field and leave every other part of the image unchanged. Constraints: no hairline crack network; no diffuse smudge; no raised deposit; no soft faded edges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "impact_chip_spall",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "single point of the glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no hairline crack network",
+        "no diffuse smudge",
+        "no raised deposit",
+        "no soft faded edges"
+      ],
+      "prompt": "Edit the image to add a single impact chip spall defect at slight severity, caused by localised impact or contact stress fractures the thin glassy glaze layer, popping a flake free and exposing the body beneath. The defect must appear as: At a single point of the glazed field, chip away a small shallow flake of glaze, leaving a duller thinned patch bounded by a short angular fractured edge. Keep the matte body from showing through and leave the surrounding glaze unchanged. Add exactly one such defect. Apply this change only within the single point of the glazed field and leave every other part of the image unchanged. Constraints: no hairline crack network; no diffuse smudge; no raised deposit; no soft faded edges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "impact_chip_spall",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "single point of the glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no hairline crack network",
+        "no diffuse smudge",
+        "no raised deposit",
+        "no soft faded edges"
+      ],
+      "prompt": "Edit the image to add a single impact chip spall defect at moderate severity, caused by localised impact or contact stress fractures the thin glassy glaze layer, popping a flake free and exposing the body beneath. The defect must appear as: At a single point of the glazed field, break out a distinct crater that exposes the matte lighter body beneath, bounded by a sharp angular fractured edge. Leave the surrounding glossy glaze and its speckle pattern unchanged. Add exactly one such defect. Apply this change only within the single point of the glazed field and leave every other part of the image unchanged. Constraints: no hairline crack network; no diffuse smudge; no raised deposit; no soft faded edges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "impact_chip_spall",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "single point of the glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no hairline crack network",
+        "no diffuse smudge",
+        "no raised deposit",
+        "no soft faded edges"
+      ],
+      "prompt": "Edit the image to add a single impact chip spall defect at severe severity, caused by localised impact or contact stress fractures the thin glassy glaze layer, popping a flake free and exposing the body beneath. The defect must appear as: At a single point of the glazed field, break out a large crater exposing the matte lighter body, its glaze perimeter stepped where the layer has fractured away, with one smaller flake loss immediately beside it. Leave the surrounding glaze unchanged. Add exactly one such defect. Apply this change only within the single point of the glazed field and leave every other part of the image unchanged. Constraints: no hairline crack network; no diffuse smudge; no raised deposit; no soft faded edges. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "abrasive_gloss_wear",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "band crossing the open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no open craters",
+        "no branching cracks",
+        "no exposed body",
+        "no raised deposit"
+      ],
+      "prompt": "Edit the image to add a single abrasive gloss wear defect at minimal severity, caused by hard particles under normal and tangential load scratch the glaze, removing material by brittle micro-fracture and lowering surface gloss. The defect must appear as: Across a band crossing the open glazed field, subdue the sheen over a short run so the glaze reads as marginally less glossy along one direction. Resolve no individual striation and keep the tone and speckle pattern otherwise unchanged. Add exactly one such defect. Apply this change only within the band crossing the open glazed field and leave every other part of the image unchanged. Constraints: no open craters; no branching cracks; no exposed body; no raised deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "abrasive_gloss_wear",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "band crossing the open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no open craters",
+        "no branching cracks",
+        "no exposed body",
+        "no raised deposit"
+      ],
+      "prompt": "Edit the image to add a single abrasive gloss wear defect at slight severity, caused by hard particles under normal and tangential load scratch the glaze, removing material by brittle micro-fracture and lowering surface gloss. The defect must appear as: Across a band crossing the open glazed field, lay a short narrow streak of reduced gloss carrying a few shallow parallel striations along one direction. Keep its tone close to the surrounding glaze and let its edges fade softly into intact gloss. Add exactly one such defect. Apply this change only within the band crossing the open glazed field and leave every other part of the image unchanged. Constraints: no open craters; no branching cracks; no exposed body; no raised deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "abrasive_gloss_wear",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "band crossing the open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no open craters",
+        "no branching cracks",
+        "no exposed body",
+        "no raised deposit"
+      ],
+      "prompt": "Edit the image to add a single abrasive gloss wear defect at moderate severity, caused by hard particles under normal and tangential load scratch the glaze, removing material by brittle micro-fracture and lowering surface gloss. The defect must appear as: Across a band crossing the open glazed field, abrade a clear matte band whose parallel striations run visibly along one direction. Let its edges fade softly into the intact glossy glaze and keep the glaze colour otherwise unchanged. Add exactly one such defect. Apply this change only within the band crossing the open glazed field and leave every other part of the image unchanged. Constraints: no open craters; no branching cracks; no exposed body; no raised deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "abrasive_gloss_wear",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "band crossing the open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no open craters",
+        "no branching cracks",
+        "no exposed body",
+        "no raised deposit"
+      ],
+      "prompt": "Edit the image to add a single abrasive gloss wear defect at severe severity, caused by hard particles under normal and tangential load scratch the glaze, removing material by brittle micro-fracture and lowering surface gloss. The defect must appear as: Across a band crossing the open glazed field, abrade a broad dull band packed with deep parallel striations along one direction, its tone greyed where material has been worn away. Let its edges fade softly into the intact glossy glaze. Add exactly one such defect. Apply this change only within the band crossing the open glazed field and leave every other part of the image unchanged. Constraints: no open craters; no branching cracks; no exposed body; no raised deposit. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "surface_residue_film",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no cracks or voids",
+        "no material loss",
+        "no sharp edges",
+        "no exposed body"
+      ],
+      "prompt": "Edit the image to add a single surface residue film defect at minimal severity, caused by cementitious, oily or organic residue dries and bonds onto the glaze; micro-rough or porous glaze traps it and resists cleaning. The defect must appear as: On the open glazed field, dull the gloss over a short run of the glaze so faintly that it is only just noticeable, giving it the barest cool cast. Keep the speckle pattern reading as sharply there as it does elsewhere. Add exactly one such defect. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no cracks or voids; no material loss; no sharp edges; no exposed body. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "surface_residue_film",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no cracks or voids",
+        "no material loss",
+        "no sharp edges",
+        "no exposed body"
+      ],
+      "prompt": "Edit the image to add a single surface residue film defect at slight severity, caused by cementitious, oily or organic residue dries and bonds onto the glaze; micro-rough or porous glaze traps it and resists cleaning. The defect must appear as: On the open glazed field, lay a thin pale film over a small area, whitening it enough to soften the gloss noticeably while the speckles still read clearly through it. Let its edge fade softly with no defined outline. Add exactly one such defect. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no cracks or voids; no material loss; no sharp edges; no exposed body. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "surface_residue_film",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no cracks or voids",
+        "no material loss",
+        "no sharp edges",
+        "no exposed body"
+      ],
+      "prompt": "Edit the image to add a single surface residue film defect at moderate severity, caused by cementitious, oily or organic residue dries and bonds onto the glaze; micro-rough or porous glaze traps it and resists cleaning. The defect must appear as: On the open glazed field, lay a clearly cloudy whitish film over part of the field, veiling the gloss while the speckles remain visible through it. Let its edge fade softly into clean glaze with no defined outline. Add exactly one such defect. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no cracks or voids; no material loss; no sharp edges; no exposed body. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    },
+    {
+      "mode": "surface_residue_film",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "open glazed field",
+      "instance_count": "single",
+      "negatives": [
+        "no cracks or voids",
+        "no material loss",
+        "no sharp edges",
+        "no exposed body"
+      ],
+      "prompt": "Edit the image to add a single surface residue film defect at severe severity, caused by cementitious, oily or organic residue dries and bonds onto the glaze; micro-rough or porous glaze traps it and resists cleaning. The defect must appear as: On the open glazed field, lay a thick uneven chalky film over the glaze that strongly veils the speckle pattern and dulls the gloss. Let its edge fade softly into clean glaze, with the glaze surface intact beneath the deposit. Add exactly one such defect. Apply this change only within the open glazed field and leave every other part of the image unchanged. Constraints: no cracks or voids; no material loss; no sharp edges; no exposed body. Keep the edit photorealistic and continuous with the surrounding surface. Keep the flat top-down close-up framing of the glossy speckled glaze filling the frame, its pale gray-green base with dark mottled speckles, even diffuse frontal lighting with fine sparkle highlights, and the same sharpness, resolution and neutral color cast."
+    }
+  ],
+  "counts": {
+    "modes": 5,
+    "prompts": 20
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}

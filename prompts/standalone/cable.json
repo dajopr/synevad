@@ -1,0 +1,298 @@
+{
+  "benchmark": "mvtec_ad",
+  "category": "cable",
+  "grading_mode": "standalone",
+  "severity_scale": [
+    "minimal",
+    "slight",
+    "moderate",
+    "severe"
+  ],
+  "generation_prompts": [
+    {
+      "mode": "inner_insulation_cut",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "colored insulation jacket of an inner conductor",
+      "instance_count": "single",
+      "negatives": [
+        "not a round puncture hole",
+        "no discoloration or burn halo",
+        "no melted edges",
+        "no wide gouge or material loss"
+      ],
+      "prompt": "Edit the image to add a single inner insulation cut defect at minimal severity, caused by a sharp blade or edge shears and lacerates the colored polymer insulation of an inner conductor, severing the jacket and, when deep enough, exposing the copper strands beneath. The defect must appear as: On the colored insulation jacket of one inner conductor, mark a short hairline scuff: a thin matte streak where the surface gloss is interrupted, with no material displaced and nothing cut into the jacket. Keep it faint enough to read only as a change in sheen. Add exactly one such defect. Apply this change only within the colored insulation jacket of an inner conductor and leave every other part of the image unchanged. Constraints: not a round puncture hole; no discoloration or burn halo; no melted edges; no wide gouge or material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "inner_insulation_cut",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "colored insulation jacket of an inner conductor",
+      "instance_count": "single",
+      "negatives": [
+        "not a round puncture hole",
+        "no discoloration or burn halo",
+        "no melted edges",
+        "no wide gouge or material loss"
+      ],
+      "prompt": "Edit the image to add a single inner insulation cut defect at slight severity, caused by a sharp blade or edge shears and lacerates the colored polymer insulation of an inner conductor, severing the jacket and, when deep enough, exposing the copper strands beneath. The defect must appear as: On the colored insulation jacket of one inner conductor, cut a short score line that is distinctly incised into the surface, its two edges still meeting along the whole length. The blade bites into the jacket but the wall stays unbroken and no copper shows. Add exactly one such defect. Apply this change only within the colored insulation jacket of an inner conductor and leave every other part of the image unchanged. Constraints: not a round puncture hole; no discoloration or burn halo; no melted edges; no wide gouge or material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "inner_insulation_cut",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "colored insulation jacket of an inner conductor",
+      "instance_count": "single",
+      "negatives": [
+        "not a round puncture hole",
+        "no discoloration or burn halo",
+        "no melted edges",
+        "no wide gouge or material loss"
+      ],
+      "prompt": "Edit the image to add a single inner insulation cut defect at moderate severity, caused by a sharp blade or edge shears and lacerates the colored polymer insulation of an inner conductor, severing the jacket and, when deep enough, exposing the copper strands beneath. The defect must appear as: On the colored insulation jacket of one inner conductor, cut a clean straight slit that passes partway through the colored insulation, its edges gapping slightly apart along the length. Keep the cut edges sharp and sheared. The copper strands underneath stay covered and unexposed. Add exactly one such defect. Apply this change only within the colored insulation jacket of an inner conductor and leave every other part of the image unchanged. Constraints: not a round puncture hole; no discoloration or burn halo; no melted edges; no wide gouge or material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "inner_insulation_cut",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "colored insulation jacket of an inner conductor",
+      "instance_count": "single",
+      "negatives": [
+        "not a round puncture hole",
+        "no discoloration or burn halo",
+        "no melted edges",
+        "no wide gouge or material loss"
+      ],
+      "prompt": "Edit the image to add a single inner insulation cut defect at severe severity, caused by a sharp blade or edge shears and lacerates the colored polymer insulation of an inner conductor, severing the jacket and, when deep enough, exposing the copper strands beneath. The defect must appear as: On the colored insulation jacket of one inner conductor, cut a deep clean-edged gash running fully through the insulation, its edges gapping open to expose the bright copper strands beneath. Keep the cut edges clean and sheared, with the surrounding jacket otherwise undamaged. Add exactly one such defect. Apply this change only within the colored insulation jacket of an inner conductor and leave every other part of the image unchanged. Constraints: not a round puncture hole; no discoloration or burn halo; no melted edges; no wide gouge or material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "insulation_puncture",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "exposed colored insulation face of an inner conductor",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear cut or slit",
+        "no discoloration or burn halo",
+        "no melting",
+        "no wide crater or material loss"
+      ],
+      "prompt": "Edit the image to add a single insulation puncture defect at minimal severity, caused by a pointed object pokes and punctures the colored insulation of an inner conductor, the tip penetrating the surface and, when forced through, perforating the jacket to the copper. The defect must appear as: On the exposed colored insulation face of one inner conductor, place a faint circular impression: a small dulled spot where the surface gloss is flattened, with no discernible depth and no rim around it. The insulation surface stays continuous and unbroken. Add exactly one such defect. Apply this change only within the exposed colored insulation face of an inner conductor and leave every other part of the image unchanged. Constraints: not a linear cut or slit; no discoloration or burn halo; no melting; no wide crater or material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "insulation_puncture",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "exposed colored insulation face of an inner conductor",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear cut or slit",
+        "no discoloration or burn halo",
+        "no melting",
+        "no wide crater or material loss"
+      ],
+      "prompt": "Edit the image to add a single insulation puncture defect at slight severity, caused by a pointed object pokes and punctures the colored insulation of an inner conductor, the tip penetrating the surface and, when forced through, perforating the jacket to the copper. The defect must appear as: On the exposed colored insulation face of one inner conductor, press a shallow round dimple into the surface, its floor smooth and its edge sloping softly into the surrounding insulation. The surface stays unbroken, with no rim formed and no copper visible. Add exactly one such defect. Apply this change only within the exposed colored insulation face of an inner conductor and leave every other part of the image unchanged. Constraints: not a linear cut or slit; no discoloration or burn halo; no melting; no wide crater or material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "insulation_puncture",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "exposed colored insulation face of an inner conductor",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear cut or slit",
+        "no discoloration or burn halo",
+        "no melting",
+        "no wide crater or material loss"
+      ],
+      "prompt": "Edit the image to add a single insulation puncture defect at moderate severity, caused by a pointed object pokes and punctures the colored insulation of an inner conductor, the tip penetrating the surface and, when forced through, perforating the jacket to the copper. The defect must appear as: On the exposed colored insulation face of one inner conductor, make a small round puncture that partly penetrates the insulation, ringed by a slight depressed or raised rim. The hole stops short of the conductor and no copper is visible. Add exactly one such defect. Apply this change only within the exposed colored insulation face of an inner conductor and leave every other part of the image unchanged. Constraints: not a linear cut or slit; no discoloration or burn halo; no melting; no wide crater or material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "insulation_puncture",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "exposed colored insulation face of an inner conductor",
+      "instance_count": "single",
+      "negatives": [
+        "not a linear cut or slit",
+        "no discoloration or burn halo",
+        "no melting",
+        "no wide crater or material loss"
+      ],
+      "prompt": "Edit the image to add a single insulation puncture defect at severe severity, caused by a pointed object pokes and punctures the colored insulation of an inner conductor, the tip penetrating the surface and, when forced through, perforating the jacket to the copper. The defect must appear as: On the exposed colored insulation face of one inner conductor, drive a through-puncture hole that perforates the insulation and exposes the bright copper beneath, with a small torn or raised rim and short radial splits running outward from the hole. Add exactly one such defect. Apply this change only within the exposed colored insulation face of an inner conductor and leave every other part of the image unchanged. Constraints: not a linear cut or slit; no discoloration or burn halo; no melting; no wide crater or material loss. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "missing_conductor",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "conductor seat in the cream inner sheath",
+      "instance_count": "single",
+      "negatives": [
+        "no extra or added conductor",
+        "no bent or kinked conductor",
+        "no cut or hole",
+        "no debris or filler occupying the seat"
+      ],
+      "prompt": "Edit the image to add a single missing conductor defect at minimal severity, caused by one insulated conductor is omitted or withdrawn from the bundle during assembly, leaving an empty seat where a designated conductor should be; a logical assembly nonconformance, not surface damage. The defect must appear as: At one conductor seat in the cream inner sheath, set that conductor off-centre so its insulated ring sits skewed within the seat and the sheath wall reads thicker on one side. No void opens, the seat stays fully occupied, and the other conductors are unchanged. Add exactly one such defect. Apply this change only within the conductor seat in the cream inner sheath and leave every other part of the image unchanged. Constraints: no extra or added conductor; no bent or kinked conductor; no cut or hole; no debris or filler occupying the seat. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "missing_conductor",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "conductor seat in the cream inner sheath",
+      "instance_count": "single",
+      "negatives": [
+        "no extra or added conductor",
+        "no bent or kinked conductor",
+        "no cut or hole",
+        "no debris or filler occupying the seat"
+      ],
+      "prompt": "Edit the image to add a single missing conductor defect at slight severity, caused by one insulated conductor is omitted or withdrawn from the bundle during assembly, leaving an empty seat where a designated conductor should be; a logical assembly nonconformance, not surface damage. The defect must appear as: At one conductor seat in the cream inner sheath, set that conductor low so it sits sunk below the plane of its neighbours and a narrow sliver of pale sheath shows along one side of the seat. The seat is still occupied and the other conductors are unchanged. Add exactly one such defect. Apply this change only within the conductor seat in the cream inner sheath and leave every other part of the image unchanged. Constraints: no extra or added conductor; no bent or kinked conductor; no cut or hole; no debris or filler occupying the seat. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "missing_conductor",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "conductor seat in the cream inner sheath",
+      "instance_count": "single",
+      "negatives": [
+        "no extra or added conductor",
+        "no bent or kinked conductor",
+        "no cut or hole",
+        "no debris or filler occupying the seat"
+      ],
+      "prompt": "Edit the image to add a single missing conductor defect at moderate severity, caused by one insulated conductor is omitted or withdrawn from the bundle during assembly, leaving an empty seat where a designated conductor should be; a logical assembly nonconformance, not surface damage. The defect must appear as: At one conductor seat in the cream inner sheath, leave that conductor clearly under-seated and partly withdrawn, so a crescent gap opens and the seat reads as partly empty with the pale sheath visible inside it. The remaining conductors stay intact. Add exactly one such defect. Apply this change only within the conductor seat in the cream inner sheath and leave every other part of the image unchanged. Constraints: no extra or added conductor; no bent or kinked conductor; no cut or hole; no debris or filler occupying the seat. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "missing_conductor",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "conductor seat in the cream inner sheath",
+      "instance_count": "single",
+      "negatives": [
+        "no extra or added conductor",
+        "no bent or kinked conductor",
+        "no cut or hole",
+        "no debris or filler occupying the seat"
+      ],
+      "prompt": "Edit the image to add a single missing conductor defect at severe severity, caused by one insulated conductor is omitted or withdrawn from the bundle during assembly, leaving an empty seat where a designated conductor should be; a logical assembly nonconformance, not surface damage. The defect must appear as: At one conductor seat in the cream inner sheath, omit that conductor entirely, leaving an empty circular seat where the insulated conductor should be. The pale sheath or filler shows in the void, with no colored insulation ring and no copper strands. Remaining conductors stay intact. Add exactly one such defect. Apply this change only within the conductor seat in the cream inner sheath and leave every other part of the image unchanged. Constraints: no extra or added conductor; no bent or kinked conductor; no cut or hole; no debris or filler occupying the seat. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "conductor_position_swap",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "colored conductor arrangement inside the sheath",
+      "instance_count": "single",
+      "negatives": [
+        "no colour change of any conductor",
+        "no missing or extra conductor",
+        "no cut, puncture or bend on any conductor"
+      ],
+      "prompt": "Edit the image to add a single conductor position swap defect at minimal severity, caused by two conductors are assembled into each other's positions, violating the colour-and-position identification that defines conductor identity; a logical misassembly, not surface damage. The defect must appear as: In the colored conductor arrangement inside the sheath, set one conductor off its expected angular position so its centre sits away from where the arrangement would place it, while the spacing around the bundle stays near-even and the colour sequence reads as the canonical order. Add exactly one such defect. Apply this change only within the colored conductor arrangement inside the sheath and leave every other part of the image unchanged. Constraints: no colour change of any conductor; no missing or extra conductor; no cut, puncture or bend on any conductor. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "conductor_position_swap",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "colored conductor arrangement inside the sheath",
+      "instance_count": "single",
+      "negatives": [
+        "no colour change of any conductor",
+        "no missing or extra conductor",
+        "no cut, puncture or bend on any conductor"
+      ],
+      "prompt": "Edit the image to add a single conductor position swap defect at slight severity, caused by two conductors are assembled into each other's positions, violating the colour-and-position identification that defines conductor identity; a logical misassembly, not surface damage. The defect must appear as: In the colored conductor arrangement inside the sheath, displace one conductor from its correct angular seat toward a neighbour's position, crowding that neighbour and opening a wider gap behind it. Colours stay unchanged and the sequence around the bundle still reads as the canonical order. Add exactly one such defect. Apply this change only within the colored conductor arrangement inside the sheath and leave every other part of the image unchanged. Constraints: no colour change of any conductor; no missing or extra conductor; no cut, puncture or bend on any conductor. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "conductor_position_swap",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "colored conductor arrangement inside the sheath",
+      "instance_count": "single",
+      "negatives": [
+        "no colour change of any conductor",
+        "no missing or extra conductor",
+        "no cut, puncture or bend on any conductor"
+      ],
+      "prompt": "Edit the image to add a single conductor position swap defect at moderate severity, caused by two conductors are assembled into each other's positions, violating the colour-and-position identification that defines conductor identity; a logical misassembly, not surface damage. The defect must appear as: In the colored conductor arrangement inside the sheath, exchange two conductors partway into each other's seats so the colour arrangement reads as visibly wrong, though both sit a little irregularly rather than squarely in position. Every conductor keeps its own colour and stays undamaged. Add exactly one such defect. Apply this change only within the colored conductor arrangement inside the sheath and leave every other part of the image unchanged. Constraints: no colour change of any conductor; no missing or extra conductor; no cut, puncture or bend on any conductor. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "conductor_position_swap",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "colored conductor arrangement inside the sheath",
+      "instance_count": "single",
+      "negatives": [
+        "no colour change of any conductor",
+        "no missing or extra conductor",
+        "no cut, puncture or bend on any conductor"
+      ],
+      "prompt": "Edit the image to add a single conductor position swap defect at severe severity, caused by two conductors are assembled into each other's positions, violating the colour-and-position identification that defines conductor identity; a logical misassembly, not surface damage. The defect must appear as: In the colored conductor arrangement inside the sheath, seat two conductors fully and cleanly in each other's correct positions, so the colour order clearly deviates from the canonical arrangement while every conductor sits squarely in a proper seat and remains undamaged. Add exactly one such defect. Apply this change only within the colored conductor arrangement inside the sheath and leave every other part of the image unchanged. Constraints: no colour change of any conductor; no missing or extra conductor; no cut, puncture or bend on any conductor. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bent_conductor",
+      "stage": "minimal",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "stranded copper bundle at one conductor's cut end",
+      "instance_count": "single",
+      "negatives": [
+        "no missing conductor",
+        "no cut or puncture",
+        "no severed strands",
+        "no discoloration or melting"
+      ],
+      "prompt": "Edit the image to add a single bent conductor defect at minimal severity, caused by a conductor is plastically bent beyond its elastic limit and pushed out of position; the copper yields permanently and the stranded bundle kinks or splays (birdcaging), losing its round shape. The defect must appear as: At the stranded copper bundle of one conductor's cut end, tip the bundle off-square so its cut face sits at a small angle to its neighbours. The outline stays circular, every strand lies tight in the lay, and the bundle keeps its concentric position. Add exactly one such defect. Apply this change only within the stranded copper bundle at one conductor's cut end and leave every other part of the image unchanged. Constraints: no missing conductor; no cut or puncture; no severed strands; no discoloration or melting. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bent_conductor",
+      "stage": "slight",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "stranded copper bundle at one conductor's cut end",
+      "instance_count": "single",
+      "negatives": [
+        "no missing conductor",
+        "no cut or puncture",
+        "no severed strands",
+        "no discoloration or melting"
+      ],
+      "prompt": "Edit the image to add a single bent conductor defect at slight severity, caused by a conductor is plastically bent beyond its elastic limit and pushed out of position; the copper yields permanently and the stranded bundle kinks or splays (birdcaging), losing its round shape. The defect must appear as: At the stranded copper bundle of one conductor's cut end, lean the bundle off axis so its cut face reads as a slight oval rather than a circle, and offset it a short way from its concentric position. All strands stay tight and parallel, bright and untarnished. Add exactly one such defect. Apply this change only within the stranded copper bundle at one conductor's cut end and leave every other part of the image unchanged. Constraints: no missing conductor; no cut or puncture; no severed strands; no discoloration or melting. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bent_conductor",
+      "stage": "moderate",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "stranded copper bundle at one conductor's cut end",
+      "instance_count": "single",
+      "negatives": [
+        "no missing conductor",
+        "no cut or puncture",
+        "no severed strands",
+        "no discoloration or melting"
+      ],
+      "prompt": "Edit the image to add a single bent conductor defect at moderate severity, caused by a conductor is plastically bent beyond its elastic limit and pushed out of position; the copper yields permanently and the stranded bundle kinks or splays (birdcaging), losing its round shape. The defect must appear as: At the stranded copper bundle of one conductor's cut end, bend the bundle and push it sideways out of its position so the round shape is distorted, with some outer strands lifting away from the lay. The strands stay whole and bright with no tarnish. Add exactly one such defect. Apply this change only within the stranded copper bundle at one conductor's cut end and leave every other part of the image unchanged. Constraints: no missing conductor; no cut or puncture; no severed strands; no discoloration or melting. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    },
+    {
+      "mode": "bent_conductor",
+      "stage": "severe",
+      "applies_to": "defect_free_source",
+      "region_of_interest": "stranded copper bundle at one conductor's cut end",
+      "instance_count": "single",
+      "negatives": [
+        "no missing conductor",
+        "no cut or puncture",
+        "no severed strands",
+        "no discoloration or melting"
+      ],
+      "prompt": "Edit the image to add a single bent conductor defect at severe severity, caused by a conductor is plastically bent beyond its elastic limit and pushed out of position; the copper yields permanently and the stranded bundle kinks or splays (birdcaging), losing its round shape. The defect must appear as: At the stranded copper bundle of one conductor's cut end, form a pronounced kink and displacement, with outer strands splayed outward like a birdcage so the bundle is no longer round and sits clearly out of alignment with the others. Strands remain unsevered and bright. Add exactly one such defect. Apply this change only within the stranded copper bundle at one conductor's cut end and leave every other part of the image unchanged. Constraints: no missing conductor; no cut or puncture; no severed strands; no discoloration or melting. Keep the edit photorealistic and continuous with the surrounding surface. Keep the even soft directional lighting with bright speculars on the copper strands, the mottled blue-gray speckled background, the top-down axial view of the cut cable end centered and filling the frame, and the sharp macro capture with cool bluish color cast; alter nothing except the defect edit."
+    }
+  ],
+  "counts": {
+    "modes": 5,
+    "prompts": 20
+  },
+  "warnings": [],
+  "self_check": {
+    "passed": true,
+    "failures": []
+  }
+}
